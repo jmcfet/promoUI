@@ -1,0 +1,58 @@
+.channelBg{
+	fill:#111177;
+	background-color: #111177;
+}
+
+.channelBgHighlight{
+	fill:#4455AA;
+	background-color: #4455AA;
+}
+
+.channelBgDisabled {
+}
+
+.eventBg, .eventBgCurrent {
+	fill:#332299;
+	stroke-width:0;
+	background-color: #332299;
+}
+
+.eventBgHighlight {
+	fill:#5577DD;
+	stroke:#DDDD00;
+	stroke-width:2;
+	background-color: #5577DD;
+	-webkit-box-shadow: 0px 0px 3px 1px #DDDD00;
+}
+
+.eventBgDisabled {
+	fill:#222266;
+	stroke-width:0;
+	border-width: 0;
+	background-color: #222266;
+}
+
+.eventText, .channelText {
+	font-size:15px;
+	fill: white;
+	text-anchor: start;
+	color: white;
+}
+
+.channelTextDisabled {
+	font-size:15px;
+	fill: #777777;
+	color: #777777;
+}
+
+.timeLabelText {
+	font-size:12px;
+	fill:#ffffff;
+	color: #ffffff;
+}
+
+.timeLineBg {
+	fill:#ffffff;
+	opacity: 0.2;
+	background-color: #ffffff;
+}

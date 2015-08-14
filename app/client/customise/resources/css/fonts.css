@@ -1,0 +1,739 @@
+/* fonts.css - for styling solely related to fonts/typography */
+
+/* font weight definitions */
+/* standard global font definition */
+html, body, div, p {
+	color: #fff;
+	font-family: 'Ubuntu', sans-serif;
+}
+p {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+/* medium font weight definition, please use .medium */
+.medium, .newPopupIndicatorTitle, .musicGenreItem, .musicGenreItemSeleted, .musicSubCategoryItem, .musicSubCategoryItemSeleted, .mosaicEventName,
+.mosaicUnsubscribePrompt, .pipUnsubscribePrompt, .posterPrompt, .mosaicPosterPrompt, .startAndEndTimeMiniguideEventGroup, .startAndEndTimeZapperEventGroup,
+.startAndEndTimeProgressBarLabels, .miniguideChannelNameAndNumber, .directChannelNumberEntry, .synopsisLarge, .synopsisSmall,
+.miniguideTime, .textUbuntuMedium, .miniguideTitle, .miniguideTitleGrey, .diskSpaceFreeText, .logoMenuItemHighlighted,
+.logoMenuItemUnhighlighted, .currentTimeText, .messageListItemTitle, .mediumText, .splashScreenProgress,
+.splashScreenProgressHighlight, .scheduledItemName, .promotionItemTitle, .musicPromotionItemTitle, .menuSubTitle,
+.nowFullAssetInfoTitle, .nowFullAssetInfoPrice, .nowFullAssetInfoExpiry,
+.loadingBarText, .nowAssetInfo.title, .keypadInputTextNumeric, .keypadInputTextAlphaNumeric, .fullViewRightSubtitle, .tipsFromNetText,
+.thumbnailTitle, .videoUnavailableText, .nowKidsMenuItem, .nowKidsMenuItemHighlighted, .nowKidsMenuItemDefocusHighlighted {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 500;
+}
+/* light font weight definition, please use .light */
+.light, .nowDisclaimerTitle, .pinKeys {
+	font-family: 'Ubuntu-Light', sans-serif;
+}
+.bold {
+	font-weight: 600;
+}
+.nowrap {
+	white-space: nowrap;
+}
+/* font weight definitions section ends
+ * no font weights should be defined outside of this section */
+
+/* font size definitions
+ * please try to apply .tiny .small .normal .large .extraLarge or .gigantic */
+.optionsMenuItemTitleSmaller {
+	font-size: 10.5px;
+}
+.optionsMenuItemTitle, .errorText {
+	font-size: 12px;
+}
+.smallFont {
+	font-size: 14px;
+}
+.subtitle3, .description {
+	font-size: 15px;
+}
+.channelLogoNameStyle {
+	font-size: 16px;
+}
+.photoPlayerIconLabelText {
+	font-size: 17px;
+}
+.promotionItemEventDetails, .recordingPromotionItemEventDetails, .greyKeypadKey, .videoUnavailableText, .photoPlayerFolderLabel, .photoPlayerLabelRightAlign, .photoPlayerImageLabel {
+	font-size: 18px;
+}
+.duration, .usbLoadingTextMessage {
+	font-size: 19px;
+}
+.timeShiftProgressStartLabel, .nowDisclaimerButtonText, .subtitle, .accountEntry, .musicPromotionItemTitle, .timeShiftProgressEndLabel,
+.settingsFooterLabel, .thumbnailsubtitle {
+	font-size: 20px;
+}
+/* tiny font size definition, please use .tiny */
+.tiny, .newPopupIndicatorContent, .msgToAddFavorite, .filterTypeText, .startAndEndTimeMiniguideEventGroup, .startAndEndTimeZapperEventGroup,
+.startAndEndTimeProgressBarLabels, .nowAssetInfo.moreLabel, .nowGalleryPosition, .nowAssetInfo.subtitle, .addToFavTitle, .agoraIndicatorText,
+.mosaicinfo, .mosaicServiceName, .mosaicEventGenre, .mosaicEventDescription, .PPVSubText,
+.diskSpaceFreeText, .miniguideButtonText, .miniguideNoOptionsText, .bannerButtonText, .bannerNoOptionsText, .dialog_title, .dialog_title_centre, .errorCode, .legend,
+.recordingsOptionFooterText, .miniguideButtonTextChange, .bannerButtonTextChange, .fontSize22, .playbackIconLabelText, .tipsFromNetText,
+.playbackIconLabelTextRightAlign, .playbackIconLabelTextLeftAlign {
+	font-size: 22px;
+}
+/* small font size definition, please use .small */
+.small, .promotionItemTitle, .nowAssetInfo, .nowFullAssetInfoRentalDuration, .nowFullAssetInfoExpiry, .nowFullAssetInfoMisc,
+.nowFullAssetInfoActors, .loadingBarText, .mosaicUnsubscribePrompt, .pipUnsubscribePrompt, .posterPrompt, .mosaicPosterPrompt,
+.settingsDescriptionSmall, .gridTime, .gridTimePast, .miniguideChannelNameAndNumber, .popupDirectTextEntryCursor, .synopsisXSmall,
+.synopsisXSmallGrey, .PPVHistoryEventNameFocused, .miniguideNextTitle, .playerHelpText,
+.currentDateText, .backLabelText, .messageListItemDate, .liveTVTitle, .timeShiftEventName, .timeShiftEpisodeInfo, .timeShiftSpeedIndicator,
+.gridRowItemTitleHighlighted,
+.nowLoadingText, .textContentDescription, .fullViewLeftSubtitle, .fullViewRightSubtitle, .noSignalMessage, .noSignalCode,
+.directChannelEntryFeedback, .usbLoadingTextLabel, .recordingItemName {
+	font-size: 24px;
+}
+/* normal font size definition, please use .normal */
+.normal, .noChannels, .mosaicEventName, .synopsisSmallDescription, .synopsisSmall, .menuTitle, .nowAssetInfo.price, .nowMyContentItemText,
+.nowMyContentSeriesText, .nowMySubscriptionsItemText, .nowMySubscriptionsSeriesText, .agoraServiceName, .agoraEventName, .agoraSeriesEpisodeTitle,
+.agoraInvalidEventName, .mosaicSeriesInfo, .mosaicEpisodeName, .synopsisSmallGrey, .PPVDefaultText, .PPVHistoryEventName, .miniguideTitle,
+.miniguideTitleGrey, .noMailText, .channelListChanName,
+.messageListItemTitle, .dialogSubtitle, .dialogMessage, .scheduledItemName,
+.portalHighlightedItemLabel, .menuSubTitle, .noEPGContent, .textDescription,
+.installAlternative, .firstInstallvalueLabel, .progressEndLabel {
+	font-size: 26px;
+}
+.blockingDialogTitle, .nowDisclaimerText, .miniguideTime, .summarySeasonAndEpisode {
+	font-size: 28px;
+}
+/* large font size definition, please use .large */
+.large, .newPopupIndicatorTitle, .synopsisMedium, .menuItem, .menuItemLeft, .menuItemLineTwoHighlighted, .longMenuItem, .searchMenuItem, .recordDate,
+.previewTitleLabel, .nowAssetInfo.title, .nowFullAssetInfoSubtitle, .nowFullAssetInfoPrice, .videoLoadingBarText,
+.musicGenreItem, .musicGenreItemSeleted, .musicSubCategoryItem, .musicSubCategoryItemSeleted, .zapperTitle, .settingsSummaryTitle,
+.summaryTitle, .recordingDialogOptionText, .textOptionSelectorText,.textOptionSelectorTextHighlighted, .settingsDescription,
+.logoMenuItemHighlighted, .logoMenuItemUnhighlighted, .channelListChanNum, .eventName, .textItemText, .generalItemText, .selected,
+.currentTimeText, .currentVolumeText, .backLabelText, .dialogueTypeLabelSubText, .dialogButtonText,
+.unSelectableDialogButtonTextLeft, .unSelectableDialogButtonText, .dialogButtonTextLeft, .dialogButtonTextLabel,
+.messageDialogText, .breadcrumbParent, .breadcrumbCurrent, .keyInactive, .keyInactiveVod, .keypadInputTextNumeric,
+.keypadInputTextAlphaNumeric, .textTitleDescription, .thumbnailTitle, .nowKidsMenuItem, .breadcrumbSubTitle {
+	font-size: 30px;
+}
+.pinDialogMessage {
+	font-size: 31.5px;
+}
+.libraryOptionsSubMenuTitle {
+	font-size: 32px;
+}
+/* extra large font size definition, please use .extraLarge */
+.extraLarge, .startAndEndTimeProgressBar, .directChannel, .splashScreenProgressHighlight,
+.splashScreenLabel, .splashScreenProgress, .noSignalMessageBoxTitle, .nowKidsMenuItemHighlighted, .nowKidsMenuItemDefocusHighlighted {
+	font-size: 36px;
+}
+/* gigantic font size definition, please use .gigantic */
+.gigantic, .synopsisLarge, .menuItemHighlighted, .menuItemHighlightedScrolling, .menuItemHighlightedRightAlign, .menuItemHighlightedScrolling,
+.menuStripItemHighlighted, .nowFullAssetInfoTitle, .title, .titleHighlight, .subtitle3, .breadcrumbTitle, .libraryTitle, .libraryTitleGray,
+.mosaicTitle, .pinEntryTitle, .dialogueTypeLabel, .directChannelNumberEntry, .PPVEventTitle, .dialogTitle {
+	font-size: 40px;
+}
+.currentTimeText {
+	font-size: 46px;
+}
+.nowDisclaimerTitle {
+	font-size: 48px;
+}
+.newLibraryTitle, .newLibraryTitleGray {
+	font-size: 50px;
+}
+.progressTextStart, .progressTextEnd {
+	font-size: 55px;
+}
+.socialAuthCode {
+	font-size: 72px;
+}
+.pinKeys {
+	font-size: 160px;
+}
+
+.greyKeypadKey {
+	font-family: "Ubuntu-Medium";
+	font-weight: 500;
+}
+/* font size definitions section ends
+ * no font sizes should defined outside of this section*/
+
+/* ellipsis definition, please use .ellipsis */
+.ellipsis, .title, .titleHighlight, .subtitle3, .breadcrumbTitle, .libraryTitle, .newLibraryTitle, .breadcrumbSubTitle, .agoraServiceName,
+.agoraIndicatorText, .usbLoadingTextMessage, .agoraEventName, .agoraSeriesEpisodeTitle, .agoraInvalidEventName, .musicGenreItem,
+.musicGenreItemSeleted, .musicSubCategoryItem, .musicSubCategoryItemSeleted, .mosaicTitle, .mosaicinfo, .zapperTitle, .settingsSummaryTitle,
+.dialogueTypeLabel, .recordingDialogOptionText, .subtitle, .accountEntry, .description, .settingsDescription,
+.settingsDescriptionSmall, .gridTime, .gridTimePast, .miniguideTitle, .miniguideTitleGrey, .miniguideNextTitle,
+.diskSpaceFreeText, .menuItem, .menuItemLeft, .menuItemHighlighted,
+.menuItemHighlightedRightAlign, .menuItemLineTwoHighlighted, .logoMenuItemHighlighted, .logoMenuItemUnhighlighted,
+.channelListChanName,
+.libraryOptionsSubMenuTitle, .textItemText, .generalItemText, .selected, .playerHelpText, .dialogTitle, .dialogSubtitle, .pinDialogMessage,
+.dialogMessage, .promotionItemTitle, .scheduledItemName, .portalHighlightedItemLabel,
+.musicPromotionItemTitle, .timeShiftEventName, .timeShiftEpisodeInfo,
+.nowKidsMenuItem, .nowKidsMenuItemHighlighted, .nowKidsMenuItemDefocusHighlighted, .thumbnailsubtitle, .thumbnailTitle,
+.fullViewRightSubtitle, .fullViewLeftSubtitle, .greyKeypadKey, .breadcrumbCurrent, .breadcrumbParent,
+.nowFullAssetInfoTitle, 
+.nowFullAssetInfoSubtitle, .nowFullAssetInfoActors, .nowAssetInfo, .nowMyContentItemText, .nowMyContentSeriesText,
+.nowMySubscriptionsItemText, .nowMySubscriptionsSeriesText, .nowDisclaimerText, .noEPGContent, .menuSubTitle,
+.gridRowItemTitleHighlighted, .eventName {
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+
+.promotionalItemImage {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.ellipsisTwoLines {
+	white-space: normal;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.breadcrumbChildTitle {
+	color: #4b9dda;
+	font-size: 30px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.addToFavTitle, .portalHighlightUnderlay, .nowAssetInfo.moreLabel, .nowClubeAssetInfoMoreLabel {
+	color: #2c688f;
+}
+
+.titleHighlight, .mosaicServiceName, .nowDisclaimerButtonText, .directChannelNumberEntry,
+.miniguideButtonTextChange, .bannerButtonTextChange {
+	color: #3e89f9;
+}
+
+.libraryTitleGray, .newLibraryTitleGray, .agoraSeriesEpisodeTitle, .musicGenreItem, .gridTimePast, .fullViewLeftSubtitle,
+.miniguideTitleGrey, .miniguideNextTitle, .unSelectableDialogButtonTextLeft, .unSelectableDialogButtonText,
+.gridRowItemTitleHighlighted, .nowGrey,
+.nowFullAssetInfoSubtitle, .nowAssetInfo, .loadingBarText, .nowMyContentSeriesText,
+.nowMySubscriptionsSeriesText, .photoPlayerFolderLabel {
+	color: #999;
+}
+
+.unplayable {
+    color:#606060;
+}
+
+.breadcrumbSubTitle, .breadcrumbCurrent	{
+	color: #4b9dda;
+	margin-left: 8px;
+}
+
+.lessImportant, .musicSubCategoryItem, .PPVDefaultText, .PPVSubText, .diskSpaceFreeText,
+.miniguideNoOptionsText, .settingsFooterLabel, .dialogButtonTextLabel,
+.nowFullAssetInfoActors, .nowFullAssetInfoRentalDuration, .greyKeypadKey, .legend, .recordingsOptionFooterText,
+.colorCCCCCC {
+	color: #ccc;
+}
+
+.displayQrCodeBackground{
+	border: 1px solid #19acea;
+	opacity: 1;
+}
+
+.mosaicEventNameGrey, .mosaicSeriesInfo, .mosaicEpisodeName, .mosaicEventDescription, .miniguideChannelNameAndNumber,
+.synopsisSmallGrey, .synopsisXSmallGrey, .timeShiftEpisodeInfo,
+.eventSubtitleColor, .agoraInvalidEventName  {
+	color: #707070;
+}
+.mosaicEventGenre {
+	text-overflow: ellipsis;
+}
+.multiLineEventDescription {
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.mosaicPreviewBackground {
+	background-color: #0c273a;
+	border: #3e89f9 solid 1px;
+}
+.mosaicUnsubscribePrompt {
+	margin: 30px 70px 30px 70px;
+	line-height: 30px;
+}
+
+.pipUnsubscribePrompt {
+	margin: 10% 10% 10% 10%;
+	text-align: center;
+	padding-top: 10px;
+	line-height: 30px;
+}
+
+
+.posterPrompt, .mosaicPosterPrompt, .mosaicUnsubscribePrompt, .pipUnsubscribePrompt, .PPVEventTitle,
+.nowFullAssetInfoPrice, .nowFullAssetInfoExpiry, .directChannelEntryFeedback,
+.photoPlayerImageLabel {
+	color: #19acea;
+}
+.posterPrompt {
+	margin-left: 16%;
+	margin-top: 20%;
+}
+.mosaicPosterPrompt {
+	margin-left: 24px;
+	margin-top: 30px;
+}
+
+.dialogueTypeLabel {
+	margin-left:-100%;
+}
+
+.ellipsisText {
+	text-overflow: ellipsis;
+}
+
+.miniguideTime {
+	margin-top:-28px;
+}
+
+.miniguideChannelNameAndNumber {
+	margin-top: 3px;
+}
+
+.miniguideChannelNumberEntered {
+	margin-top: -11px;
+}
+
+.PPVHistoryEventNameFocused {
+	padding-top: 3px;
+	font-weight: 600;
+}
+.PPVHistoryEventName {
+	font-weight: 600;
+}
+
+.miniguideNextTitleContainer {
+	background-color: #102637;
+	opacity: 1;
+}
+
+.bannerButtonText, .bannerNoOptionsText {
+	margin-top:-22px;
+}
+
+.menuItem, .menuItemHighlighted, .menuItemLineTwoHighlighted, .menuItemHighlightedRightAlign {
+	margin-left:-100%;
+}
+
+.logoMenuItemUnhighlighted, .timeItemTextHighlight {
+	color: #46658e;
+}
+
+.catchupTime, .catchupHighlight {
+    color:  #505050;
+}
+
+.catchupItem {
+    color: #707070;
+    opacity: 0.6;
+}
+
+/*season focused
+.timeItemTextGreyFocused {
+}
+*/
+
+.channelListChanNum {
+	color: #82b0c6;
+}
+
+.searchBackground {
+	background-color: #010c1b;
+	opacity: 0.95;
+}
+
+.SpanLabelText {
+	color: white;
+}
+
+.playerHelpText {
+	margin-left:-100%;
+}
+
+.progressTextStart, .progressTextEnd {
+	margin-left:-100%;
+}
+
+.progressTextEnd {
+	margin-left:0;
+}
+
+.dialog_title_centre {
+	width: 100%;
+}
+
+.currentVolumeText, .backLabelText {
+	margin-left:-100%;
+}
+
+.volumeProgress {
+	background-color: #5598d8;
+	margin-left: 0;
+}
+
+.volumeProgressOuter {
+	background-color: #082139;
+}
+
+.messageListItemDate {
+	font-weight: normal;
+}
+
+.messageListItemTitle {
+	text-overflow: ellipsis;
+}
+
+.dialogueTypeLabelSubText {
+	margin-left:-100%;
+}
+
+.splashScreenProgress {
+	color: #30507e;
+}
+
+.blank {
+	background-color: #fff;
+}
+
+.eventImageContainer {
+	background-color: #010710;
+	border: 1px solid #19acea;
+}
+
+.dialogButtonText {
+	text-overflow: ellipsis;
+}
+
+.unSelectableDialogButtonTextLeft {
+	color: #999;
+	text-overflow: ellipsis;
+}
+
+.unSelectableDialogButtonText {
+	color: #999;
+	text-overflow: ellipsis;
+	width: 100%;
+}
+
+.dialogButtonTextLeft {
+	text-overflow: ellipsis;
+}
+
+.dialogButtonTextLabel {
+	text-overflow: ellipsis;
+}
+
+.highlightLight, .recordingListItemHighlight, .recordingListLogoHighlight {
+	background-color: #2c688f;
+	border: #3e89f9 solid 2px;
+	border-radius: 4px;
+	box-shadow: 0 0 8px #19acea;
+}
+
+.recordingListItemHighlight, .recordingListLogoHighlight {
+	border: #19acea solid 2px;
+	border-radius: 2px;
+}
+
+.recordingListLogoHighlight {
+	background-color: transparent;
+}
+
+.channelLogoNameStyle {
+	color: #146299;
+}
+
+.channelLogoDefinitionStyle {
+	font-weight: bold;
+	color: #DBDBDB;
+}
+
+.timeListLine {
+	background-color: #6699cc;
+	opacity: 0.30;
+}
+
+.timeListItemBackground {
+	background-color: #0c273a;
+	opacity: 0.75;
+}
+
+.timeListItemBackgroundCurrent {
+	background-color: #0a3a5b;
+	opacity: 0.75;
+}
+
+.timeListItemHighlight, .channelListItemHighlight {
+	background-color: #2c688f;
+	border: #19acea solid 2px;
+	border-radius: 2px;
+	box-shadow: 0 0 8px #19acea;
+}
+
+.settingschannelLogoItemHighlight {
+	background-color: transparent;
+	border: #19acea solid 2px;
+	border-radius: 2px;
+	box-shadow: 0 0 8px #19acea;
+}
+
+.messageListItemHighlight {
+	background-color: #2c688f;
+	border: #3e89f9 solid 2px;
+}
+
+.menuItemBackgroundFocus {
+	border-radius: 4px;
+}
+
+.timeListItemBackgroundSecondaryFocus {
+	background-color: #2c688f ;
+	opacity: 0.6;
+}
+
+.channelLogoListItemHighlight {
+	background-color: transparent;
+	border: #3e89f9 solid 2px;
+	border-radius: 2px;
+	box-shadow: 0 0 8px #19acea;
+}
+
+.timeListItemTimeLine {
+	border: #3e89f9 solid 1px;
+}
+
+.recordingsWindowBackgroundActivated {
+	background-color: #0f4268;
+	opacity: 0.7;
+}
+
+.recordingsWindowBackgroundPassivated {
+	background-color: #0b2845;
+	opacity: 0.7;
+}
+
+.liveTVTitle {
+	text-align: center;
+	position: relative;
+}
+
+.textItemText {
+	color: #30507e;
+}
+
+.inactiveMenuItemHighlight {
+	background-color: #0f4268;
+	opacity: 0.85;
+	border-radius: 1px;
+}
+
+.messageDialogText {
+	width: 100%;
+}
+
+/*
+.videoloadingBarCentreGlow {
+}
+
+.videoloadingBarEdgeGlow {
+}
+*/
+.loadingBarBackground, .guideNoEpgBarBackground {
+	background-color: #000;
+	opacity: 0.5;
+}
+
+.guideNoEpgButtonBackground {
+	background-color: #174254;
+	border:1px solid #19acea;
+}
+
+.nowDialogBackground {
+	background-color: #000;
+	opacity: 0.75;
+}
+
+.nowDialogCellBackground {
+	background-color: #000;
+	border:1px solid #19acea;
+}
+
+.nowDialogCellBackgroundHighlighted {
+	background-color: #174254;
+	border:1px solid #19acea;
+}
+
+.nowFullAssetSolidDivider {
+	background-color: #335566;
+}
+
+.loadingBarSolidDivider, .guideNoEpgBarSolidDivider {
+	background-color: #99bbcc;
+}
+
+.nowMyContentItemBackground, .nowMySubscriptionsItemBackground {
+	background-color: #fff;
+	opacity: 0.12;
+}
+
+.nowMyContentItemHighlight, .nowMySubscriptionsItemHighlight {
+	background-color: #34464f;
+	border: #3e89f9 solid 2px;
+	box-shadow: 0 0 8px #19acea;
+}
+
+.nowMissingSubscription {
+	background-color: #0b2538;
+	background-color: rgba(11,37,56,0.75);
+	opacity: 0.75;
+	border: #19acea solid 3px;
+}
+
+.nowGalleryItemHighlight {
+	background-color: transparent;
+	box-shadow: 0 0 10px 3px #19acea;
+	border: 5px solid #19acea;
+	border-radius: 5px;
+}
+
+.nowGalleryPosition {
+	color: #c0bfbf;
+}
+
+.keyInactive, .keyInactiveVod {
+	border: solid 1px;
+}
+
+.keyInactive {
+	background-color: #0f4268;
+	border-color: #19acea;
+	border-radius: 5px;
+	opacity: 1;
+}
+
+.keyInactiveVod {
+	background-color: #262626;
+	border-color: #444;
+	border-radius: 5px;
+}
+
+.keyActive, .keyActiveVod {
+	border: #19acea solid;
+	box-shadow: 0 0 8px #19acea;
+}
+
+.keyActive {
+	background-color: #38759f;
+	border-width: 1px;
+}
+
+.keyActiveVod {
+	background-color: #4a5d66;
+	border-width: 2px;
+}
+
+.keypadInputBar, .keypadInputBarVod {
+	border: solid 1px;
+}
+
+.keypadInputBar {
+	background-color: #081623;
+	border-color: #19acea;
+}
+
+.keypadInputBarVod {
+	background-color: #333;
+	border-color: #777;
+}
+
+.keypadInputTextNumeric, .keypadInputTextAlphaNumeric {
+	color: #99ccff;
+	white-space: pre;
+}
+
+.textTitleDescription {
+	text-overflow: ellipsis;
+}
+
+.textContentDescription {
+	text-overflow: ellipsis;
+}
+
+.installAlternative {
+	margin-left: auto;
+	color: #38759f;
+}
+
+.firstInstallvalueLabel {
+	margin-left: auto;
+}
+
+.legend {
+	opacity: 0.6;
+}
+
+.signalProgressBarOuter {
+	background-color: #0e3857;
+}
+
+.recordingsOptionFooterBackground {
+	background-color: #0b2845;
+	opacity: 0.7;
+}
+
+.bannerButtonTextChange {
+	margin-top:-22px;
+}
+
+.colorA3A3A3 {
+	color: #a3a3a3;
+}
+
+.tipsFromNetBackGroundBox {
+	background-color: #16232f;
+	opacity: 0.85;
+}
+
+.dullYellowColor {
+	color: #cc9933;
+}
+
+.remoteAccessBackground {
+	background-color: #183e5b;
+}
+
+.videoUnavailableText {
+	color: #13acea;
+	margin-left: 24px;
+	margin-top: 150px;
+}
+
+/*now kids*/
+
+.nowKidsMenuItemHighlighted {
+	color: #ffc100;
+}
+
+.kidsFill {
+	background-color: #006699;
+}
+/*now kids*/
+
+.aquaText {
+	color: #4b9dda;
+}
+
+.parentSpan {
+	color: #fff;
+	width: auto;
+	max-width: 60%;
+	display: inline-block;
+}

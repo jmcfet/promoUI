@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="../../../customise/resources/css/common.css" type="text/css"?>
+<?xml-stylesheet href="css/agora.css" type="text/css"?>
+
+<svg id="content" xmlns="http://www.w3.org/2000/svg"
+	xml:space="preserve"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:ekioh="http://www.ekioh.com/2007/ekioh"
+	xmlns:svg="http://www.w3.org/2000/svg"
+	version="1.2"
+	baseProfile="tiny"
+	viewBox="0 0 1280 720"
+	preserveAspectRatio="none"
+	focusable="true"
+	fill-rule="evenodd"
+	image-rendering="optimizeQuality"
+	onload="Agora.load()">
+
+	<script xlink:href="../min/app-min.js" />
+
+</svg>

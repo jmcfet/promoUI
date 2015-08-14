@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<view xmlns="http://www.example.org/nagra">
+	<video id="videoFullScreen" width="1920" height="1080" />
+	<timeShiftBanner id="timeShiftBanner" x="0" y="640" visible="false" />
+	<image id="parentalLockIcon" href="" x="0" y="0" width="1920" height="1080" visible="false" />
+	<bufferIndicator id="bufferingIcon" x="924" y="504" imageWidth="48" imageHeight="48" image="../../../customise/resources/images/net/loading.png" visible="false" />
+	<playbackBanner id="playbackBanner" x="0" y="640" visible="false" />
+	<PVRPlaybackBanner id="pvrPlaybackBanner" x="0" y="640" visible="false" />
+	<audioBanner id="audioBanner" x="0" y="0" visible="false" />
+
+	<ThumbnailWithAnimation id="thumbnailImage" x="0" y="0" visible="false" />
+	<MediaPlaybackBanner id="mediaPlaybackBanner" x="0" y="640" visible="false" />
+	<ImageBanner id="imageBanner" x="0" y="500" visible="false" />
+	<ImageViewer id="imageViewer" x="0" y="0" visible="false" />
+	<group id="backLabelContainer" x="1480" y="15" visible="false">
+		<backgroundBox id="backLabelBackground" width="420" height="125" cssClass="fadeGradient" opacity="0.3"/>
+		<spanLabel id="backLabel" x="400" y="50" cssClass="backLabelText" />
+	</group>
+	<group id="arrowIconsContainer" x="1480" y="15" visible="false">
+		<image id="leftArrow" href="" x="100" y="500" width="30" height="30" visible="false" />
+		<image id="rightArrow" href="" x="1800" y="500" width="30" height="30" visible="false"  />
+	</group>
+
+	<videoLoadingBar id="loadingBar" visible="false" />
+</view>

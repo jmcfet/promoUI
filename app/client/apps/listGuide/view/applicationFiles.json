@@ -1,0 +1,11 @@
+[
+		"GridRowItem.js",
+	"GridRow.js",
+	"Grid.js",
+	"../ChannelList.js",
+	"../TimeList.js",
+	"../GridController.js",
+	"../EventList.js",
+	"../NoEpg.js",
+	"../ListGuide.js"
+]

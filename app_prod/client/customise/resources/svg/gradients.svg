@@ -1,0 +1,194 @@
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:svg="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:ekioh="http://www.ekioh.com/2007/ekioh"
+	version="1.2" baseProfile="tiny"
+	focusable="true"
+	viewBox="0 0 1280 720" preserveAspectRatio="none">
+
+	<defs>
+		<linearGradient id="titleGradient" x1="0" y1="0" x2="0" y2="1">
+			<stop stop-color="#ffffff" offset="0" stop-opacity="1"/>
+			<stop stop-color="#ffffff" offset="0.3" stop-opacity="1"/>
+			<stop stop-color="#808080" offset="1" stop-opacity="1"/>
+		</linearGradient>
+
+		<linearGradient id="panelGradient" x1="0" y1="0" x2="0" y2="1">
+			<stop stop-color="#004782" offset="0" stop-opacity="1"/>
+			<stop stop-color="#00070D" offset="1" stop-opacity="0.9"/>
+		</linearGradient>
+
+		<linearGradient id="halfCardGradient" x1="0" y1="0" x2="0" y2="1">
+			<stop stop-color="#00070D" offset="0" stop-opacity="0.9"/>
+			<stop stop-color="#004782" offset="1" stop-opacity="1"/>
+		</linearGradient>
+
+		<linearGradient id="fullCardGradient" x1="0" y1="0" x2="0" y2="1">
+			<stop stop-color="#000000" offset="0" stop-opacity="1"/>
+			<stop stop-color="#004782" offset="0.5" stop-opacity="1"/>
+			<stop stop-color="#000000" offset="1" stop-opacity="1"/>
+		</linearGradient>
+
+		<linearGradient id="horizontalPreviewGradient" x1="0" y1="0" x2="1" y2="0">
+			<stop stop-color="#000000" offset="0" stop-opacity="1"/>
+			<stop stop-color="#000000" offset="0.5" stop-opacity="0"/>
+		</linearGradient>
+
+		<linearGradient id="contentBrowserGradient" x1="0" y1="0" x2="1" y2="0">
+			<stop stop-color="#1C1C1C" offset="0" stop-opacity="1"/>
+			<stop stop-color="#000000" offset="1" stop-opacity="1"/>
+		</linearGradient>
+
+		<linearGradient id="contentBrowserInFocusGradient" x1="0" y1="0" x2="1" y2="0">
+			<stop stop-color="#004782" offset="0%" stop-opacity="0"/>
+			<stop stop-color="#004782" offset="15%" stop-opacity="0.6"/>
+			<stop stop-color="#004782" offset="30%" stop-opacity="1"/>
+		</linearGradient>
+
+		<linearGradient id="dialogueGradient" x1="0" y1="0" x2="0" y2="1">
+			<stop stop-color="#000000" offset="0" stop-opacity="1"/>
+			<stop stop-color="#004782" offset="1" stop-opacity="1"/>
+		</linearGradient>
+
+		<linearGradient id="dialogueConfirmationGradient" x1="0" y1="0" x2="0.5" y2="1">
+			<stop stop-color="#000000" offset="0" stop-opacity="1"/>
+			<stop stop-color="#004782" offset="1" stop-opacity="1"/>
+		</linearGradient>
+
+		<linearGradient id="fadeGradient" x1="0" y1="0" x2="0" y2="1">
+			<stop stop-color="#000000" offset="0" stop-opacity="1"/>
+			<stop stop-color="#000000" offset="1" stop-opacity="0"/>
+		</linearGradient>
+
+		<radialGradient id="menuFadeGradientOverlay" cx="0%" cy="50%" r="90%" fx="0%" fy="50%">
+			<stop stop-color="#2E619B" offset="0" stop-opacity="1"/>
+			<stop stop-color="#2E619B" offset="0.6" stop-opacity="0"/>
+		</radialGradient>
+
+        <linearGradient id="miniguideBackground" x1="0" y1="0" x2="0" y2="1">
+                <stop stop-color="#000010" offset="0" stop-opacity="0"/>
+                <stop stop-color="#000010" offset="0.2" stop-opacity="0.5"/>
+                <stop stop-color="#000010" offset="0.4" stop-opacity="1"/>
+                <stop stop-color="#000010" offset="1" stop-opacity="1"/>
+        </linearGradient>
+
+        <linearGradient id="playbackBackground" x1="0" y1="0" x2="0" y2="1">
+                <stop stop-color="#000010" offset="0" stop-opacity="0"/>
+                <stop stop-color="#000010" offset="0.4" stop-opacity="0.8"/>
+                <stop stop-color="#000010" offset="0.5" stop-opacity="1"/>
+                <stop stop-color="#000010" offset="1" stop-opacity="1"/>
+        </linearGradient>
+
+        <linearGradient id="agoraBackground" x1="0" y1="0" x2="1" y2="0">
+                <stop stop-color="#000010" offset="0" stop-opacity="1"/>
+                <stop stop-color="#000010" offset="0.5" stop-opacity="0.9"/>
+                <stop stop-color="#000010" offset="0.7" stop-opacity="0.7"/>
+                <stop stop-color="#000010" offset="1" stop-opacity="0"/>
+        </linearGradient>
+
+		<radialGradient id="synopsisFadeGradientTop" cx="50%" cy="0%" r="40%" fx="50%" fy="40%">
+			<stop stop-color="#395a79" offset="0" stop-opacity="0.85"/>
+			<stop stop-color="#021021" offset="1" stop-opacity="0"/>
+		</radialGradient>
+
+        <radialGradient id="synopsisFadeGradientBottom" cx="50%" cy="100%" r="40%" fx="50%" fy="40%">
+                <stop stop-color="#395a79" offset="0" stop-opacity="0.45"/>
+                <stop stop-color="#021021" offset="1" stop-opacity="0"/>
+        </radialGradient>
+
+		<linearGradient id="textUnderlayGradient" x1="0" y1="0" x2="0" y2="1">
+			<stop stop-color="#19364f" offset="0" stop-opacity="0"/>
+			<stop stop-color="#19364f" offset="0.3" stop-opacity="0.5"/>
+			<stop stop-color="#19364f" offset="1" stop-opacity="0.95"/>
+		</linearGradient>
+
+        <linearGradient id="dialogueGlowGradientUpper" x1="0" y1="1" x2="0" y2="0">
+                <stop stop-color="#19acea" offset="0" stop-opacity="0.5"/>
+                <stop stop-color="#19acea" offset="0.2" stop-opacity="0.3"/>
+                <stop stop-color="#19acea" offset="0.8" stop-opacity="0"/>
+        </linearGradient>
+
+        <linearGradient id="dialogueGlowGradientLower" x1="0" y1="0" x2="0" y2="1">
+                <stop stop-color="#19acea" offset="0" stop-opacity="0.5"/>
+                <stop stop-color="#19acea" offset="0.2" stop-opacity="0.3"/>
+                <stop stop-color="#19acea" offset="0.8" stop-opacity="0"/>
+        </linearGradient>
+
+		<radialGradient id="recordIconRadialGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+			<stop stop-color="#041422" offset="0" stop-opacity="1"/>
+			<stop stop-color="#041422" offset="0.8" stop-opacity="0"/>
+		</radialGradient>
+
+		<linearGradient id="settingsProgressBarInnerGlow" x1="50%" y1="0%" x2="50%" y2="100%">
+			<stop stop-color="#ffffff" offset="0" stop-opacity="0"/>
+			<stop stop-color="#ffffff" offset="0.2" stop-opacity="0.1"/>
+			<stop stop-color="#E6F7FC" offset="0.5" stop-opacity="0.4"/>
+			<stop stop-color="#ffffff" offset="0.8" stop-opacity="0.1"/>
+			<stop stop-color="#ffffff" offset="1" stop-opacity="0"/>
+		</linearGradient>
+
+		<radialGradient id="nowFadeGradientOverlay" cx="0%" cy="50%" r="90%" fx="0%" fy="50%">
+			<stop stop-color="#01405F" offset="0" stop-opacity="1"/>
+			<stop stop-color="#01405F" offset="0.6" stop-opacity="0"/>
+		</radialGradient>
+
+		<linearGradient id="nowColorStrip" x1="0%" y1="0%" x2="100%" y2="0%">
+			<stop stop-color="#ab85b0" offset="0" stop-opacity="1"/>
+			<stop stop-color="#63a7c9" offset="0.5" stop-opacity="1"/>
+			<stop stop-color="#7dc242" offset="1" stop-opacity="1"/>
+		</linearGradient>
+
+		<linearGradient id="nowColorStripVert" x1="0%" y1="0%" x2="0%" y2="100%">
+			<stop stop-color="#3c641a" offset="0" stop-opacity="1"/>
+			<stop stop-color="#235974" offset="0.5" stop-opacity="1"/>
+			<stop stop-color="#622b69" offset="1" stop-opacity="1"/>
+		</linearGradient>
+
+		<linearGradient id="nowFullAssetUniformGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+			<stop stop-color="#38759f" offset="0" stop-opacity="0"/>
+			<stop stop-color="#38759f" offset="0.3" stop-opacity="0.1"/>
+			<stop stop-color="#38759f" offset="1" stop-opacity="0.35"/>
+		</linearGradient>
+		<linearGradient id="nowFullAssetUniformGradientInvert" x1="0%" y1="0%" x2="0%" y2="100%">
+			<stop stop-color="#38759f" offset="0" stop-opacity="0.35"/>
+			<stop stop-color="#38759f" offset="0.7" stop-opacity="0.1"/>
+			<stop stop-color="#38759f" offset="1" stop-opacity="0"/>
+		</linearGradient>
+
+		<radialGradient id="nowFullAssetRadialGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+			<stop stop-color="#38759f" offset="0" stop-opacity="0.5"/>
+			<stop stop-color="#38759f" offset="0.7" stop-opacity="0.15"/>
+			<stop stop-color="#38759f" offset="1" stop-opacity="0"/>
+		</radialGradient>
+		<radialGradient id="videoloadingBarCentreGlow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+			<stop stop-color="#3c8b93" offset="0" stop-opacity="0.75"/>
+			<stop stop-color="#3c8b93" offset="0.7" stop-opacity="0.2"/>
+			<stop stop-color="#3c8b93" offset="1" stop-opacity="0"/>
+		</radialGradient>
+		<radialGradient id="videoloadingBarEdgeGlow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+			<stop stop-color="#96912d" offset="0" stop-opacity="0.5"/>
+			<stop stop-color="#96912d" offset="0.7" stop-opacity="0.15"/>
+			<stop stop-color="#96912d" offset="1" stop-opacity="0"/>
+		</radialGradient>
+
+		<linearGradient id="scrollingGroupFadeTop" x1="0%" y1="0%" x2="0%" y2="100%">
+			<stop stop-color="#000000" offset="0" stop-opacity="1"/>
+			<stop stop-color="#000000" offset="0.75" stop-opacity="0.5"/>
+			<stop stop-color="#000000" offset="0.94" stop-opacity="0.25"/>
+			<stop stop-color="#000000" offset="1" stop-opacity="0"/>
+		</linearGradient>
+		<linearGradient id="scrollingGroupFadeBottom" x1="0%" y1="0%" x2="0%" y2="100%">
+			<stop stop-color="#000000" offset="0" stop-opacity="0"/>
+			<stop stop-color="#000000" offset="0.06" stop-opacity="0.25"/>
+			<stop stop-color="#000000" offset="0.25" stop-opacity="0.5"/>
+			<stop stop-color="#000000" offset="1" stop-opacity="1"/>
+		</linearGradient>
+
+		<linearGradient id="videoUnavailableGradient" x1="0" y1="0" x2="0" y2="1">
+			<stop stop-color="#000000" offset="0" stop-opacity="0"/>
+			<stop stop-color="#0b2538 " offset="0.5" stop-opacity="0"/>
+			<stop stop-color="#0b2538 " offset="1" stop-opacity="1"/>
+		</linearGradient>
+	</defs>
+</svg>

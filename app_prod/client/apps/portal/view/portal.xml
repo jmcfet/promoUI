@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<view xmlns="http://www.example.org/nagra">
+	<layer id="portalBackgroundGradient" x="0" y="0" width="300" height="1080" visible="true" opacity="0.9">
+		<backgroundBox id="menuFadeGradientOverlay" x="0" y="0" width="300" height="1080" cssClass="menuFadeGradientOverlay" opacity="0.3"/>
+	</layer>
+	<pageableList id="menuList" x="79.5" y="305" visibleItemCount="8" itemHeight="83" itemTemplate="LogoMenuItem" />
+	<group id="scrollIndicator" x="79.5" y="260" >
+		<image id="upArrow" x="7" y="5" height="30" width="40" href="./images/%RES/Icn_Surfer_arrowUp.png" visible="false"/>
+		<image id="downArrow" x="7" y="700" height="30" width="40" href="./images/%RES/Icn_Surfer_arrowDown.png" visible="false"/>
+	</group>
+	<layer id="portalWindow" x="588" y="312.5" width="1224" height="621" visible="false">
+		<backgroundBox id="backgroundBox" x="0" y="0" width="1224" height="621" cssClass="portalColour" opacity="0.7"/>
+		<dynamicTable id="guideTable" x="24" y="22" width="1177.5" height="577.5" itemTemplate="EventPromotionItem" highlightCssClass="dynamicTableHighlight" visible="false"/>
+		<dynamicTable id="recordingsTable" x="24" y="22" width="1177.5" height="546" itemTemplate="RecordingPromotionItem" highlightCssClass="highlightLight" highlightRounding="2" visible="false"/>
+		<label id="recordingsItemLabel" x="28.5" y="586" cssClass="portalHighlightedItemLabel" visible="false"/>
+		<dynamicTable id="musicTable" x="22.5" y="25" width="1177.5" height="560" itemTemplate="MusicPromotionItem" highlightCssClass="noFill" highlightRounding="0" visible="false" />
+		<portalMessages id="messagesTable" x="24" y="22" visible="false" />
+		<dynamicTable id="settingsTable" x="22.5" y="10" width="1177.5" height="560" itemTemplate="PortalIconTextItem" highlightCssClass="noFill" highlightRounding="0" visible="false" />
+	</layer>
+</view>

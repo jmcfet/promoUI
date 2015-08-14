@@ -1,0 +1,121 @@
+{
+	"Channels": {
+		"GlsatHD": "e68a9be3-14f2-4e5b-b18a-1843470bd723",
+		"Globo": "e68a9be3-14f2-4e5b-b18a-1843470bd723",
+		"GloboHD": "e68a9be3-14f2-4e5b-b18a-1843470bd723",
+
+		"OFF": "762a64bb-d65b-4f02-9424-ee3cf2eb589f",
+		"OFFHD": "762a64bb-d65b-4f02-9424-ee3cf2eb589f",
+
+		"SporTV": "949ed2fb-3d0a-45fc-8341-793b0fab7daf",
+		"SporTV2": "949ed2fb-3d0a-45fc-8341-793b0fab7daf",
+		"SporTV3": "949ed2fb-3d0a-45fc-8341-793b0fab7daf",
+		"SpTVHD": "949ed2fb-3d0a-45fc-8341-793b0fab7daf",
+		"SpTV2HD": "949ed2fb-3d0a-45fc-8341-793b0fab7daf",
+
+		"GlbNews": "060a7658-e219-4ee4-9020-8ae1e85804e1",
+		"GlNeHD": "060a7658-e219-4ee4-9020-8ae1e85804e1",
+
+		"GNT": "7ca8a0c8-18da-4668-a014-634b2b91fe02",
+		"GNTHD": "7ca8a0c8-18da-4668-a014-634b2b91fe02",
+
+		"Mshow": "5fdd8cce-9ce6-4d4e-96d5-26efc3e5c927",
+		"MultiHD": "5fdd8cce-9ce6-4d4e-96d5-26efc3e5c927",
+
+		"Globosat": "c261a9b1-4636-47bb-b06e-d99b6df71f59",
+		"GlsatHD": "c261a9b1-4636-47bb-b06e-d99b6df71f59",
+
+		"TLC": "e7af9c1c-dee5-4d86-b0d6-d46bdc9156b5",
+		"TLCHD": "e7af9c1c-dee5-4d86-b0d6-d46bdc9156b5",
+
+		"DiscHH": "d4f67f4f-e405-44fe-91b5-633fe8b74f86",
+		"DiscHHHD": "d4f67f4f-e405-44fe-91b5-633fe8b74f86",
+
+		"ESPN": "c3d5f058-1c66-4bc9-93b6-34550d79e065",
+		"ESPNHD": "c3d5f058-1c66-4bc9-93b6-34550d79e065",
+		"ESPNPHD": "c3d5f058-1c66-4bc9-93b6-34550d79e065",
+		"ESPN B": "c3d5f058-1c66-4bc9-93b6-34550d79e065",
+		"ESPNBrHD": "c3d5f058-1c66-4bc9-93b6-34550d79e065",
+
+		"NatGeo": "932fdd85-6543-48f4-b7c6-c836295636ea",
+		"NatGeoHD": "932fdd85-6543-48f4-b7c6-c836295636ea",
+		"NGWildHD": "932fdd85-6543-48f4-b7c6-c836295636ea",
+
+		"DiscoCh": "4b6d2a03-157e-47b3-806e-bbd22192ca61",
+		"DiscoHD": "4b6d2a03-157e-47b3-806e-bbd22192ca61",
+		"DisHDTh": "4b6d2a03-157e-47b3-806e-bbd22192ca61",
+		"DiscoTur": "4b6d2a03-157e-47b3-806e-bbd22192ca61",
+		"DiscoSci": "4b6d2a03-157e-47b3-806e-bbd22192ca61",
+		"DiscoCiv": "4b6d2a03-157e-47b3-806e-bbd22192ca61",
+
+		"DiscoK": "cde25476-770b-483e-81bf-c9713e1e8bac",
+		"DisKidHD": "cde25476-770b-483e-81bf-c9713e1e8bac",
+
+		"Gloob": "7b80c2d2-6150-4b2d-98ed-72a44ebd7d3d",
+		"GloobHD": "7b80c2d2-6150-4b2d-98ed-72a44ebd7d3d",
+
+		"DisCh": "000da71a-fd7c-40da-8784-e4f0373a9fcb",
+		"DisneyHD": "000da71a-fd7c-40da-8784-e4f0373a9fcb",
+		"Disney XD": "000da71a-fd7c-40da-8784-e4f0373a9fcb",
+		"DisnJun": "000da71a-fd7c-40da-8784-e4f0373a9fcb",
+
+		"Nickelo": "b92c47fb-558c-4013-b3f1-885ec07dac6e",
+		"NickJr": "b92c47fb-558c-4013-b3f1-885ec07dac6e",
+
+		"Cartoon": "1ce30dc9-bd35-4073-b320-34165d8dfaf3",
+		"CartHD": "1ce30dc9-bd35-4073-b320-34165d8dfaf3",
+
+		"Boom": "70abd500-6992-4198-bcdc-0fde4e11de2b",
+		"Boomerang": "351bf366-ef01-4a59-9bc3-f1ff6c8b6a54",
+
+		"BIS": "a7f3a97d-466e-45e2-a076-e3816ff113f5",
+		"BISHD": "a7f3a97d-466e-45e2-a076-e3816ff113f5",
+
+		"UnivCh": "022ba109-711b-42cd-8271-bce966811c7b",
+		"UniverHD": "022ba109-711b-42cd-8271-bce966811c7b",
+
+		"ID": "16465b8b-a98a-4593-b8b6-a640a8f15a6e",
+		"IDHD": "16465b8b-a98a-4593-b8b6-a640a8f15a6e",
+
+		"TNT": "edd5785c-a768-4d5c-8896-2a3a0e51640a",
+		"TNTHD": "edd5785c-a768-4d5c-8896-2a3a0e51640a",
+
+		"TelePre": "eb1c8b4b-c5f8-495a-8ba5-7a4c68e295b3",
+		"TelecAct": "eb1c8b4b-c5f8-495a-8ba5-7a4c68e295b3",
+		"TeleTou": "eb1c8b4b-c5f8-495a-8ba5-7a4c68e295b3",
+		"TeleFun": "eb1c8b4b-c5f8-495a-8ba5-7a4c68e295b3",
+		"TelePip": "eb1c8b4b-c5f8-495a-8ba5-7a4c68e295b3",
+		"TeleCult": "eb1c8b4b-c5f8-495a-8ba5-7a4c68e295b3",
+		"PremiHD1": "eb1c8b4b-c5f8-495a-8ba5-7a4c68e295b3",
+		"Action HD": "eb1c8b4b-c5f8-495a-8ba5-7a4c68e295b3",
+		"Touch HD": "eb1c8b4b-c5f8-495a-8ba5-7a4c68e295b3",
+		"FunHD": "eb1c8b4b-c5f8-495a-8ba5-7a4c68e295b3",
+		"PipocaHD": "eb1c8b4b-c5f8-495a-8ba5-7a4c68e295b3",
+
+		"HBO": "2f775c70-8b37-404e-88d2-da4d321fe186",
+		"HBO2": "2f775c70-8b37-404e-88d2-da4d321fe186",
+		"HBOPlus": "2f775c70-8b37-404e-88d2-da4d321fe186",
+		"HBOPluse": "2f775c70-8b37-404e-88d2-da4d321fe186",
+		"HBOFam": "2f775c70-8b37-404e-88d2-da4d321fe186",
+		"HBOSign": "2f775c70-8b37-404e-88d2-da4d321fe186",
+		"HBOHD": "2f775c70-8b37-404e-88d2-da4d321fe186",
+		"HBO2HD": "2f775c70-8b37-404e-88d2-da4d321fe186",
+		"HBOPHD": "2f775c70-8b37-404e-88d2-da4d321fe186",
+		"HBOPHD1": "2f775c70-8b37-404e-88d2-da4d321fe186",
+
+		"BBC": "c84b0e98-efef-4d80-877b-fbfb82312f1b",
+		"BBCHD": "c84b0e98-efef-4d80-877b-fbfb82312f1b",
+
+		"Viva": "f08db4ac-410a-4d1b-aee3-ea71d61766fc",
+		"Fox Life": "dcd50dd6-2d51-4414-b485-a8dc2d12b940",
+		"Arte 1": "de58868a-30a3-4e2f-be43-549b13cb774f",
+		"Glitz": "5b857688-1969-428c-992a-b7a67bc8e055",
+		"Curta": "78cbaa88-cc9e-4c99-9073-fb9e7b95db4c",
+		"AniPla": "9fc6a0aa-1b42-44f2-bf33-9f3d02e7c8bd",
+		"Futura": "db540fd4-7263-461c-8572-ef1bce831603",
+		"Fox": "4e4784d2-5b0e-45f0-8a9d-e85112aaf52f",
+		"Syfy": "e8e3ec29-a1f4-413e-ae64-5a3a367bd835",
+		"CanaBra": "455ab166-1866-4345-8554-c2d39fbfccbd",
+		"Combate": "7d73d934-abf3-431b-a83c-5a78035a5947"
+	}
+}

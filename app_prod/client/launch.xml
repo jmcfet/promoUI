@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<view xmlns="http://www.example.org/nagra">
+
+	<!-- background video -->
+	<group id="fullScreenPlayer">
+		<video id="fullScreenVideo" x="0" y="0" width="1920" height="1080" href="display://0"/>
+		<image id="fullScreenBackPlate" x="0" y="0" width="1920" height="1080" visible="false" />
+		<bufferIndicator id="bufferingIcon" x="924" y="504" image="customise/resources/images/%RES/icons/waiting.png" visible="false" />
+	</group>
+
+	<!-- boot screen -->
+	<group id="logo">
+		<container id="logoContainer" x="0" y="0" width="1920" height="1080" />
+		<image id="logoImage" href="customise/resources/images/logos/NET_loading.png" x="0" y="0" />
+		<textArea id="bootMessageTextArea" x="638.5" y="576" width="639" height="auto" cssClass="splashScreenLabel"/>
+		<label id="bootProgress1Label" x="926" y="740" text="." cssClass="splashScreenProgressHighlight"/>
+		<label id="bootProgress2Label" x="953" y="740" text="." cssClass="splashScreenProgress"/>
+		<label id="bootProgress3Label" x="980" y="740" text="." cssClass="splashScreenProgress"/>
+	</group>
+
+	<!-- branding -->
+	<brand id="branding" />
+
+	<!-- Application "windows" will be dynamically created here by ContextManager class -->
+	<group id="_contextGroup_" />
+
+	<loadingBar id="commonLoadingBar" visible="false" />
+
+	<!-- clock display -->
+	<group id="clockContainer" x="1833" y="97" visible="false">
+		<spanLabel id="timeDateLabel" x="0" y="0" cssClass="currentTimeText" />
+		<spanLabel id="dayDateLabel" x="0" y="50" cssClass="currentDateText" />
+	</group>
+
+	<!-- remote access indicator -->
+	<container id="remoteAccessIndicator" x="1345.5" y="76.5" width="295.5" height="57" cssClass="remoteAccessBackground" opacity="0">
+		<bufferIndicator id="spinningLoadIcon" x="10.5" y="12" imageWidth="33" imageHeight="33" image="customise/resources/images/net/loading.png"/>
+		<label id="remoteAccessLabel" x="52.5" y="39" cssClass="tipsFromNetText" text="Remote access"/>
+	</container>
+
+	<!-- messageIndicator display -->
+    <group id="messageIndicator">
+    	<image id="newMail" x="1594.5" y="114" href="customise/resources/images/net/blue_envelope.png" visible="false" opacity="0"/>
+    	<group id="newPopup" x="1920" y="105" visible="false" opacity="0">
+    		<backgroundBox id="newPopupBK" width="645" height="120" cssClass="newPopupIndicatorBackgroud"/>
+    		<image id="newPopupIcon" x="30" y="12" href="customise/resources/images/net/call_to_action_envelope.png"/>
+    		<label id="newPopupTitle" x="322.5" y="60" alignment="centre" width="645" cssClass="newPopupIndicatorTitle"/>
+    		<label id="newPopupTip" x="322.5" y="100" alignment="centre" width="645" cssClass="newPopupIndicatorContent"/>
+		</group>
+	</group>
+
+	<!-- volume display -->
+	<group id="volumeContainer" x="1707" y="104" visible="false">
+		<image id="speakerImage"/>
+		<image id="progressBarBackground" x="9" y="93" width="45" height="327" href="customise/resources/images/%RES/icons/volume_barra_fundo.png"/>
+		<verticalProgressBar id="volumeProgressBar" x="17.5" y="101.5" width="30" height="312" minimumValue="0" maximumValue="100" innerCssClass="volumeProgress" outerCssClass="volumeProgressOuter"/>
+	</group>
+
+	<label id="mimicLabel" y="2000"/>
+	<textArea id="mimicTextArea" y="2000" height="auto"/>
+
+	<!-- background video for PIP-->
+	<group id="smallVideoGroup" visible="false" >
+    	<container id="smallScreenBorder" x="1501" y="835.5" width="337.5" height="193.5" cssClass="mosaicVideoBorder"/>
+		<video id="smallScreenVideo" x="1503" y="838.5" width="331.5" height="187.5" href="display://1"/>
+	</group>
+</view>

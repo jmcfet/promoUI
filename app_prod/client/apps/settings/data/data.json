@@ -1,0 +1,441 @@
+{
+"menuItems":[
+    {
+        "title": "menuPreferences",
+        "logo": "../../../customise/resources/images/net/blue_icone-user.png",
+		"logoHighlight": "../../../customise/resources/images/net/white_icone-user.png",
+        "isVisible": "getVisibleMenuItems",
+        "configs": [{
+			"dataMapper": "Settings",
+			"itemTemplate": "MenuItemWithHighlight",
+			"component": "firstSubMenuList",
+			"scrollComponent": "scrollIndicatorFirstMenu",
+			"scrollType": "item",
+			"uiConfigs": {
+				"dataConfig": [{
+						"setter": "visibleRows",
+						"value" : "6"
+					}],
+				"componentConfig": [{
+					"setter": "itemHeight",
+					"value": "77"
+				}, {
+					"setter": "y",
+					"value": "95"
+				}, {
+					"setter": "backgroundConfig",
+					"value": {
+						"y": "-65",
+						"width": "661"
+					}
+				}, {
+					"setter": "itemConfig",
+					"value": {
+						"width": "576",
+						"height": "60"
+					}
+				}]
+			},
+			"footerConfig":{
+				"group" : "firstMenuFooter",
+				"uiConfigs" : [{
+					"component" : "footerBackgroundBox",
+					"componentConfig" : [ {
+						"setter" : "Width",
+						"value" : "661"
+						}]
+					},
+					{
+					"component" : "leftArrow",
+					"componentConfig" : [ {
+						"setter" : "visible",
+						"value" : "true"
+						}]
+					},
+					{
+					"component" : "rightArrow",
+					"componentConfig" : [ {
+						"setter" : "visible",
+						"value" : "true"
+						}, {
+						"setter": "x",
+						"value": "627"
+						}]
+					},
+					{
+					"component" : "backLabel",
+					"componentConfig" : [ {
+						"setter" : "text",
+						"value" : "menuSettingsBack"
+						}]
+					},
+					{
+					"component" : "forwardLabel",
+					"componentConfig" : [ {
+						"setter" : "text",
+						"value" : "menuSettingsForward"
+						}, {
+						"setter": "x",
+						"value": "508"
+						}]
+					}]
+			}
+		}]
+    },
+    {
+        "title": "menuFavorites",
+        "logo": "../../../customise/resources/images/net/blue_config_01_favoritos.png",
+		"logoHighlight": "../../../customise/resources/images/net/white_config_01_favoritos.png",
+        "isVisible": "getVisibleMenuItems",
+        "href" : "../../../customise/resources/images/%RES/icons/tick_17x17.png",
+        "configs": [{
+	        "dataMapper": "AllChannels",
+	        "itemTemplate": "ChannelListIconItem",
+	        "component": "firstSubMenuList",
+	        "scrollType": "item",
+			"title": "allChannels",
+			"titleId": "firstSubMenuTitle",
+	        "directChannelEntryEnabled" : true,
+	        "uiConfigs": {
+			"dataConfig": [{
+					"setter": "VisibleRows",
+					"value" : "6"
+				}],
+				"componentConfig": [{
+					"setter": "itemHeight",
+					"value": "73"
+				}, {
+					"setter": "y",
+					"value": "125"
+				}, {
+					"setter": "backgroundConfig",
+					"value": {
+						"y": "-95"
+					}
+				}]
+			},
+			"itemSelected": "doubleMenuItemSelected",
+			"scrollComponent": "scrollIndicatorFirstMenu",
+			"footerConfig":{
+				"group" : "firstMenuFooter",
+				"isFooterForDoubleMenu": true,
+				"uiConfigs" : [{
+					"component" : "footerBackgroundBox",
+					"componentConfig" : [ {
+						"setter" : "Width",
+						"value" : "1350"
+						}]
+					},
+					{
+						"component" : "selectLabel",
+	                    "componentConfig" : [{
+	                        "setter" : "text",
+	                        "value" : "addToFavorites"
+	                    }, {
+	                        "setter" : "X",
+	                        "value" : "90"
+	                    }]
+	                },
+	                {
+						"component" : "okIcon",
+	                    "componentConfig" : [{
+	                        "setter" : "visible",
+	                        "value" : "true"
+	                    },{
+	                        "setter" : "X",
+	                        "value" : "40"
+	                    }]
+					}]
+			}
+        },
+        {
+	        "dataMapper": "Favourites",
+	        "itemTemplate": "DoubleTextItem",
+	        "component": "secondSubMenuList",
+	        "scrollType": "item",
+	        "title": "favorites",
+	        "titleId": "secondSubMenuTitle",
+	        "uiConfigs": {
+				"dataConfig": [{
+					"setter": "VisibleRows",
+					"value" : "6"
+				}],
+				"componentConfig": [{
+					"setter": "itemHeight",
+					"value": "73"
+				}, {
+					"setter": "y",
+					"value": "125"
+				}, {
+					"setter": "backgroundConfig",
+					"value": {
+						"y": "-95"
+					}
+				}]
+			},
+	        "itemSelected": "doubleMenuItemSelected",
+	        "scrollComponent": "scrollIndicator"
+        }]
+    },
+    {
+        "title": "menuReminders",
+        "logo": "../../../customise/resources/images/net/blue_icone-lembrete-.png",
+		"logoHighlight": "../../../customise/resources/images/net/white_icone-lembrete-.png",
+        "isVisible": "getVisibleMenuItems",
+        "configs": [{
+	        "dataMapper": "ReminderList",
+			"itemTemplate": "GenericReminderListItem",
+			"errorText" : "noReminders",
+			"component" : "fullViewMenuList",
+			"scrollComponent": "scrollIndicator",
+			"scrollType": "item",
+			"uiConfigs": {
+				"dataConfig": [{
+					"setter": "VisibleRows",
+					"value" : "4"
+				}],
+				"componentConfig": [{
+					"setter": "itemHeight",
+					"value": "114"
+				}, {
+					"setter": "Y",
+					"value": "98"
+				}, {
+					"setter": "backgroundConfig",
+					"value": {
+						"y": "-68"
+					}
+				}, {
+					"setter": "itemConfig",
+					"value": {
+						"cssClassTitle": "menuSubTitle",
+						"cssClassSubtitle": "dialogSubtitle"
+					}
+				}]
+			},
+	        "footerConfig":{
+				"group" : "firstMenuFooter",
+				"uiConfigs" : [{
+					"component" : "footerBackgroundBox",
+					"componentConfig" : [ {
+						"setter" : "Width",
+						"value" : "1346"
+					}]
+				}, {
+					"component" : "leftArrow",
+					"componentConfig" : [ {
+						"setter" : "visible",
+						"value" : "true"
+					}]
+				}, {
+					"component" : "backLabel",
+					"componentConfig" : [ {
+						"setter" : "text",
+						"value" : "menuSettingsBack"
+					}]
+				}, {
+					"component" : "yellowSelectLabel",
+					"componentConfig" : [{
+						"setter" : "text",
+						"value" : "deleteReminder"
+					}, {
+						"setter" : "X",
+						"value" : "1233"
+					}, {
+                        "setter" : "visible",
+                        "value" : true
+                    }]
+				}, {
+					"component" : "yellowKey",
+					"componentConfig" : [{
+						"setter" : "Visible",
+						"value" : false
+					}, {
+						"setter" : "X",
+						"value" : "1185"
+					}, {
+                        "setter" : "visible",
+                        "value" : true
+                    }]
+				}, {
+					"component" : "redKey",
+					"componentConfig" : [{
+						"setter" : "visible",
+						"value" : "true"
+					}, {
+						"setter" : "X",
+						"value" : "365"
+					}]
+				}, {
+					"component" : "redSelectLabel",
+					"componentConfig" : [{
+						"setter" : "text",
+						"value" : "eventInfo"
+					}, {
+						"setter" : "X",
+						"value" : "405"
+					}]
+				}, {
+                    "component" : "greenKey",
+                    "componentConfig" : [{
+						"setter" : "X",
+						"value" : "740"
+					}, {
+                        "setter" : "visible",
+                        "value" : true
+                    }]
+                }, {
+					"component" : "greenSelectLabel",
+					"componentConfig" : [{
+						"setter" : "text",
+						"value" : "newReminder"
+					}, {
+						"setter" : "X",
+						"value" : "788"
+					}, {
+                        "setter" : "visible",
+                        "value" : true
+                    }]
+				}]
+			}
+          }]
+    },
+    {
+        "title": "menuPurchases",
+        "logo": "../../../customise/resources/images/net/blue_ic-shop-cart.png",
+		"logoHighlight": "../../../customise/resources/images/net/white_ic-shop-cart.png",
+        "isVisible": "getVisibleMenuItems",
+        "configs": [{
+	        "dataMapper": "Settings",
+	        "itemTemplate": "MenuItemWithHighlight",
+	        "component": "firstSubMenuList",
+	        "uiConfigs": {
+				"componentConfig": [{
+					"setter": "itemHeight",
+					"value": "70"
+				}, {
+					"setter": "y",
+					"value": "95"
+				}, {
+					"setter": "backgroundConfig",
+					"value": {
+						"y": "-65"
+					}
+				}]
+			},
+			"footerConfig":{
+				"group" : "firstMenuFooter",
+				"uiConfigs" : [{
+					"component" : "footerBackgroundBox",
+					"componentConfig" : [ {
+						"setter" : "Width",
+						"value" : "661"
+						}]
+					},
+					{
+					"component" : "leftArrow",
+					"componentConfig" : [ {
+						"setter" : "visible",
+						"value" : "true"
+						}]
+					},
+					{
+					"component" : "rightArrow",
+					"componentConfig" : [ {
+						"setter" : "visible",
+						"value" : "true"
+						}, {
+						"setter": "x",
+						"value": "627"
+						}]
+					},
+					{
+					"component" : "backLabel",
+					"componentConfig" : [ {
+						"setter" : "text",
+						"value" : "menuSettingsBack"
+						}]
+					},
+					{
+					"component" : "forwardLabel",
+					"componentConfig" : [ {
+						"setter" : "text",
+						"value" : "menuSettingsForward"
+						}, {
+						"setter": "x",
+						"value": "508"
+						}]
+					}]
+			}
+		}]
+    },
+    {
+        "title": "menuSystem",
+        "logo": "../../../customise/resources/images/net/blue_icone-sistema.png",
+		"logoHighlight": "../../../customise/resources/images/net/white_icone-sistema.png",
+        "isVisible": "getVisibleMenuItems",
+        "configs": [{
+	        "dataMapper": "Settings",
+	        "itemTemplate": "MenuItemWithHighlight",
+	        "component": "firstSubMenuList",
+	        "uiConfigs": {
+				"componentConfig": [{
+					"setter": "itemHeight",
+					"value": "70"
+				}, {
+					"setter": "y",
+					"value": "95"
+				}, {
+					"setter": "backgroundConfig",
+					"value": {
+						"y": "-65"
+					}
+				}]
+			},
+	        "footerConfig":{
+				"group" : "firstMenuFooter",
+				"uiConfigs" : [{
+					"component" : "footerBackgroundBox",
+					"componentConfig" : [ {
+						"setter" : "Width",
+						"value" : "661"
+						}]
+					},
+					{
+					"component" : "leftArrow",
+					"componentConfig" : [ {
+						"setter" : "visible",
+						"value" : "true"
+						}]
+					},
+					{
+					"component" : "rightArrow",
+					"componentConfig" : [ {
+						"setter" : "visible",
+						"value" : "true"
+						}, {
+						"setter": "x",
+						"value": "627"
+						}]
+					},
+					{
+					"component" : "backLabel",
+					"componentConfig" : [ {
+						"setter" : "text",
+						"value" : "menuSettingsBack"
+						}]
+					},
+					{
+					"component" : "forwardLabel",
+					"componentConfig" : [ {
+						"setter" : "text",
+						"value" : "menuSettingsForward"
+						}, {
+						"setter": "x",
+						"value": "508"
+						}]
+					}]
+			}
+            }]
+     }
+]}

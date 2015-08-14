@@ -1,0 +1,9 @@
+{
+	"EMULATOR": [
+		"min/stubs-min.js"
+	],
+	"NATIVE": [
+		"min/app-min.js"
+	]
+}
+

@@ -1,0 +1,117 @@
+/* List CSS */
+
+.list_item_bg {
+   fill-opacity: 0 ;
+   stroke-opacity: 0 ;
+}
+
+.list_item_text {
+	fill: #ffffff;
+	font-size: 20;
+}
+
+.list_item_text_inactive {
+	fill: #777777;
+	font-size: 20;
+}
+
+.list_highlight_bar {
+	fill: #113484;
+}
+
+.list_bg {
+	display: none;
+}
+
+/* Button CSS */
+
+.button_bg, .button_bg_disabled, .button_bg_highlight {
+	fill: black;
+	stroke: #777777;
+	stroke-width: 1;
+}
+
+.button_bg_disabled {
+	opacity: 0.5;
+}
+
+.button_bg_highlight {
+	fill: blue;
+}
+
+.button_text, .button_text_disabled, .button_text_highlight {
+	fill: white;
+	font-size: 15px;
+	text-overflow: ellipsis;
+	text-anchor: middle;
+}
+
+.button_text_disabled {
+	opacity: 0.5;
+}
+
+.button_text_highlight {
+	fill: yellow;
+}
+
+/* Number Input CSS */
+
+.number_entry_bg, .number_entry_bg_disabled, .number_entry_bg_highlight {
+	fill: white;
+	stroke: #777777;
+	stroke-width: 1;
+}
+
+.number_entry_bg_disabled {
+	opacity: 0.5;
+}
+
+.number_entry_bg_highlight {
+	fill: yellow;
+}
+
+.number_entry_text, .number_entry_text_disabled, .number_entry_text_highlight {
+	fill: black;
+	font-size: 15px;
+	text-overflow: ellipsis;
+}
+
+.number_entry_text_disabled {
+	opacity: 0.5;
+}
+
+.dialog_bg {
+	fill: #969696;
+	stroke: black;
+	stroke-width: 5;
+}
+
+.dialog_title, .dialog_message {
+	fill: white;
+}
+
+.octet_entry_bg, .octet_entry_bg_disabled, .octet_entry_bg_highlight {
+	fill: grey;
+	stroke: #777777;
+	stroke-width: 1;
+	/*opacity: 0.1;*/
+}
+
+.octet_entry_bg_disabled {
+	opacity: 0.5;
+}
+
+.octet_entry_bg_highlight {
+	fill: yellow;
+}
+
+.octet_entry_text, .octet_entry_text_disabled, .octet_entry_text_highlight {
+	fill: black;
+	font-size: 18px;
+	text-anchor: middle;
+}
+
+.octet_entry_text_disabled {
+	opacity: 0.5;
+}
+

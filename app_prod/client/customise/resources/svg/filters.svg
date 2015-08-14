@@ -1,0 +1,94 @@
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:svg="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:ekioh="http://www.ekioh.com/2007/ekioh"
+	version="1.2" baseProfile="tiny"
+	focusable="true"
+	viewBox="0 0 1280 720" preserveAspectRatio="none">
+
+	<defs>
+		<!-- NET glow effect, note bounding box is much bigger than default because of the radius of the blur -->
+		<filter id="net-glow" filterUnits="objectBoundingBox" x="-15%" y="-40%" width="130%" height="180%">
+			<!-- stdDeviation affects the size of the glow effect -->
+			<feGaussianBlur in="SourceAlpha" stdDeviation="8" result="blur"/>
+			<!-- Flood fill the glow colour -->
+			<feFlood flood-color="#19ACEA"/>
+			<!-- Composite block colour and blur mask -->
+			<feComposite in2="blur" operator="in"/>
+			<!-- Merge glow effect with original image -->
+			<feMerge>
+				<feMergeNode/>
+				<feMergeNode in="SourceGraphic"/>
+			</feMerge>
+		</filter>
+
+		<!-- NET glow effect, note bounding box is much bigger than default because of the radius of the blur -->
+		<filter id="net-bar-glow" filterUnits="objectBoundingBox" x="-15%" y="-40%" width="130%" height="180%">
+			<!-- stdDeviation affects the size of the glow effect -->
+			<feGaussianBlur in="SourceAlpha" stdDeviation="6" result="blur"/>
+			<!-- Flood fill the glow colour -->
+			<feFlood flood-color="#46658E"/>
+			<!-- Composite block colour and blur mask -->
+			<feComposite in2="blur" operator="in"/>
+			<!-- Merge glow effect with original image -->
+			<feMerge>
+				<feMergeNode/>
+				<feMergeNode in="SourceGraphic"/>
+			</feMerge>
+		</filter>
+
+		<!-- NET glow effect, note bounding box is much bigger than default because of the radius of the blur -->
+		<filter id="net-button-glow" filterUnits="objectBoundingBox" x="-15%" y="-15%" width="130%" height="130%">
+			<!-- stdDeviation affects the size of the glow effect -->
+			<feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+			<!-- Flood fill the glow colour -->
+			<feFlood flood-color="#19acea"/>
+			<!-- Composite block colour and blur mask -->
+			<feComposite in2="blur" operator="in"/>
+			<!-- Merge glow effect with original image -->
+			<feMerge>
+				<feMergeNode/>
+				<feMergeNode in="SourceGraphic"/>
+			</feMerge>
+		</filter>
+
+		<!-- NET focus glow effect, note bounding box is much bigger than default because of the radius of the blur -->
+		<filter id="net-focus-glow" filterUnits="objectBoundingBox" x="-10%" y="-30%" width="120%" height="160%">
+			<!-- Change the content colour to the target glow colour (appears more accurate than feFlood) -->
+			<feColorMatrix type="matrix" values=
+				"0 0 0 50   0
+				 0 0 0 126  0
+				 0 0 0 164  0
+				 0 0 0 1 0"/>
+			<!-- stdDeviation affects the size of the glow effect -->
+			<feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+			<!-- Flood fill white at 75% opacity to fix Ekioh bug ignoring feColorMatrix's alpha component
+				 when using hardware acceleration -->
+			<feFlood flood-color="#ffffff" flood-opacity="0.75" />
+			<!-- Composite blur with 75% opacity white to reduce glow opacity -->
+			<feComposite in2="blur" operator="in"/>
+			<!-- Merge composited glow effect with original image -->
+			<feMerge>
+				<feMergeNode/>
+				<feMergeNode in="SourceGraphic"/>
+			</feMerge>
+		</filter>
+		
+		<filter id="net-mosaic-focus-glow" filterUnits="objectBoundingBox" x="-20%" y="-30%" width="140%" height="160%">
+			<!-- Change the content colour to the target glow colour (appears more accurate than feFlood) -->
+			<!-- stdDeviation affects the size of the glow effect -->
+			<feGaussianBlur in="SourceAlpha" stdDeviation="10" result="blur"/>
+			<!-- Flood fill white at 75% opacity to fix Ekioh bug ignoring feColorMatrix's alpha component
+				 when using hardware acceleration -->
+			<feFlood flood-color="#19acea" flood-opacity="0.80" />
+			<!-- Composite blur with 75% opacity white to reduce glow opacity -->
+			<feComposite in2="blur" operator="in"/>
+			<!-- Merge composited glow effect with original image -->
+			<feMerge>
+				<feMergeNode/>
+				<feMergeNode in="SourceGraphic"/>
+			</feMerge>
+		</filter>
+	</defs>
+</svg>

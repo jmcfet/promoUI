@@ -1,0 +1,101 @@
+/* icons.css - for creating icons used in the application*/
+
+/*Settings, Agora  left arrow icon */
+.settingsLeftArrowIcon, .agoraLeftArrow {
+    position: absolute;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    border: 10px solid transparent;
+    margin-left: -12px;
+    border-right: 12px solid #FFFFFF;
+    left: 0;
+    top: 0;
+}
+
+.agoraLeftArrow {
+    margin-left: -10px;
+    left: 0;
+    top: 2px;
+}
+
+/*Settings, Agora right arrow icon*/
+.settingsRightArrowIcon, .agoraRightArrow{
+    position: absolute;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    border: 10px solid transparent;
+    border-left: 12px solid #FFFFFF;
+    left: 0;
+    top: 0;
+}
+
+.agoraRightArrow {
+    left: 0;
+    top: 2px;
+}
+
+.whiteIcon {
+    background-color: white;
+}
+
+/* Miniguide up arrow */
+.miniguideUpArrowIcon {
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 12px solid #8d9ba9;
+}
+
+/* Miniguide down arrow */
+.miniguideDownArrowIcon {
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 12px solid #8d9ba9;
+}
+
+/* Miniguide left arrow */
+.miniguideLeftArrowIcon {
+   	width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 12px solid #8d9ba9;
+}
+
+/* Miniguide right arrow */
+.miniguideRightArrowIcon {
+   	width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 12px solid #8d9ba9;
+}
+.whiteUpArrowIcon {
+       width: 0;
+       height: 0;
+       border-left: 10px solid transparent;
+       border-right: 10px solid transparent;
+       border-bottom: 12px solid #FFFFFF;
+}
+
+.whiteDownArrowIcon {
+       width: 0;
+       height: 0;
+       border-left: 10px solid transparent;
+       border-right: 10px solid transparent;
+       border-top: 12px solid #FFFFFF;
+}
+
+/*background stripes used in settings*/
+.bgStripes {
+	background-color: transparent;
+	background-image: linear-gradient(0deg, transparent 24%, #166fad 30%, transparent 30%);
+	background-size:100px 36px;
+}

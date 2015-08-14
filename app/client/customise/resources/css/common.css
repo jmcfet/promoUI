@@ -1,0 +1,7 @@
+/* common.css - for loading in the relevant css files */
+/* @import "reset.css"; /* reset.css - for resetting browser based defaults */
+@import "layout.css"; /* layout.css - for layout */
+@import "fonts.css"; /* fonts.css - for fonts */
+@import "theme.css"; /* theme.css - for styling related to the UI theme */
+@import "icons.css"; /* icon.css - for icons */
+@import "animation.css"; /* animation.css - for animations */

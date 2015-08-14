@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<view xmlns="http://www.example.org/nagra">
+	<layer id="backgroundGradient" x="0" y="0" width="1920" height="1080" visible="true" opacity="0.9">
+		<backgroundBox id="fullScreenBackground" x="0" y="0" width="1920" height="1080" cssClass="fullScreenBackground" opacity="1"/>
+		<backgroundBox id="menuFadeGradientOverlay" x="0" y="0" width="300" height="1080" cssClass="menuFadeGradientOverlay"/>
+	</layer>
+
+	<image id="netLogo" x="63" y="70.5" width="243" height="99" href="../../../customise/resources/images/net/NET_logo.png" />
+	<label id="title" x="354" y="89" width="1000" height="75" cssClass="libraryTitle" />
+	<pageableList id="menu" x="76" y="307" itemHeight="83" itemTemplate="LongMenuItem" />
+
+	<group id="wizard" x="492" y="310.5">
+		<BoxMenu id="channels" visible="false" />
+		<InfoList id="decoderInfo" visible="false" />
+		<InfoList id="IPStatus" visible="false" />
+		<FactoryResetBox id="factoryReset" visible="false" />
+	</group>
+	<MessageDialog id="exit" visible="false" />
+	<maskIcon id="settingsBGLines" x="510" y="392" href="../../../customise/resources/images/icons/settingsBGLines.png" visible="false" color="#166FAD
+" width="1305" height="435" />
+</view>

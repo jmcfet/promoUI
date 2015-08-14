@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<view xmlns="http://www.example.org/nagra">
+
+		<layer id="synopsisBackgroundLayer" width="1920" height="1080" opacity="0.95">
+			<backgroundBox id="synopsisBackground" cssClass="fullScreenBackground" width="1920" height="1080" />
+			<backgroundBox id="synopsisFadeGradientTop" cssClass="synopsisFadeGradientTop" x="0" y="0" width="1920" height="300"/>
+			<backgroundBox id="synopsisFadeGradientBottom" cssClass="synopsisFadeGradientBottom" x="0" y="780" width="1920" height="300"/>
+		</layer>
+
+		<nowPlayingAssetInfo id="vodSynopsis" visible="false" />
+
+      	<group id="leftColumn" x="174" y="120">
+			<channelLogo id="channelLogo"  />
+			<label id="serviceNumber" cssClass="synopsisXSmallGrey" x="115" y="38" />
+			<label id="service" cssClass="synopsisMedium" x="115" y="85" />
+			<delayedScrollingLabel id="eventName" y="165" width="1050" duration="250ms" cssClass="synopsisLarge" />
+			<label id="eventNameOriginalLanguage" y="267" width="1000" cssClass="synopsisSmallGrey ellipsisText" />
+			<label id="eventStartEndTime" y="337" width="210" cssClass="synopsisXSmall" />
+			<parentalRatingIcon id="parentalRatingIcon" x="220" y="307" />
+			<label id="eventGenre" x="275" y="337" width="210" cssClass="synopsisXSmall"/>
+			<label id="eventCost" x="300" y="337" width="210" cssClass="nowFullAssetInfoExpiry"/>
+			<label id="eventRecordDate" x="260" y="337" width="210" cssClass="synopsisXSmallGrey"/>
+			<recordIcon id="recordIcon" x="480" y="307" />
+			<reminderIcon id="reminderIcon" x="480" y="308" />
+			<startOverIcon id="startOverIcon" x="480" y="307" />
+			<label id="paddingLabel" y="383" width="1000" cssClass="synopsisXSmallGrey" />
+			<label id="synopsisLabel" y="432" width="1000" cssClass="synopsisSmall mediumText ellipsisText" />
+			<textArea id="eventDescription" y="442" width="1050" height="300" cssClass="synopsisSmallDescription"/>
+		</group>
+
+		<group id="rightColumn">
+			<eventPoster id="posterArea" x="1260" y="262" width="338" height="194" />
+			<textArea id="eventCreditsActorsTitle" cssClass="synopsisXSmallGrey mediumText" x="1260" y="442" width="450" height="50" />
+            <textArea id="eventCreditsActors" cssClass="synopsisXSmallGrey ellipsisText" x="1260" y="450" width="490" height="150" />
+            <textArea id="eventCreditsDirectorTitle" cssClass="synopsisXSmallGrey mediumText" x="1260" y="600" width="450" height="50" />
+            <textArea id="eventCreditsDirector" cssClass="synopsisXSmallGrey" x="1260" y="650" width="450" height="50" />
+            <textArea id="eventCreditsYear" cssClass="synopsisXSmallGrey" x="1260" y="700" width="900" height="50" />
+		</group>
+
+		<group id="optionsGroup" x="0" y="0">
+		<backgroundBox id="optionsShadow" x="0" y="604" width="1920" height="480" cssClass="miniguideBackground" opacity="1" visible="false" />
+		<optionsBar id="optionsMenu" x="174" y="873" width="1920" />
+		</group>
+
+</view>

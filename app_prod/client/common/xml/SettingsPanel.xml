@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<view xmlns="http://www.example.org/nagra">
+	<group id="settingsPanelContent">
+		<sVGlink id="settingsBGLines" y="55" href="../../../customise/resources/svg/icons.svg#settingsBGLines" visible="false"/>
+		<!-- This is the first menu panel shown on the left that contains the initial sub-menu items. -->
+		<pageableListWithBackground id="firstSubMenuList" y="95" itemTemplate="MenuItemWithHighlight" itemHeight="72" upDownPageable="true">
+			<itemConfig height="60" width="576"/>
+			<backgroundConfig height="576" width="661" y="-65"/>
+		</pageableListWithBackground>
+		<!-- List used to display the double-sized menu items -->
+		<pageableListWithBackground id="bigMenuItemList" y="95" itemTemplate="MenuItemWithHighlight" itemHeight="90" upDownPageable="true" visibleItemCount="4">
+			<itemConfig height="90" width="576"/>
+			<backgroundConfig height="576" width="661" y="-65"/>
+		</pageableListWithBackground>
+		<!-- This is the panel shown on the right hand side for sub-menus.  -->
+		<pageableListWithBackground id="secondSubMenuList" x="685" y="150" itemTemplate="MenuItemWithHighlight" itemHeight="90" upDownPageable="true">
+			<itemConfig height="60" width="576"/>
+			<backgroundConfig height="576" width="661" y="-120"/>
+		</pageableListWithBackground>
+		<!-- This is the panel shown on the right hand side for sub-menus.  -->
+		<multiItemTypePageableList id="secondMultiItemTypeSubMenuList" x="685" y="115" itemTemplate="MenuItemWithHighlight" itemHeight="90">
+			<itemConfig height="60" width="576"/>
+			<backgroundConfig height="576" width="661" y="-120"/>
+		</multiItemTypePageableList>
+		<!-- This is a full screen panel display.  -->
+		<pageableListWithBackground id="fullViewMenuList" y="95" itemTemplate="MenuItemWithHighlight" itemHeight="90" upDownPageable="true">
+			<itemConfig height="60" width="576"/>
+			<backgroundConfig height="576" width="1347" y="-65"/>
+		</pageableListWithBackground>
+		<baseKeypad id="settingsKeypad" x="685" y="32" height="576" width="661" visible="false"/>
+
+		<group id="textWithTitleAndBK" visible="false">
+			<backgroundBox id="bigBackgroundBox" x="685" y="30" width="661" height="576" cssClass="bigBackgroundBox" />
+			<textArea id="textTitle" cssClass="textTitleDescription" x="745" y="49" width="540" maxHeight="105" height="auto" />
+			<textArea id="textContent" cssClass="textContentDescription" x="745" y="180" width="540" height="361" />
+		</group>
+
+		<textArea id="textDescription" cssClass="textDescription" x="750" y="130" visible="false" width="520" height="250" />
+		<label id="firstSubMenuTitle" cssClass="zapperTitle" x="65" y="90" width="661" visible="false"/>
+		<label id="secondSubMenuTitle" cssClass="zapperTitle" x="745" y="90" width="661" visible="false"/>
+		<label id="secondSubMenuSubTitle" cssClass="dialogSubtitle" x="715" y="190" width="661" visible="false"/>
+		<label id="errorLabel" cssClass="noMailText" x="0" y="319" width="661" visible="false"/>
+		<label id="directChannelEntry" cssClass="noMailText" visible="false"/>
+		<image id="secondSubMenuTitleImage" x="1250" y="100" width="70" height="70"/>
+
+		<group id="scrollIndicator" x="1285" y="20" >
+			<image id="upArrow" x="7" y="21" height="30" width="40" href="./images/%RES/Icn_Surfer_arrowUp.png" visible="false"/>
+			<image id="downArrow" x="7" y="540" height="30" width="40" href="./images/%RES/Icn_Surfer_arrowDown.png" visible="false"/>
+		</group>
+
+		<group id="scrollIndicatorFirstMenu" x="600" y="20" >
+			<image id="upArrow" x="7" y="21" height="30" width="40" href="./images/%RES/Icn_Surfer_arrowUp.png" visible="false"/>
+			<image id="downArrow" x="7" y="540" height="30" width="40" href="./images/%RES/Icn_Surfer_arrowDown.png" visible="false"/>
+		</group>
+
+		<group id="firstMenuFooter" y="637" visible="false">
+			<backgroundBox id="footerBackgroundBox" height="72" cssClass="outOfFocusBackground" />
+			<sVGlink id="leftArrow" x="15" y="26" height="26" width="30" href="../../../customise/resources/svg/icons.svg#settingsLeftArrowIcon" />
+			<sVGlink id="rightArrow" x="627" y="26" height="26" width="30" href="../../../customise/resources/svg/icons.svg#settingsRightArrowIcon" />
+			<label id="backLabel" cssClass="settingsFooterLabel" x="46" y="46"/>
+			<label id="forwardLabel" cssClass="settingsFooterLabel" x="515" y="46"/>
+			<image id="okIcon" x="710" y="18" height="36" width="36" href="../../../customise/resources/images/%RES/icons/botao_ok_branco.png"/>
+			<label id="selectLabel" cssClass="settingsFooterLabel" x="755" y="44"/>
+			<image id="yellowKey" x="700" y="18" height="36" width="36" href="../../../customise/resources/images/%RES/icons/botao_amarelo.png"/>
+			<label id="yellowSelectLabel" cssClass="settingsFooterLabel" x="737" y="46"/>
+			<image id="greenKey" x="195" y="18" height="36" width="36" href="../../../customise/resources/images/%RES/icons/botao_verde.png"/>
+			<label id="greenSelectLabel" cssClass="settingsFooterLabel" x="245" y="46"/>
+			<image id="redKey" x="700" y="18" height="36" width="36" href="../../../customise/resources/images/%RES/icons/botao_vermelho.png"/>
+			<label id="redSelectLabel" cssClass="settingsFooterLabel" x="245" y="46"/>
+		</group>
+	</group>
+</view>

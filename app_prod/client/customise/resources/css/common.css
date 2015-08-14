@@ -1,0 +1,3049 @@
+p, textArea, .optionsMenuItemTitle {
+	color:#ffffff;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.unHighlightColour {
+	color: #46658e;
+}
+
+.primaryColour {
+	fill: #004782;
+	background-color: #004782;
+}
+
+.portalColour {
+	fill: #19364f;
+	background-color: #19364f;
+}
+
+.favouriteColour {
+	fill: #009800;
+	background-color: #009800;
+}
+
+.sortColour {
+	fill: #A00000;
+	background-color: #A00000;
+}
+
+.primaryColourHighlight {
+	fill: #0064b5;
+	background-color: #0064b5;
+}
+
+.green {
+	fill: green;
+	color: green;
+}
+
+.fullScreenBackground {
+	color: #010916;
+	fill: #010916;
+}
+
+.rootMenuPanel, .channelPanel {
+	fill:url(../svg/gradients.svg#panelGradient);
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, rgba(0,72,130,1)),
+		color-stop(1, rgba(0,7,13,0.9))
+	);
+}
+
+.fadeGradient {
+	fill:url(../svg/gradients.svg#fadeGradient);
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, rgba(0,0,0,1)),
+		color-stop(1, rgba(0,0,0,0))
+	);
+}
+
+.menuFadeGradientOverlay {
+	fill:url(../svg/gradients.svg#menuFadeGradientOverlay);
+}
+
+.miniguideBackground {
+	fill:url(../svg/gradients.svg#miniguideBackground);
+}
+
+.newPopupIndicatorBackgroud {
+	fill: #162742;
+	background-color: #162742;
+	opacity: 0.7;
+}
+
+.newPopupIndicatorTitle {
+	font-family: 'Ubuntu-Medium';
+	font-size: 30px;
+	fill: #ffffff;
+	color: #ffffff;
+}
+
+.newPopupIndicatorContent {
+	font-family: 'Ubuntu';
+	font-size: 22px;
+	fill: #ffffff;
+	color: #ffffff;
+}
+
+.playbackBackground {
+	fill:url(../svg/gradients.svg#playbackBackground);
+}
+
+.agoraBackground {
+	fill:url(../svg/gradients.svg#agoraBackground);
+}
+
+.synopsisFadeGradientTop {
+	fill:url(../svg/gradients.svg#synopsisFadeGradientTop);
+}
+
+.synopsisFadeGradientBottom {
+	fill:url(../svg/gradients.svg#synopsisFadeGradientBottom);
+}
+
+.recordIconRadialGradient {
+	fill:url(../svg/gradients.svg#recordIconRadialGradient);
+}
+
+.contentBrowserPanel {
+	fill:url(../svg/gradients.svg#contentBrowserGradient);
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		color-stop(0, rgba(28,28,28,1)),
+		color-stop(1, rgba(0,0,0,1))
+	);
+}
+
+.contentBrowserInFocusGradient {
+	fill:url(../svg/gradients.svg#contentBrowserInFocusGradient);
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		color-stop(0, rgba(0,72,130,0)),
+		color-stop(0.15, rgba(0,72,130,0.6)),
+		color-stop(0.3, rgba(0,72,130,1))
+	);
+}
+
+.horizontalPreviewGradient {
+	fill:url(../svg/gradients.svg#horizontalPreviewGradient);
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		color-stop(0, rgba(0,0,0,1)),
+		color-stop(0.5, rgba(0,0,0,0))
+	);
+}
+
+.dropShadow {
+	fill: #191F2E;
+	background-color: #191F2E;
+	opacity: 0.2;
+}
+
+.fullCardPanel {
+	fill:url(../svg/gradients.svg#fullCardGradient);
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, rgba(0,0,0,1)),
+		color-stop(0.5, rgba(0,72,130,1)),
+		color-stop(1, rgba(0,0,0,1))
+	);
+}
+
+.halfCardPanel {
+	fill:url(../svg/gradients.svg#halfCardGradient);
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, rgba(0,7,13,0.9)),
+		color-stop(1, rgba(0,72,130,1))
+	);
+}
+
+.dialoguePanel {
+	fill: #ff8000;
+	background-color: #ff8000;
+	opacity: 1.0;
+	stroke:#0000ff;
+	stroke-width:2.5;
+}
+
+.dialogueBackground {
+	fill: #061323;
+    background-color: #061323;
+    opacity: 1.0;
+} 
+
+.dialogueBackplate {
+	fill: #061323;
+    background-color: #061323;
+    opacity: 1.0;
+    stroke:#19acea;
+    stroke-width: 2;
+}
+
+
+.pinProgressIndicatorHider {
+	fill: #16232f;
+	background-color: #16232f;
+	opacity: 1.0;
+}
+
+.labelBackplate {
+	fill: #061323;
+	background-color: #061323;
+	opacity: 1.0;
+}
+
+
+.dialogueGlowUpper {
+	fill:url(../svg/gradients.svg#dialogueGlowGradientUpper);
+	opacity: 1.0;
+}
+
+.dialogueGlowLower {
+	fill:url(../svg/gradients.svg#dialogueGlowGradientLower);
+	opacity: 1.0;
+}
+
+.dialogueConfirmationPanel {
+	fill:url(../svg/gradients.svg#dialogueConfirmationGradient);
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		50% bottom,
+		color-stop(0, rgba(0,0,0,1)),
+		color-stop(1, rgba(0,72,130,1))
+	);
+}
+
+.subtitleAudioBoxBackground {
+	fill: #16232f;
+	stroke:#19acea;
+	stroke-width:2;
+	opacity:0.8;
+	background-color: #16232f;
+}
+
+.dividerPanel {
+	fill: #979797;
+	background-color: #979797;
+	opacity: 0.3;
+}
+
+.timePanel, .mediaCardPanel {
+	fill: #001d36;
+	background-color: #001d36;
+}
+
+.gridPanel {
+	fill: #001629;
+	background-color: #001629;
+}
+
+.blackFill, .barFill {
+	fill: #000000;
+	background-color: #000000;
+}
+
+.headerText, .headerTextLeft {
+	font-size: 35px;
+	fill: white;
+	color: white;
+	text-anchor: end;
+	margin-left:-100%;
+}
+
+.headerTextLeft {
+	text-anchor: start;
+	margin-left:0%;
+}
+
+.headerTextRight {
+	text-anchor: end;
+	margin-left:-100%;
+	margin-right:0%;
+}
+
+.title, .titleHighlight, .subtitle2, .subtitle3 {
+	color: #ffffff;
+	font-size: 40px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.noChannels, .noFavoritesList, .noFavoritesGrid, .msgToAddFavorite {
+	color: #ffffff;
+	fill: #ffffff;
+	font-family: 'Ubuntu-Regular';
+}
+
+.noFavoritesList {
+	font-size: 24px;
+	text-align: center;
+}
+
+.noFavoritesGrid {
+	font-size: 24px;
+	text-align: left;
+}
+
+.noChannels {
+	font-size: 26px;
+}
+
+.msgToAddFavorite {
+	font-size: 22px;
+}
+
+.addToFavTitle {
+	color: #2C688F;
+	fill: #2C688F;
+	font-size: 22px;
+	text-align: center;
+	font-family: 'Ubuntu-Regular';
+}
+
+.genreTitle {
+	color: #ffffff;
+	font-size: 40px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.titleHighlight {
+	fill: #3e89f9;
+	color: #3e89f9;
+}
+
+.zapperTitle, .pinEntryTitle, .vodTitle, .menuItemHighlighted, .menuItemHighlightedRightAlign, .menuItemHighlightedScrolling,
+.focusBoxLabel, .longMenuItem, .longMenuItemHighlighted, .logoMenuItemUnhighlighted, .logoMenuItemHighlighted, .nowMenuItem, .nowMenuItemHighlighted, .nowMenuItemDefocusHighlighted, .mediaCardTitle, .nowAssetInfoTitle,
+.pinDialogTitle, .headerText, .headerTextLeft, .headerTextRight, .accountEntryHighlighted, .nowFullAssetInfoTitle, .nowFullAssetInfoPrice, .messageDialogText,
+.textOptionSelectorTextHighlighted, .channelTextHighlighted, .channelTextHighlightedRight, .subtitle, .settingsTitle, .dialogTitle, .blockingDialogTitle, .gridTimeIndicator, .gridTimeIndicatorSpan, .contentItemTextHighlighted, .videoDescription,
+.synopsisSeriesName, .summaryTitle, .scheduledItemName, .libraryOptionsMenuTextBold, .menuSubTitle, .keypadInputText {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.portalTitle {
+	font-size: 50px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+
+.breadcrumbTitle, .libraryTitle	{
+	font-size: 40px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.libraryTitleGray {
+	font-size: 40px;
+	color: #999999;
+	fill: #999999;
+}
+
+.newLibraryTitle {
+	font-size: 50px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.newLibraryTitleGray {
+	font-size: 50px;
+	color: #999999;
+	fill: #999999;
+}
+
+.breadcrumbTitle	{
+	color: #FFFFFF;
+	fill: #FFFFFF;
+}
+
+.breadcrumbSubTitle	{
+	font-size: 40px;
+	color: #4b9dda;
+	fill: #4b9dda;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.agoraServiceName	{
+	font-size: 26px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.agoraIndicatorText	{
+	font-size: 22px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.agoraInvalidChannelBackground {
+	fill: #000000;
+	background-color: #000000;
+	opacity: 0.75;
+}
+
+.agoraEventName {
+	font-size: 26px;
+	color: #FFFFFF;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.agoraSeriesEpisodeTitle {
+	font-size: 26px;
+	color: #999999;
+	fill: #999999;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.agoraInvalidEventName {
+	font-size: 26px;
+	color: #707070;
+	fill: #707070;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.agoraListItemBackground {
+	fill: #093a5b;
+	background-color: #093a5b;
+}
+
+.aseguirListItemBackground {
+	fill: #0c273a;
+	background-color: #0c273a;
+}
+
+.agoraProgressOuter {
+	fill: #686d71;
+	background-color: #686d71;
+}
+
+.agoraProgressInner {
+	stroke: #5598d8;
+	stroke-width: 1;
+	opacity: 1;
+	fill: #5598d8;
+	background-color: #5598d8;
+}
+
+.musicGenreItem {
+	font-family: 'Ubuntu-Medium', sans-serif;
+	font-size:30px;
+	color: #999999;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.musicGenreItemSeleted {
+	font-family: 'Ubuntu-Medium', sans-serif;
+	font-size:30px;
+	color: #FFFFFF;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.musicSubCategoryItem {
+	font-family: 'Ubuntu-Medium', sans-serif;
+	font-size:30px;
+	color: #CCCCCC;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.musicSubCategoryItemSeleted {
+	font-family: 'Ubuntu-Medium', sans-serif;
+	font-size:30px;
+	color: #FFFFFF;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.mosaicTitle	{
+	font-size: 40px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.mosaicinfo	{
+	font-size: 22px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	font-family: 'Ubuntu';
+}
+.mosaicChannelHighlight {
+	stroke: #3e89f9;
+	border-color: #3e89f9;
+	stroke-width: 8px;
+	border-style: solid;
+	border-width: 8px;
+	filter: url(../svg/filters.svg#net-mosaic-focus-glow);
+}
+
+.displayQrCodeBackground{
+	border: 1px solid #19acea;
+	fill: none;
+	stroke: #19acea;
+	stroke-width: 1;
+	opacity: 1;
+}
+
+.mosaicServiceName {
+	color: #3e89f9;
+	fill: #3e89f9;
+	font-size: 22px;
+}
+
+.mosaicEventName {
+	color: #ffffff;
+	fill: #ffffff;
+	font-family: 'Ubuntu-Medium';
+	font-size: 26px;
+}
+.mosaicEventNameGrey {
+	color: #707070;
+	fill: #707070;
+}
+.mosaicSeriesInfo {
+	color: #707070;
+	fill: #707070;
+	font-size: 26px;
+}
+.mosaicEpisodeName {
+	color: #707070;
+	fill: #707070;
+	font-size: 26px;
+}
+.mosaicEventGenre {
+	color: #ffffff;
+	fill: #ffffff;
+	font-size: 22px;
+	text-overflow: ellipsis;
+}
+.mosaicEventDescription {
+	color: #707070;
+	fill: #707070;
+	font-size: 22px;
+	text-overflow: ellipsis;
+}
+.mosaicPreviewBackground {
+	fill: #0c273a;
+	background-color: #0c273a;
+	stroke: #3e89f9;
+	border-color: #3e89f9;
+	stroke-width: 1px;
+	border-style: solid;
+	border-width: 1px;
+}
+.mosaicUnsubscribePrompt {
+	color: #19acea;
+	fill: #19acea;
+	font-size: 24px;
+	margin-left: 24px;
+	margin-top: 30px;
+	margin-right: 24px;
+	margin-bottom: 30px;
+	text-align: center;
+	line-height: 30px;
+	font-family: 'Ubuntu-Medium';
+}
+.posterPrompt, .mosaicPosterPrompt {
+	color: #19acea;
+	fill: #19acea;
+	font-family: 'Ubuntu-Medium';
+}
+.posterPrompt {
+	font-size: 24px;
+	margin-left: 8px;
+	margin-top: 8px;
+}
+.mosaicPosterPrompt {
+	font-size: 24px;
+	margin-left: 24px;
+	margin-top: 30px;
+}
+.mosaicBackground {
+	fill: #010c1b;            
+    background-color: #010c1b;
+    opacity: 1;
+}
+.mosaicVideoBorder {
+	fill: transparent;
+	background-color: transparent;
+	stroke: #3e89f9;
+	border-color: #3e89f9;
+	stroke-width: 3px;
+	border-style: solid;
+	border-width: 3px;
+}
+
+.zapperTitle, .settingsSummaryTitle {
+	color: #ffffff;
+	font-size: 30px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.pinEntryTitle {
+	color: #ffffff;
+	font-size: 40px;
+}
+
+.vodTitle, .dialogueTypeLabel {
+	color: #ffffff;
+	font-size: 40px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	text-anchor: end;
+	margin-left:-100%;
+}
+
+.optionsMenuItemTitle, .optionsMenuItemTitleSmaller {
+	text-align: center;
+	margin-left:-50%;
+}
+
+.optionsMenuItemTitle {
+	font-size:12px;
+}
+
+.optionsMenuItemTitleSmaller {
+	font-size:10.5px;
+}
+
+.optionsMenuItem {
+	color: #081623;
+	fill: #081623;
+	background-color: #081623;
+	border:1px solid #19acea;
+	stroke:#19acea;
+	stroke-width:1;
+	opacity:1;
+}
+
+.unSelectableOptionsMenuItem {
+	color: #374654;
+	fill: #374654;
+	background-color: #374654;
+	stroke:#073346;
+	stroke-width:1;
+	opacity:1;
+}
+
+.optionsMenuItemHighlighted {
+	color: #2f85aa;
+	fill: #2f85aa;
+	stroke:#19acea;
+	background-color: #2f85aa;
+	border:1px solid #19acea;
+	stroke-width:1;
+	opacity:1;
+}
+
+.pinDialogTitle {
+	color: #ffffff;
+	font-size: 40px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.ellipsisText {
+	text-overflow: ellipsis;
+}
+
+.mediaBrowserTitle {
+	color: #ffffff;
+	font-size: 24px;
+	overflow: hidden;
+	text-align: end;
+	text-overflow: ellipsis;
+}
+
+.contentBrowserSubTitle {
+	color: #ffffff;
+	font-size: 18px;
+	overflow: hidden;
+	text-anchor: end;
+	margin-left:-100%;
+	text-overflow: ellipsis;
+}
+
+.mediaCardTitle, .pinDialogSubtitle {
+	font-size: 28px;
+	fill: #FFFFFF;
+	color: #FFFFFF;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.pinDialogDescription, .summaryTitle, .recordingDialogOptionText {
+	font-size: 30px;
+	fill: #FFFFFF;
+	color: #FFFFFF;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.subtitle, .octet_entry_text_highlight, .octet_entry_text, .accountEntry {
+	font-size: 20px;
+	fill: #FFFFFF;
+	color: #FFFFFF;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.octet_entry_text {
+	fill: white;
+	color: white;
+}
+
+.octet_entry_bg, .octet_entry_bg_highlight, .ipEntryBg {
+	fill: none;
+	background-color: transparent;
+}
+
+.subtitle2 {
+	font-size: 19px;
+}
+
+.subtitle3 {
+	font-size: 15px;
+}
+
+.subtitle2Span {
+	font-size: 13px;
+}
+
+.description {
+	font-size: 15px;
+	fill: white;
+	color: white;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.textOptionSelectorText,.textOptionSelectorTextHighlighted {
+	font-size: 30px;
+	fill: white;
+	color: white;
+}
+
+.settingsDescription,.manualRecordingsDescription, .manualRecordingsDescriptionWarning {
+	font-size: 30px;
+	fill: white;
+	color: white;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.manualRecordingsDescription, .manualRecordingsDescriptionWarning {
+	font-size: 22px;
+}
+
+.descriptionWarning {
+	fill: #FF1100;
+	color: #FF1100;
+}
+
+.settingsDescriptionSmall, .gridTime, .gridTimePast {
+	font-size: 24px;
+	fill: white;
+	color: white;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.gridTimePast {
+	fill: #999999;
+	color: #999999;
+}
+
+.gridTimeSeparator {
+	fill: #4cb2f5;
+	background-color: #4cb2f5;
+}
+
+.conflictDescriptionSmall {
+	font-size: 20px;
+	fill: white;
+	color: white;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.settingsTitle {
+	font-size: 44px;
+	fill: white;
+	color: white;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.descriptionRecordings {
+	font-size:30px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.descriptionSmall {
+	font-size: 10px;
+}
+
+.filterTypeText {
+	font-size:22px;
+}
+
+.descriptionConflictDialogue {
+	font-size:20px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.descriptionZapper {
+	font-size:18px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.progressBarTime {
+	font-size:24px;
+}
+
+.descriptionStandard {
+	font-size: 15px;
+}
+
+.descriptionLarge {
+	font-size: 25px;
+}
+
+.startAndEndTimeProgressBar {
+	font-size: 36px;
+}
+
+.startAndEndTimeMiniguideEventGroup, .startAndEndTimeZapperEventGroup, .startAndEndTimeProgressBarLabels {
+	font-size: 22px;
+	font-family: 'Ubuntu-Medium', sans-serif;
+}
+
+.miniguideChannelNameAndNumber {
+	font-family: 'Ubuntu-Medium';
+	font-size:24px;
+	color: #707070;
+	fill: #707070;
+}
+
+.popupDirectTextEntryCursor {
+	font-size:24px;
+	color: #ffffff;
+	fill: #ffffff;
+}
+
+.directChannelNumberEntry {
+	font-size:40px;
+	color: #3e89f9;
+	fill: #3e89f9;
+	font-family: 'Ubuntu-Medium';
+}
+
+.synopsisLarge {
+	font-size:40px;
+	font-family: 'Ubuntu-Medium';
+}
+.synopsisMedium {
+	font-size:30px;
+	font-family: 'Ubuntu';
+}
+.synopsisSmall {
+	font-size:26px;
+	font-family: 'Ubuntu-Medium';
+}
+
+.synopsisSmallDescription {
+	font-size:26px;
+	font-family: 'Ubuntu';
+}
+.synopsisSmallGrey {
+	font-size:26px;
+	color: #707070;
+	fill: #707070;
+	font-family: 'Ubuntu';
+}
+.synopsisXSmall {
+	font-size:24px;
+	font-family: 'Ubuntu';
+}
+.synopsisXSmallGrey {
+	font-size:24px;
+	color: #707070;
+	fill: #707070;
+	font-family: 'Ubuntu';
+}
+
+.miniguideTime  {
+	font-family: 'Ubuntu-Medium';
+	font-size:28px;
+	margin-top:-28px !important;
+}
+
+.textUbuntuMedium {
+	font-family: 'Ubuntu-Medium';
+}
+
+.PPVEventTitle {
+	font-size:40px;
+	color: #19ACEA;
+	fill: #19ACEA;
+}
+.PPVDefaultText {
+	font-size:26px;
+	color: #CCCCCC;
+	fill: #CCCCCC;
+	font-family: 'Ubuntu';
+}
+.PPVSubText {
+	font-size:22px;
+	fill: #CCCCCC;
+	color: #CCCCCC;
+	font-family: 'Ubuntu';
+}
+.PPVHistoryEventNameFocused {
+	font-size:24px;
+	font-weight: 600;
+	font-family: 'Ubuntu';
+}
+.PPVHistoryEventName {
+	font-size:26px;
+	font-weight: 600;
+	font-family: 'Ubuntu';
+}
+.miniguideTitle {
+	font-family: 'Ubuntu-Medium';
+	font-size: 26px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.miniguideTitleGrey {
+	color: #999;
+	fill: #999;
+	font-family: 'Ubuntu-Medium';
+	font-size: 26px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.miniguideTitleContainer {
+	color: #0e3450;
+	fill: #0e3450;
+	stroke-width: 0;
+	opacity: 1;
+}
+
+.miniguideNextTitle {
+	color: #999;
+	fill: #999;
+	font-size: 24px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.summaryStartAndEndTime, .summaryGenres, .diskSpaceFreeText {
+	color: #CCCCCC;
+	fill: #CCCCCC;
+	font-size: 22px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.diskSpaceFreeText {
+	font-family: 'Ubuntu-Medium';
+}
+
+.summarySeasonAndEpisode {
+	color: #CCCCCC;
+	fill: #CCCCCC;
+	font-size: 28px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.miniguideNextTitleContainer {
+	color: #102637;
+	fill: #102637;
+	stroke-width: 0;
+	opacity: 1;
+}
+
+.miniguideButtonText {
+	font-size:22px;
+	margin-top:-22px !important;
+	color: #FFFFFF;
+	fill: #FFFFFF;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.miniguideNoOptionsText {
+	font-size:22px;
+	margin-top:-22px !important;
+	color: #CCCCCC;
+	fill: #CCCCCC;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.channelNumberTextRight {
+	font-size: 36px;
+	text-anchor: end;
+	margin-left:-100%;
+}
+
+.recordingDateText {
+	font-size: 36px;
+	text-anchor: start;
+	margin-right:0px;
+	margin-left:0px;
+	margin-bottom: 0px;
+}
+
+.channelNumberTextLeft {
+	font-size: 36px;
+}
+
+.duration, .durationUnit {
+	fill: url(../svg/gradients.svg#titleGradient);
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, rgba(255,255,255,1)),
+		color-stop(0.3, rgba(255,255,255,1)),
+		color-stop(1, rgba(128,128,128,1))
+	);
+	color: white;
+	font-size: 19px;
+	text-anchor: end;
+	margin-left:-100%;
+}
+.durationUnit {
+	font-size: 13px;
+}
+
+.thumbnailText {
+	font-size: 18px;
+	text-anchor: middle;
+	margin-left:-50%;
+	fill: white;
+	color: white;
+}
+
+.noMailText, .keypadEntryKey {
+	font-size: 26px;
+	text-align: center;
+	fill: #ffffff;
+	color: #ffffff;
+}
+
+.keypadEntryKey {
+	font-family: 'Ubuntu-Medium';
+}
+
+text, textArea, .settingsSummary {
+	fill: white;
+	color: white;
+}
+
+.menuItem, .menuItemLeft, .menuItemLineTwoHighlighted {
+	font-size:30px;
+}
+
+.menuItem, .menuItemHighlighted, .menuItemLineTwoHighlighted  {
+	text-anchor: end;
+	margin-left:-100%;
+}
+
+.menuItemHighlighted, .menuItemHighlightedScrolling, .contentItemTextHighlighted, .menuItemHighlightedRightAlign, .menuItemHighlightedScrolling, .menuStripItemHighlighted {
+	font-size:40px;
+}
+
+
+.menuItem, .menuItemLeft, .menuItemHighlighted, .contentItemTextHighlighted, .menuItemHighlightedRightAlign, .menuItemLineTwoHighlighted {
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.contentItemTextHighlighted {
+	text-anchor: end;
+	margin-left:-100%;
+}
+.menuItemHighlightedRightAlign {
+	text-anchor:end;
+	margin-left:-100%;
+}
+
+.longMenuItem, .searchMenuItem {
+	font-size:30px;
+}
+
+.longMenuItemHighlighted {
+	font-size:30px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.logoMenuItemHighlighted, .logoMenuItemIconHighlighted {
+	filter: url(../svg/filters.svg#net-glow);
+}
+
+.logoMenuItemHighlighted, .logoMenuItemUnhighlighted {
+	font-size:30px;
+	font-family: 'Ubuntu-Medium';
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.logoMenuItemUnhighlighted {
+	color: #46658e;
+	fill: #46658e;
+}
+
+.searchMenuItem {
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.focusBoxLabel {
+	font-size:40px;
+	text-anchor: start;
+}
+
+.timeItemText, .timeItemTextGrey, .timeItemTextGreyFocused, .timeItemTextUnplayable, .timeItemTextUnplayableFocused, .timeItemPastText, .timeItemTextHighlight {
+	font-size:24px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.timeItemTextGrey, .timeItemTextGreyFocused {
+	color: #505050;
+	fill: #505050;
+}
+
+.timeItemTextUnplayable, .timeItemTextUnplayableFocused, .timeItemPastText {
+	color: #505050;
+	fill: #505050;
+}
+
+/*season unfocused*/
+.timeItemTextGrey {
+	color: #707070;
+	fill: #707070;
+}
+
+/*season focused*/
+.timeItemTextGreyFocused {
+}
+
+/*event unfocused*/
+.timeItemTextUnplayable {
+	color: #707070;
+	fill: #707070;
+}
+
+/*event focused*/
+.timeItemTextUnplayableFocused {
+	color: #505050;
+	fill: #505050;
+}
+
+/*time focused / unfocused*/
+.timeItemPastText {
+	color: #505050;
+	fill: #505050;
+}
+
+/*
+.timeItemTextUnplayable, .timeItemTextUnplayableFocused, .timeItemPastText {
+	color: #999999;
+	fill: #999999;
+}
+*/
+
+.timeItemTextGrey, .timeItemTextUnplayable {
+	opacity: 0.50;
+}
+
+.timeItemTextHighlight {
+	color: #46658e;
+	fill: #46658e;
+}
+
+.timeItemSubText {
+}
+
+.channelText, .folderInaccessibleText {
+	font-size:20px;
+	text-anchor:end;
+	margin-left:-100%;
+}
+
+.recordDate {
+	font-size:30px;
+	text-anchor:start;
+}
+
+.channelListChanNum {
+	font-size: 30px;
+	fill: #82b0c6;
+	color: #82b0c6;
+}
+
+.channelListChanName, .libraryOptionsMenuText, .libraryOptionsMenuTextBold, .firstInstallMenuText {
+	font-size: 26px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.firstInstallMenuText {
+	font-family: 'Ubuntu-Medium';
+}
+
+.libraryOptionsSubMenuTitle {
+	font-size: 32px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.channelNumberGridGuide {
+	font-size:24px;
+	text-anchor:start;
+}
+
+.channelTextHighlighted, .channelTextHighlightedRight {
+	font-size:40px;
+	text-anchor:end;
+	margin-left:-100%;
+}
+
+.directChannel {
+	font-size: 36px;
+	text-anchor: start;
+}
+
+
+.channelTextHighlightedRight {
+	text-anchor:start;
+	margin-left:0%;
+}
+
+.deviceTextHighlighted {
+	font-size:40px;
+	text-anchor:start;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.eventName, .eventNameDefocus {
+	font-size:30px;
+	text-overflow:ellipsis;
+	overflow: hidden;
+}
+
+.eventOnNow {
+	font-size:24px;
+	fill: green;
+	color: green;
+}
+.searchBackground {
+	fill: #010c1b;            
+    background-color: #010c1b;
+    opacity: 0.95;
+}
+
+.eventText, .searchResultText, .searchResultTextHighlight {
+	font-size:15px;
+	text-overflow:ellipsis;
+	overflow: hidden;
+}
+
+.searchResultHLSText, .summaryDescription {
+	font-size:24px;
+	text-overflow:ellipsis;
+	overflow: hidden;
+}
+
+.searchResultTextHighlight, .searchResultTextHighlightFocus, .SpanLabelText, .settingsSummarySelected {
+	fill: white;
+	color: white;
+}
+
+.searchResultTextFocus, .searchResultTextHighlightFocus {
+	font-size:19px;
+}
+
+.selectForInfoText {
+	fill: url(../svg/gradients.svg#titleGradient);
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, rgba(255,255,255,1)),
+		color-stop(0.3, rgba(255,255,255,1)),
+		color-stop(1, rgba(128,128,128,1))
+	);
+	color: white;
+	font-size: 19px;
+}
+
+.contentItemText {
+	font-size:15px;
+	text-anchor:start;
+	text-overflow:ellipsis;
+	overflow: hidden;
+}
+
+.contentItemSubText {
+	font-size:15px;
+	text-anchor:start;
+}
+
+.folderLabelText {
+	font-size:24px;
+	text-anchor:start;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.currentDirectoryTextVertical, .deviceItemText {
+	font-size:30px;
+	text-anchor:start;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.textItemText, .textItemTextVertical, .generalItemText, .selected {
+	font-size:30px;
+	text-anchor:start;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.contentBrowserItemText {
+	font-size:30px;
+	text-anchor:end;
+	margin-left:-100%;
+	overflow: hidden;
+}
+
+.contentBrowserItemTextOverflow {
+	font-size:24px;
+	text-align:end;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.textItemTextVertical {
+	text-anchor: middle;
+	margin-left:-50%;
+}
+
+.textItemTextRight {
+	font-size:18px;
+	text-anchor:end;
+	margin-left:-100%;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.textRunTime {
+	font-size:24px;
+	text-anchor:end;
+	margin-left:-100%;
+}
+
+.textItemBreadCrumbRight, .playerHelpText {
+	font-size:24px;
+	text-anchor:end;
+	margin-left:-100%;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.smallFont {
+	font-size: 14px;
+}
+.verticalText {
+	text-anchor: middle;
+	margin-left:-50%;
+}
+
+.channelSelectItemText {
+	font-size:15px;
+	text-overflow:ellipsis;
+	overflow: hidden;
+}
+
+.backgroundBlur {
+	fill: #707070;
+	background-color: #707070;
+	opacity: 0.9;
+}
+
+.progressContentBrowserOuter {
+	fill: #00447D;
+	background-color: #00447D;
+}
+
+.progressOuter {
+	fill: #AAAAAA;
+	background-color: #AAAAAA;
+}
+
+.progressBarOuter {
+	fill: #031e33;
+	background-color: #031e33;
+}
+
+.progressInner {
+	stroke: #46658E;
+	stroke-width: 1;
+	opacity: 1;
+	fill: #46658E;
+	background-color: #46658E;
+	filter: url(../svg/filters.svg#net-bar-glow);
+}
+
+.progressBarInner {
+	stroke: #fff;
+	stroke-width: 1;
+	opacity: 1;
+	fill: #fff;
+	background-color: #fff;
+}
+
+.progressInnerRed {
+	stroke: #CD0000;
+	stroke-width: 1;
+	opacity: 1;
+	fill: #CD0000;
+	background-color: #CD0000;
+}
+
+.progressTextStart, .progressTextEnd {
+	fill: white;
+	color: white;
+	font-size: 55px;
+	text-anchor: end;
+	margin-left:-100%;
+}
+
+.progressTextEnd {
+	text-anchor: start;
+	margin-left:0%;
+}
+
+.dialog_bg {
+	fill: none;
+	background-color: transparent;
+}
+
+.dialog_title {
+	fill: #ffffff;
+	color: #ffffff;
+	font-size: 22px;
+}
+
+.dialog_title_centre {
+	fill: #ffffff;
+	color: #ffffff;
+	font-size: 22px;
+	text-anchor: middle;
+	margin-left:-50%;
+}
+
+.dialog_message {
+	fill: #02BDFF;
+	color: #02BDFF;
+	font-size: 15px;
+}
+
+.button_bg {
+	fill: #222222;
+	background-color: #222222;
+	stroke-width: 0;
+}
+
+.button_bg_highlight {
+	fill: #02BDFF;
+	background-color: #02BDFF;
+	stroke: #FFFFFF;
+	stroke-width: 1;
+}
+
+.button_text {
+	fill: #ffffff;
+	background-color: #ffffff;
+	font-size: 18px;
+	text-anchor:middle;
+	margin-left:-50%;
+}
+
+.button_text_highlight {
+	fill: #000000;
+	color: #000000;
+	text-anchor:middle;
+	margin-left:-50%;
+	font-size: 18px;
+}
+
+.currentTimeText, .currentDateText, .currentVolumeText, .backLabelText {
+	fill: #FFFFFF;
+	color: #FFFFFF;
+	font-size:30px;
+	text-anchor: end;
+	margin-left:-100%;
+}
+
+.currentTimeText {
+	font-family: 'Ubuntu-Medium';
+	font-size:46px;
+}
+.currentDateText {
+	font-size:24px;
+}
+
+.backLabelText {
+	font-size:24px;
+}
+
+.volumeProgress {
+	fill: #5598d8;
+	background-color: #5598d8;
+	text-anchor: end;
+	margin-left:-100%;
+}
+
+.volumeProgressOuter {
+	fill: #082139;
+	background-color: #082139;
+}
+
+.cachingProgressInner {
+	fill: #004782;
+	background-color: #004782;
+}
+
+.cachingProgressOuter {
+	fill: #FFFFFF;
+	background-color: #FFFFFF;
+	stroke: #ffffff;
+	stroke-width: 1;
+	border: solid 1px #ffffff;
+}
+
+.glowFill {
+	fill: url(../../../customise/resources/svg/gradients.svg#glowGradient);
+	background-color: url(../../../customise/resources/svg/gradients.svg#glowGradient);
+}
+
+.messageBody {
+	font-size: 18px;
+	fill: white;
+	background-color: white;
+}
+
+.messageListItemDate {
+	font-weight: normal;
+	font-size: 24px;
+	fill: #ffffff;
+	color: #ffffff;
+}
+
+.messageListItemTitle {
+	font-family: 'Ubuntu-Medium';
+	font-size: 26px;
+	fill: #ffffff;
+	color: #ffffff;
+	text-overflow: ellipsis;
+}
+
+.pinEnteredDigits {
+	fill: #00FF00;
+	color: #00FF00;
+	font-size: 80px;
+	font-weight: bold;
+}
+
+.pinNonEnteredDigits {
+	fill: #FFFFFF;
+	color: #FFFFFF;
+	font-size: 80px;
+	font-weight: bold;
+}
+
+.mediumText {
+	font-family: 'Ubuntu-Medium';
+}
+
+.invalidX {
+	fill: #f50208;
+	color: #f50208;
+	font-size: 22px;
+	stroke: #f50208;
+	stroke-width: 2;
+}
+
+.trickPlaySpeed {
+	font-size: 35px;
+	text-anchor: middle;
+	margin-left:-50%;
+}
+
+.trickPlaySpeedSmall {
+	font-size: 30px;
+	text-anchor: middle;
+	margin-left:-50%;
+}
+
+.chapterIndicator {
+	fill: white;
+	color: white;
+}
+
+.vodFooterTextLabel {
+	fill: white;
+	color: white;
+	font-size: 24px;
+}
+
+.vodFooterText, .settingsInfoLabelText, .settingsInfoLabelTextHighlight,.audioSliderLabel {
+	font-size: 24px;
+}
+
+.audioSliderLabel {
+	text-anchor: middle;
+	margin-left:-50%;
+}
+
+.catchUpShortDayText {
+	fill: #757575;
+	color: #757575;
+	font-size: 14px;
+}
+
+.dialogueTypeLabelSubText {
+	font-size: 30px;
+	text-anchor: end;
+	margin-left:-100%;
+}
+
+.endText {
+	text-anchor: end;
+	margin-left:-100%;
+}
+
+.relatedZapperText {
+	font-size: 48px;
+	text-anchor: end;
+	margin-left:-100%;
+}
+
+.noFill {
+	fill: none;
+	background-color: transparent;
+}
+
+.sortSpan {
+	fill: #616161;
+	color: #616161;
+}
+
+.settingsSummaryHighlight, .settingsInfoLabelTextHighlight {
+	fill: green;
+	color: green;
+}
+
+.accountEntry, .accountEntryUnHighlighted, .accountEntryHighlighted {
+	font-size: 35px;
+}
+
+.accountEntryUnHighlighted {
+	fill: #FFFFFF;
+	color: #FFFFFF;
+}
+
+.frequencyEntry {
+	font-size: 18px;
+	fill: #02BDFF;
+	color: #02BDFF;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.ipAddressDisplay {
+	font-size: 30px;
+	fill: #02BDFF;
+	color: #02BDFF;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.errorText {
+	font-size: 12px;
+}
+
+.settingsSummarySelected, .settingsSummaryHighlight, .settingsSummary {
+	font-size: 20px;
+}
+
+.splashScreenLabel {
+	font-size: 36px;
+	fill: #FFFFFF;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.splashScreenProgress {
+	font-family: 'Ubuntu-Medium';
+	font-size: 36px;
+	fill: #30507e;
+	color: #30507e;
+}
+
+.splashScreenProgressHighlight {
+	font-family: 'Ubuntu-Medium';
+	font-size: 36px;
+	fill: #FFFFFF;
+	color: #FFFFFF;
+}
+
+.bgBlur {
+	fill: #FFFFFF;
+	background-color: #FFFFFF;
+	opacity: 0.38;
+}
+
+.blank {
+	fill: #FFFFFF;
+	background-color: #FFFFFF;
+}
+
+.number_entry_bg {
+	fill: none;
+	background-color: transparent;
+}
+
+.eventImageContainer {
+	fill: none;
+	background-color: transparent;
+	stroke: #19acea;
+	border-color: #19acea;
+	stroke-width: 1px;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.sushiTitle {
+	font-size: 30px;
+	fill: #FFFFFF;
+	color: 	#FFFFFF;
+}
+
+.sushiSubTitle {
+	text-align: end;
+	margin-right:0%;
+	font-size: 18px;
+	fill: #FFFFFF;
+	color: 	#FFFFFF;
+}
+
+.sushiDescription {
+	fill: #FFFFFF;
+	color: 	#FFFFFF;
+}
+
+.dialogTitle {
+	color: #ffffff;
+	font-size: 40px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.dialogSubtitle {
+	color: #ffffff;
+	font-size: 26px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.pinDialogMessage {
+	color: #ffffff;
+	font-size: 31.5px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.dialogMessage {
+	color: #ffffff;
+	font-size: 26px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.dialogButtonText {
+	color: #ffffff;
+	fill: #ffffff;
+	font-size: 30px;
+	text-anchor: middle;
+	text-overflow: ellipsis;
+	margin-left:-50%;
+}
+
+
+.unSelectableDialogButtonTextLeft {
+	color: #999999;
+	fill: #999999;
+	font-size: 30px;
+	text-anchor: start;
+	margin-left: 0%;
+	text-overflow: ellipsis;
+}
+
+.unSelectableDialogButtonText {
+	color: #999999;
+	fill: #999999;
+	font-size: 30px;
+	text-anchor: middle;
+	text-overflow: ellipsis;
+	margin-left:-50%;
+}
+
+
+.dialogButtonTextLeft {
+	color: #ffffff;
+	fill: #ffffff;
+	font-size: 30px;
+	text-anchor: start;
+	margin-left: 0%;
+	text-overflow: ellipsis;
+}
+
+.dialogButtonTextLabel {
+	color: #ffffff;
+	fill: #ffffff;
+	font-size: 30px;
+	text-anchor: start;
+	margin-left: 0%;
+	text-overflow: ellipsis;
+}
+
+.videoDescription {
+	font-size: 20px;
+	fill: #707070;
+	color: #707070;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.dynamicTableHighlight {
+	fill: none;
+	background-color: transparent;
+	stroke: #19acea;
+	border-color: #19acea;
+	stroke-width: 4px;
+	border-style: solid;
+	border-width: 4px;
+}
+
+.highlightLight {
+	fill: none;
+	background-color: transparent;
+	stroke: #19acea;
+	border-color: #19acea;
+	stroke-width: 2px;
+	border-style: solid;
+	border-width: 2px;
+}
+
+.dynamicSettingsTableHighlightSolid {
+	fill: #0f4268;
+	background-color: #0f4268;
+	opacity: 1;
+	stroke: #19acea;
+	border-color: #19acea;
+	stroke-width: 1px;
+	border-style: solid;
+	border-width: 1px;
+	filter: url(../svg/filters.svg#net-focus-glow);
+}
+
+.recordingListItemHighlight {
+	fill: #2c688f;
+	background-color: #2c688f;
+	stroke: #19acea;
+	border-color: #19acea;
+	stroke-width: 2px;
+	border-style: solid;
+	border-width: 2px;
+	/* filter: url(../svg/filters.svg#net-focus-glow); TODO as part of NETUI-3465 */
+}
+
+.recordingListLogoHighlight {
+	fill: none;
+	background-color: transparent;
+	stroke: #19acea;
+	border-color: #19acea;
+	stroke-width: 2px;
+	border-style: solid;
+	border-width: 2px;
+}
+
+.channelLogoLabel {
+	font-size: 16px;
+	fill: #146299;
+	color: #146299;
+	text-anchor: middle;
+	margin-left:-50%;
+}
+
+.channelDefinitionLabel{
+	font-size: 42px;
+	font-weight: bold;
+	fill: ##DBDBDB;
+	color: ##DBDBDB;
+	opacity: 0.2;
+	text-anchor: middle;
+	margin-left:-50%;
+}
+
+.channelListItemBackground {
+	fill: #1d2533;
+	background-color: #1d2533;
+	opacity: 0.75;
+}
+
+.channelListItemBackgroundSelected {
+	fill: #166fad;
+	background-color: #166fad;
+	opacity: 0.30;
+}
+
+.timeListBackGroundSelected {
+	fill: #166fad;
+	background-color: #166fad;
+	opacity: 0.30;
+}
+
+.timeListLine {
+	fill: #6699cc;
+	background-color: #6699cc;
+	opacity: 0.30;
+}
+
+.timeListItemBackgroundInListGuide {
+	fill: #166fad;
+	background-color: #166fad;
+	opacity: 0;
+}
+
+.timeListItemBackground {
+	fill: #0c273a;
+	background-color: #0c273a;
+	opacity: 0.75;
+}
+
+.timeListItemBackgroundCurrent {
+	fill: #0a3a5b;
+	background-color: #0a3a5b;
+	opacity: 0.75;
+}
+
+.channelListItemHighlight, .timeListItemHighlight, .messageListItemHighlight {
+	fill: #2c688f;
+	background-color: #2c688f;
+	stroke: #3e89f9;
+	border-color: #3e89f9;
+	stroke-width: 2px;
+	border-style: solid;
+	border-width: 2px;
+	/* filter: url(../svg/filters.svg#net-focus-glow); TODO as part of NETUI-3465 */
+}
+
+.timeListItemBackgroundSecondaryFocus {
+	fill: #2c688f ;
+	background-color: #2c688f ;
+	opacity: 0.6;
+}
+
+.channelLogoListItemHighlight {
+	fill: none;
+	background-color: transparent;
+	stroke: #3e89f9;
+	border-color: #3e89f9;
+	stroke-width: 2px;
+	border-style: solid;
+	border-width: 2px;
+}
+
+.timeListItemTimeLine {
+	stroke: #3e89f9;
+	stroke-width: 1px;
+}
+
+.recordingsWindowBackgroundActivated {
+	fill: #0f4268;
+	background-color: #0f4268;
+	opacity: 0.7;
+}
+
+.recordingsWindowBackgroundPassivated {
+	fill: #0b2845;
+	background-color: #0b2845;
+	opacity: 0.7;
+}
+
+.promotionItemTitle, .recordingItemName, .scheduledItemName, .recordingItemDate,.portalHighlightedItemLabel,
+.greyRecordingItemName, .greyRecordingItemDate {
+	font-size: 26px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.scheduledItemName {
+	font-family: 'Ubuntu-Medium';
+}
+
+.promotionItemTitle {
+	font-family: 'Ubuntu-Medium';
+	font-size: 24px;
+}
+
+.greyRecordingItemName, .greyRecordingItemDate {
+	fill: #999999;
+	color: #999999;
+}
+.musicPromotionItemTitle {
+	font-family: 'Ubuntu-Medium';
+	font-size: 20px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.promotionItemEventDetails, .recordingPromotionItemEventDetails {
+	font-size: 18px;
+	color: #ffffff;
+	fill: #ffffff;
+}
+
+.recordingItemDate, .greyRecordingItemDate {
+	text-anchor: end;
+	margin-left:-100%;
+}
+
+.textUnderlayGradient {
+	fill:url(../svg/gradients.svg#textUnderlayGradient);
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, rgba(25,54,79,0)),
+		color-stop(0.3, rgba(25,54,79,0.5)),
+		color-stop(1, rgba(25,54,79,0.95))
+	);
+}
+
+.portalHighlightUnderlay {
+	fill: #2c688f;
+	color: #2c688f;
+	/* filter: url(../svg/filters.svg#net-focus-glow); TODO as part of NETUI-3465 */
+}
+
+.liveTVTitle {
+	font-size: 24px;
+	fill: #ffffff;
+	color: #ffffff;
+	text-anchor: middle;
+	margin-left:-50%;
+}
+
+.timeShiftEventName {
+	font-size: 24px;
+	fill: white;
+	color: white;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.timeShiftEpisodeInfo {
+	font-size: 24px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	fill: #707070;
+	color: #707070;
+	opacity: 1.0;
+}
+
+.timeShiftSpeedIndicator {
+	font-size: 24px;
+	fill: #2f85aa;
+	color: #2f85aa;
+	text-anchor: middle;
+	margin-left:-50%;
+}
+
+.timeShiftButton {
+	background-color: #081623;
+	fill: #081623;
+	stroke: #19acea;
+	stroke-width: 1px;
+	filter: url(../svg/filters.svg#net-button-glow);
+}
+
+.timeShiftButton_highlight, .popupButton_highlight {
+	fill: #2f85aa;
+	background-color: #2f85aa;
+	stroke: #19acea;
+	stroke-width: 1;
+	filter: url(../svg/filters.svg#net-button-glow);
+}
+
+.popupButton {
+	background-color: #081623;
+	fill: #081623;
+	stroke: #19acea;
+	stroke-width: 1px;
+}
+
+.timeShiftProgressOuter {
+	fill: #686d71;
+	background-color: #686d71;
+}
+
+.timeShiftProgressInner {
+	stroke: #46658E;
+	stroke-width: 1;
+	opacity: 1;
+	fill: #5598d8;
+	background-color: #5598d8;
+	filter: url(../svg/filters.svg#net-bar-glow);
+}
+
+.timeShiftProgressStartLabel {
+	font-size: 20px;
+	fill: #ffffff;
+	color: #ffffff;
+}
+
+.timeShiftProgressEndLabel {
+	font-size: 20px;
+	fill: #ffffff;
+	color: #ffffff;
+	text-anchor: end;
+	margin-left:-100%;
+}
+
+.gridRowItemBackground, .menuBackgroundDefocus {
+	fill: #0c273a;
+	background-color: #0c273a;
+	opacity: 0.75;
+}
+
+.gridRowItemBackgroundCatchup {
+	fill: #213a55;
+	background-color: #213a55;
+	opacity: 0.75;
+}
+
+.gridRowItemBackgroundPast {
+	fill: #1b222a;
+	background-color: #1b222a;
+	opacity: 0.5;
+}
+
+.gridRowItemBackgroundOnNow, .menuItemBackgroundDefocus, .menuBackgroundFocus {
+	fill: #0a3a5b;
+	background-color: #0a3a5b;
+	opacity: 0.75;
+}
+
+.gridRowItemBackgroundFocus, .menuItemBackgroundFocus, .currentTimeIndicator {
+	fill: #2c688f;
+	background-color: #2c688f;
+	opacity: 1;
+}
+
+.gridRowItemBackgroundFocus, .menuItemBackgroundFocus {
+	filter: url(../svg/filters.svg#net-focus-glow);
+}
+
+.gridRowItemBackgroundSecondaryFocus {
+	fill: #4cb2f5;
+	background-color: #4cb2f5;
+	opacity: 0.3;
+}
+
+.gridRowItemBackgroundOverlap {
+	fill: red;
+	background-color: red;
+	opacity: 0.3;
+}
+
+.gridRowItemHighlight, .menuItemHighlight {
+	fill: none;
+	background-color: transparent;
+	stroke: #3e89f9;
+	border-color: #3e89f9;
+	stroke-width: 2px;
+	border-style: solid;
+	border-width: 2px;
+}
+
+.gridRowItemSubtitle, .gridRowItemUnplayableSubtitle {
+	font-size: 24px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	fill: #707070;
+	color: #707070;
+	opacity: 1.0;
+}
+
+.gridRowItemUnplayableSubtitle {
+	opacity: 0.5;
+}
+
+.gridRowItemPlayableTitle, .gridRowItemTitle, .gridRowItemTitleHighlighted {
+	font-size: 24px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.gridRowItemPlayableTitle {
+	color: #ffffff;
+	fill: #ffffff;
+}
+.gridRowItemTitle, .gridRowItemTitleHighlighted {
+	fill: #999999;
+	color: #999999;
+	opacity: 0.5;
+}
+
+.gridRowItemTitleHighlighted {
+	opacity: 1.0;
+}
+
+.textItemText {
+	color: #30507e;
+	fill: #46658e;
+}
+
+.onFocusBackground {
+	fill: rgb(15, 66, 104);
+	background-color: rgba(15, 66, 104, 0.7);
+	opacity: 0.7;
+}
+
+.outOfFocusBackground {
+	fill: #0e273a;
+	background-color: rgba(14,39,58,0.7);
+	opacity: 0.7;
+}
+
+.greyDialogLabel {
+	font-size: 30px;
+	fill: #CCCCCC;
+	color: #CCCCCC;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.menuSubTitle {
+	color: #ffffff;
+	font-family: 'Ubuntu-Medium';
+	font-size: 26px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.dynamicTableHighlightSolid {
+	fill: none;
+	background-color: transparent;
+	stroke: #3e89f9;
+	stroke-width: 4px;
+	border-color: #3e89f9;
+	border-style: solid;
+	border-width: 4px;
+	filter: url(../svg/filters.svg#net-focus-glow);
+}
+
+.inactiveMenuItemHighlight {
+	fill: #0f4268;
+	background-color: #0f4268;
+	opacity: 0.85;
+}
+
+.settingsFooterLabel {
+	font-size: 20px;
+	fill: #CCCCCC;
+	color: #CCCCCC;
+	opacity: 6;
+}
+
+.previewTitleLabel {
+	font-family: 'Ubuntu';
+	font-size: 30px;
+	fill: #ffffff;
+	color: #ffffff;
+}
+
+.menuTitle {
+	color: #ffffff;
+	font-size: 26px;
+}
+
+.settingsProgressBarInner {
+	fill: #5598d8;
+	background-color: #5598d8;
+}
+
+.settingsProgressBarInnerGlow {
+	fill:url(../svg/gradients.svg#settingsProgressBarInnerGlow);
+}
+
+.blockingDialogTitle {
+	color: #ffffff;
+	font-size: 28px;
+}
+
+.messageDialogText {
+	font-size:30px;
+	text-anchor: middle;
+	margin-left:-50%;
+}
+
+.nowFadeGradientOverlay {
+	fill:url(../svg/gradients.svg#nowFadeGradientOverlay);
+}
+
+.nowColorStrip {
+	fill:url(../svg/gradients.svg#nowColorStrip);
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		color-stop(0, rgba(171,133,176,1)),
+		color-stop(0.5, rgba(99,167,201,1)),
+		color-stop(1, rgba(125,194,66,1))
+	);
+}
+
+.nowColorStripVert {
+	fill:url(../svg/gradients.svg#nowColorStripVert);
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, rgba(60,100,26,1)),
+		color-stop(0.5, rgba(35,89,116,1)),
+		color-stop(1, rgba(98,43,105,1))
+	);
+}
+
+.nowFullAssetUniformGradient, .guideNoEpgGradientTop {
+	fill:url(../svg/gradients.svg#nowFullAssetUniformGradient);
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, rgba(56,117,159,0)),
+		color-stop(1, rgba(56,117,159,0.25))
+	);
+}
+
+.nowFullAssetUniformGradientInvert, .guideNoEpgGradientBottom {
+	fill:url(../svg/gradients.svg#nowFullAssetUniformGradientInvert);
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, rgba(56,117,159,0.25)),
+		color-stop(1, rgba(56,117,159,0))
+	);
+}
+.nowLoadingBackground {
+	background-color: #000000;
+	fill: #000000;
+	stroke: #19acea;
+	border-color: #19acea;
+	border-style: solid;
+	stroke-width: 3px;
+	border-width: 3px;
+	filter: url(../svg/filters.svg#net-glow);
+}
+.nowLoadingText {
+	color: #ffffff;
+	font-size:24px;
+	font-family: 'Ubuntu-Regular';
+	text-align: center;
+}
+.nowFullAssetRadialGradient {
+	fill:url(../svg/gradients.svg#nowFullAssetRadialGradient);
+}
+
+.videoloadingBarCentreGlow {
+	fill:url(../svg/gradients.svg#videoloadingBarCentreGlow);
+}
+
+.videoloadingBarEdgeGlow {
+	fill:url(../svg/gradients.svg#videoloadingBarEdgeGlow);
+}
+
+.loadingBarBackground, .guideNoEpgBarBackground {
+	fill: #000000;
+	background-color: #000000;
+	opacity: 0.5;
+}
+
+.noEPGContent {
+	color: #ffffff;
+	font-size: 26px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.guideNoEpgButtonBackground {
+	fill: #174254;
+	background-color: #174254;
+	border:1px solid #19acea;
+	stroke:#19acea;
+	stroke-width:1;
+}
+
+.nowDialogBackground {
+	fill: #000000;
+	background-color: #000000;
+	opacity: 0.75;
+}
+
+.nowDialogCellBackground {
+	fill: #000000;
+	background-color: #000000;
+	border:1px solid #19acea;
+	stroke:#19acea;
+	stroke-width:1;
+}
+
+.nowDialogCellBackgroundHighlighted {
+	fill: #174254;
+	background-color: #174254;
+	border:1px solid #19acea;
+	stroke:#19acea;
+	stroke-width:1;
+}
+
+.nowFullAssetSolidDivider {
+	fill: #335566;
+	background-color: #335566;
+}
+
+.loadingBarSolidDivider, .guideNoEpgBarSolidDivider {
+	fill: #99bbcc;
+	background-color: #99bbcc;
+}
+
+.nowMyContentItemBackground, .nowMySubscriptionsItemBackground {
+	fill: #ffffff;
+	background-color: #ffffff;
+	opacity: 0.12;
+}
+
+.nowMyContentItemHighlight, .nowMySubscriptionsItemHighlight {
+	fill: #34464f;
+	background-color: #34464f;
+	stroke: #3e89f9;
+	border-color: #3e89f9;
+	stroke-width: 2px;
+	border-style: solid;
+	border-width: 2px;
+}
+
+.nowMissingSubscription {
+	fill: #0b2538;
+	fill-opacity: 0.75;
+	background-color: rgba(11,37,56,0.75);
+	stroke: #19acea;
+	border-color: #19acea;
+	stroke-width: 3px;
+	border-style: solid;
+	border-width: 3px;
+}
+
+.nowGalleryItemHighlight {
+	fill: none;
+	background-color: transparent;
+	stroke: #19acea;
+	border-color: #19acea;
+	stroke-width: 5px;
+	border-style: solid;
+	border-width: 5px;
+}
+
+.nowGalleryPosition {
+	text-anchor: end;
+	margin-left: -100%;
+}
+
+.loadingBarText, .videoLoadingBarText {
+	text-align: center;
+	text-anchor: middle;
+}
+
+.nowDisclaimerTitle {
+	font-family: 'Ubuntu-Light';
+	font-size: 48px;
+}
+
+.nowFullAssetInfoTitle {
+	font-size: 40px;
+}
+
+.nowMenuItemHighlighted, .nowMenuItemDefocusHighlighted {
+	font-size: 36px;
+}
+
+.nowMenuItem, .nowAssetInfoTitle, .nowFullAssetInfoSubtitle, .nowFullAssetInfoPrice, .videoLoadingBarText {
+	font-size: 30px;
+}
+
+.nowMenuItem, .nowMenuItemHighlighted, .nowMenuItemDefocusHighlighted, .nowFullAssetInfoTitle, .nowFullAssetInfoPrice, .nowFullAssetInfoExpiry {
+	font-family: 'Ubuntu-Medium';
+}
+
+.nowDisclaimerText {
+	font-size: 28px;
+}
+
+.nowAssetInfoMisc, .nowMyContentItemText, .nowMyContentSeriesText, .nowMySubscriptionsItemText, .nowMySubscriptionsSeriesText {
+	font-size: 26px;
+}
+
+.nowAssetInfoSynopsis, .nowFullAssetInfoRentalDuration, .nowFullAssetInfoExpiry, .nowFullAssetInfoMisc, .nowFullAssetInfoActors, .loadingBarText {
+	font-size: 24px;
+}
+
+.loadingBarText .nowAssetInfoTitle {
+	font-family: 'Ubuntu-Medium';
+}
+
+.nowAssetInfoMoreLabel, .nowGalleryPosition, .nowAssetInfoSubtitle {
+	font-size: 22px;
+}
+
+.nowDisclaimerButtonText {
+	font-size: 20px;
+}
+
+.nowMenuItem, .nowMenuItemHighlighted, .nowMenuItemDefocusHighlighted, .nowFullAssetInfoTitle, .nowAssetInfoTitle, .nowAssetInfoSubtitle, .nowAssetInfoMisc, .nowFullAssetInfoSubtitle, .nowFullAssetInfoActors, .nowAssetInfoSynopsis, .nowMyContentItemText, .nowMyContentSeriesText, .nowMySubscriptionsItemText, .nowMySubscriptionsSeriesText, .nowDisclaimerText {
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.nowGalleryPosition {
+	color: #c0bfbf;
+	fill: #c0bfbf;
+}
+
+.nowMenuItemHighlighted, .nowFullAssetInfoPrice, .nowFullAssetInfoExpiry {
+	color: #19acea;
+	fill: #19acea;
+}
+
+.nowFullAssetInfoActors, .nowFullAssetInfoRentalDuration {
+	color: #cccccc;
+	fill: #cccccc;
+}
+
+.nowMenuItem, .nowAssetInfoSubtitle, .nowFullAssetInfoSubtitle, .nowAssetInfoSynopsis, .loadingBarText, .nowMyContentSeriesText, .nowMySubscriptionsSeriesText {
+	color: #999999;
+	fill: #999999;
+}
+
+.nowAssetInfoMoreLabel {
+	color: #2c688f;
+	fill: #2c688f;
+}
+
+.nowDisclaimerButtonText {
+	color: #3e89f9;
+	fill: #3e89f9;
+}
+
+.breadcrumbParent, .breadcrumbCurrent {
+	font-size: 30px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	color: #4b9dda;
+	fill: #4b9dda;
+}
+
+.breadcrumbParent {
+	color: #fff;
+	fill: #fff;
+}
+
+.errorCode {
+	text-anchor: end;
+	margin-left: -100%;
+	font-size: 22px;
+}
+
+.scrollingGroupFadeTop {
+	fill:url(../svg/gradients.svg#scrollingGroupFadeTop);
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, rgba(0,0,0,1)),
+		color-stop(0.75, rgba(0,0,0,0.5)),
+		color-stop(0.94, rgba(0,0,0,0.25)),
+		color-stop(1, rgba(0,0,0,0))
+	);
+}
+
+.scrollingGroupFadeBottom {
+	fill:url(../svg/gradients.svg#scrollingGroupFadeBottom);
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, rgba(0,0,0,0)),
+		color-stop(0.06, rgba(0,0,0,0.25)),
+		color-stop(0.25, rgba(0,0,0,0.5)),
+		color-stop(1, rgba(0,0,0,1))
+	);
+}
+
+.keyInactive, .keyInactiveVod {
+	font-size: 30px;
+	text-align:center;
+	stroke-width: 1px;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.keyInactive {
+	background-color: #0f4268;
+	fill: #0f4268;
+	border-color: #19acea;
+	stroke: #19acea;
+}
+
+.keyInactiveVod {
+	background-color: #262626;
+	fill: #262626;
+	border-color: #444444;
+	stroke: #444444;
+}
+
+.keyActive, .keyActiveVod {
+	text-align:center;
+	border-color: #19acea;
+	stroke: #19acea;
+	border-style: solid;
+}
+
+.keyActive {
+	background-color: #38759f;
+	fill: #38759f;
+	border-width: 1px;
+	stroke-width: 1px;
+}
+
+.keyActiveVod {
+	background-color: #4a5d66;
+	fill: #4a5d66;
+	border-width: 2px;
+	stroke-width: 2px;
+}
+
+.greyKeypadKey {
+	font-size: 18px;
+	fill: #CCCCCC;
+	color: #CCCCCC;
+	text-align:center;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.keypadInputBar, .keypadInputBarVod {
+	stroke-width: 1px;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.keypadInputBar {
+	background-color: #081623;
+	fill: #081623;
+	border-color: #19acea;
+	stroke: #19acea;
+}
+
+.keypadInputBarVod {
+	background-color: #333333;
+	fill: #333333;
+	border-color: #777777;
+	stroke: #777777;
+}
+
+.keypadInputTextNumeric {
+	font-family: 'Ubuntu-Medium';
+	font-size: 30px;
+	fill: #99ccff;
+	color: #99ccff;
+	text-align: center;
+}
+
+.keypadInputTextAlphaNumeric {
+	font-family: 'Ubuntu-Medium';
+	font-size: 30px;
+	fill: #99ccff;
+	color: #99ccff;
+	text-align: left;
+}
+
+.textTitleDescription {
+	font-size: 30px;
+	fill: white;
+	color: white;
+	font-family: 'Ubuntu';
+	text-overflow: ellipsis;
+}
+
+.textContentDescription {
+	font-size: 24px;
+	fill: white;
+	color: white;
+	font-family: 'Ubuntu';
+	text-overflow: ellipsis;
+	line-increment: 29px;
+}
+
+.textDescription {
+	font-size: 26px;
+	fill: white;
+	color: white;
+	font-family: 'Ubuntu';
+}
+
+.bigBackgroundBox {
+	fill: #0e273a;
+	background-color: rgba(14,39,58,0.7);
+	opacity: 0.7;
+}
+
+.settingTitlegray {
+	color: #999999;
+	fill: #999999;
+	font-size: 40px;
+}
+
+.installAlternative {
+	margin-left:auto;
+	fill: #38759f;
+	color: #38759f;
+	font-size: 26px;
+}
+
+.firstInstallvalueLabel {
+	fill: #ffffff;
+	color: #ffffff;
+	font-size: 26px;
+	margin-left:auto;
+}
+
+.pinKeys {
+	font-family: 'Ubuntu-Light';
+	font-size: 160px;
+	text-align: center;
+	fill: #ffffff;
+	color: #ffffff;
+}
+.legend {
+	font-size: 22px;
+	fill: #cccccc;
+	color: #cccccc;
+	opacity: 0.6;
+}
+.signalProgressBarOuter {
+	fill: #0e3857;
+	background-color: #0e3857;
+}
+
+.recordingsOptionFooterText {
+	font-size: 22px;
+	fill: #cccccc;
+	color: #cccccc;
+}
+
+.recordingsOptionFooterBackground {
+	fill: #0b2845;
+	color: #0b2845;
+	opacity: 0.7;
+}
+
+.progressEndLabel {
+	color: #ffffff;
+	font-size: 26px;
+}
+.fullViewLeftSubtitle {
+	color: #999999;
+	fill:#999999;
+	font-size: 24px;
+	font-family: 'Ubuntu';
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.fullViewRightSubtitle {
+	color: #ffffff;
+	font-size: 24px;
+	font-family: 'Ubuntu-Medium';
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.displayHorizontalLine
+{
+	fill: #166fad;
+	opacity:0.3;
+	background-color:#166fad
+}
+.displayHorizontalLine_last
+{
+	fill: none;
+	background-color:transparent;
+}
+.miniguideButtonTextChange
+{
+	font-size:22px;
+	margin-top:-22px !important;
+	font-family: 'Ubuntu', sans-serif;
+	fill: #3e89f9;
+	color: #3e89f9;
+}
+.rightAlign{
+	text-align: end;
+}
+.fontSize22{
+	font-size: 22px;
+}
+.colorCCCCCC {
+	fill: #CCCCCC;
+	color: #CCCCCC;
+}
+.colorA3A3A3 {
+	fill: #a3a3a3;
+	color: #a3a3a3;
+}
+.tipsFromNetBackGroundBox {
+	fill: #16232f;
+	background-color: #16232f;
+	opacity: 0.85;
+}
+.playbackIconLabelText {
+	font-size: 18px;
+	fill: #ffffff;
+	color: #ffffff;
+	text-align: center;
+	font-family: 'Ubuntu';
+}
+.tipsFromNetText {
+	color: #ffffff;
+	font-size:22px;
+	font-family: 'Ubuntu-Medium';
+}
+.noSignalMessageBoxTitle {
+	color: #ffffff;
+	font-size:36px;
+	font-family: 'Ubuntu';
+}
+.noSignalMessage, .noSignalCode {
+	color: #ffffff;
+	font-size:24px;
+	font-family: 'Ubuntu';
+}
+.playbackIconLabelTextRightAlign {
+	font-size: 22px;
+	fill: #ffffff;
+	color: #ffffff;
+	text-align: end;
+	font-family: 'Ubuntu';
+}
+.playbackIconLabelTextLeftAlign {
+	font-size: 22px;
+	fill: #ffffff;
+	color: #ffffff;
+	text-align: left;
+	font-family: 'Ubuntu';
+}
+.thumbnailTitle {
+	color: #ffffff;
+	font-size: 30px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	font-family: 'Ubuntu-Medium';
+}
+.thumbnailsubtitle {
+	font-size: 20px;
+	fill: #FFFFFF;
+	color: #FFFFFF;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	font-family: 'Ubuntu';
+}
+.dullYellowColor {
+	fill: #cc9933;
+	color: #cc9933;
+}
+
+.blockedTextInGuide {
+	color: #19acea;
+	fill: #19acea;
+	font-size: 24px;
+	margin-left: 24px;
+	margin-top: 30px;
+	font-family: 'Ubuntu-Medium';
+}
+
+.remoteAccessBackground {
+	fill: #183e5b;
+	background-color: #183e5b;
+}
+
+.directChannelEntryFeedback {
+	fill: #19acea;
+	color: #19acea;
+	font-size: 24px;
+}
+
+.videoUnavailabBackground {
+	fill:url(../svg/gradients.svg#videoUnavailableGradient);
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, rgba(0,0,0,0)),
+		color-stop(0.5, rgba(11,37,,56,0)),
+		color-stop(1, rgba(11,37,56,1))
+	);
+	stroke: #3e89f9;
+	border-color: #3e89f9;
+	stroke-width: 1px;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.videoUnavailableText {
+	color: #13acea ;
+	fill: #13acea ;
+	font-family: 'Ubuntu-Medium';
+	font-size: 18px;
+	text-align: center;
+	margin-left: 24px;
+	margin-top: 150px;
+}
+
+.socialAuthCode {
+	font-size: 72px;
+}
+
+.timerText {
+	color: #ffffff;
+	fill: #ffffff;
+	text-align: right;
+}
+
+/*now kids*/
+.nowKidsMenuItem {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.nowKidsMenuItemHighlighted, .nowKidsMenuItemDefocusHighlighted {
+	font-size: 36px;
+}
+
+.nowKidsMenuItem {
+	font-size: 30px;
+}
+
+.nowKidsMenuItem, .nowKidsMenuItemHighlighted, .nowKidsMenuItemDefocusHighlighted {
+	font-family: 'Ubuntu-Medium';
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.nowKidsMenuItemHighlighted {
+	color: #FFC100;
+	fill: #FFC100;
+}
+
+.nowKidsMenuItem {
+	color: #ffffff;
+	fill: #ffffff;
+}
+
+.photoPlayerIconLabelText {
+	font-size: 17px;
+	fill: #ffffff;
+	color: #ffffff;
+	text-align: left;
+	font-family: 'Ubuntu';
+}
+
+.photoPlayerLabelText {
+	font-size: 18px;
+	fill: #ffffff;
+	color: #ffffff;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	text-align: center;
+	font-family: 'Ubuntu';
+}
+
+.photoPlayerLabelRightAlign {
+	font-size: 18px;
+	fill: #ffffff;
+	color: #ffffff;
+	text-align: end;
+	font-family: 'Ubuntu';
+}
+
+.usbLoadingTextMessage {
+	font-size: 19px;
+	fill: #ffffff;
+	color: #ffffff;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	text-align: center;
+	font-family: 'Ubuntu';
+}
+
+.usbLoadingTextLabel {
+	font-size: 24px;
+	fill: #ffffff;
+	color: #ffffff;
+	text-align: center;
+	font-family: 'Ubuntu';
+}
+/*now kids*/

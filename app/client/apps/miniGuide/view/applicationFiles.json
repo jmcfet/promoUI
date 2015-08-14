@@ -1,0 +1,9 @@
+[
+	"../ZapperBackgroundBox.js",
+	"../MiniguideButtonGroup.js",
+	"../MiniguideEventGroup.js",
+	"../AnimatedMiniguide.js",
+	"../MiniguideEventManager.js",
+	"../Miniguide.js",
+	"../Zapper.js"
+]

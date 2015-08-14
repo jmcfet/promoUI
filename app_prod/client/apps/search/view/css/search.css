@@ -1,0 +1,149 @@
+.search_title_highlighted {
+	font-family: 'Ubuntu';
+	font-size: 40px;
+	text-overflow: ellipsis;
+    fill: #ffffff;
+    color: #ffffff;
+}
+
+.search_title {
+	font-family: 'Ubuntu';
+	font-size: 40px;
+	color: #46515b;
+	fill: #46515b;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.search_keyword {
+	font-family: 'Ubuntu';
+	font-size: 40px;
+	text-overflow: ellipsis;
+    fill:  #c0c0c0;
+    color: #c0c0c0;
+}
+
+.keypad_cursor {
+    font-family: 'Ubuntu-Medium';
+    font-size: 30px;
+    fill: #99ccff;
+    color: #99ccff;
+}
+
+.search_help, .search_helpVod {
+    font-family: 'Ubuntu';
+    font-size: 22px;
+}
+
+.search_help {
+    fill: #cccccc;
+    color: #cccccc;
+}
+
+.search_helpVod {
+   fill: #2c6888;
+    color: #2c6888;
+}
+
+.serarch_result {
+    font-family: 'Ubuntu';
+    font-size: 24px;
+    fill: #cccccc;
+    color: #cccccc;
+}
+
+.search_status {
+    font-family: 'Ubuntu';
+    font-size: 30px;
+    fill: #ffffff;
+    color: #ffffff;
+}
+
+.searchResultListItemBackground {
+	background-color: #0c273a;
+	fill: #0c273a;
+	opacity: 0.75;
+}
+
+.searchResultListItemBackgroundVod {
+	background-color: #262626;
+	fill: #262626;
+}
+
+.searchResultListItemContent {
+	font-family: 'Ubuntu';
+    font-size: 26px;
+    fill: #ffffff;
+    color: #ffffff;
+    text-overflow: ellipsis;
+    font-weight:normal;
+}
+
+.searchResultListItemContentHighlighted {
+	font-family: 'Ubuntu';
+    font-size: 26px;
+    fill: #ffffff;
+    color: #ffffff;
+    text-overflow: ellipsis;
+    font-weight:normal;
+    font-weight:600;
+}
+
+.searchResultListItemContentSpan {
+	font-family: 'Ubuntu';
+    font-size: 26px;
+    fill: #99ccff;
+    color: #99ccff;
+    text-overflow: ellipsis;
+    font-weight:normal;
+}
+
+.searchResultListItemContentSpanHighlighted {
+	font-family: 'Ubuntu';
+    font-size: 26px;
+    fill: #99ccff;
+    color: #99ccff;
+    text-overflow: ellipsis;
+    font-weight:600;
+}
+
+.searchResultListItemHighlighted {
+	background-color: #2c688f;
+	fill: #2c688f;
+	stroke: #19acea;
+	border-color: #19acea;
+	border-style: solid;
+	stroke-width: 1.5px;
+	border-width: 1.5px;
+	box-shadow: 0px 0px 15px 5px rgba(148, 193, 215, .75);
+}
+
+.searchResultListItemHighlightedVod {
+	background-color: #4a5d66;
+	fill: #4a5d66;
+	stroke: #19acea;
+	border-color: #19acea;
+	stroke-width: 2px;
+	border-width: 2px;
+	border-style: solid;
+}
+
+.searchDetailResultListItemText{
+    font-family: 'Ubuntu';
+    font-size: 26px;
+    text-overflow: ellipsis;
+    font-weight:normal;
+    fill: #ffffff;
+    color: #ffffff;
+}
+
+.searchDetailResultListItemTextHighlighted{
+    font-family: 'Ubuntu';
+    font-size: 26px;
+    text-overflow: ellipsis;
+    font-weight:600;
+    fill: #ffffff;
+    color: #ffffff;
+}
+
+

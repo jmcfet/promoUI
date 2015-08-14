@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<view xmlns="http://www.example.org/nagra">
+	<group id="menuGroup" x="80" y="200">
+		<fixedList id="settingsMenu" x="5" y="148" itemTemplate="LogoMenuItem">
+		    <itemConfig movementPositions="0,0; 0,83; 0,166; 0,249; 0,332; 0,415; 0,498; 0,581"/>
+		</fixedList>
+	</group>
+	<group id="headerGroup" x="63" y="138.5">
+		<label id="title" x="450" y="146" cssClass="dialogTitle"/>
+	</group>
+	<group id="settingsPanel" x="490" y="278"></group>
+</view>

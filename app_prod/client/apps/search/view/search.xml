@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<view xmlns="http://www.example.org/nagra">
+	<group id="searchHeader">
+		<label id="title" x="354" y="144" cssClass="search_title_highlighted" />
+		<label id="filter" y="142.5" cssClass="search_title_highlighted" />
+		<label id="searchTitle" x="80" y="300" cssClass="search_keyword" visible="false"/>
+	</group>
+	<group id="vodSearchHeader" visible="false">
+		<image id="nowLogo" x="108" y="43.5" width="235.5" height="153" href="../../../customise/resources/images/net/NOW_logo.png" />
+		<breadcrumb id="breadcrumb" x="364.5" y="145.5" />
+	</group>
+
+	<group id="searchInputGroup">
+		<sVGlink id="navigateBackArrow" x="45" y="574.5" href="../../../customise/resources/svg/icons.svg#guideLeftArrowIcon" />
+		<group id="searchKeyboardGroup">
+			<baseKeypad id="searchKeyboard" x="82.5" y="337.5" textInputAlignment="left" labelAutoAlign="true" />
+			<image id="greenB" x="82.5" y="787.5" href="../../../customise/resources/images/%RES/icons/botao_verde.png"/>
+			<label id="searchHelpGreen" x="135.5" y="820" cssClass="search_help"/>
+			<image id="yellowB" x="332.5" y="787.5" href="../../../customise/resources/images/%RES/icons/botao_amarelo.png"/>
+			<label id="searchHelpYellow" x="385.5" y="820" cssClass="search_help"/>
+			<image id="okIcon" x="84" y="783" href="../../../customise/resources/images/%RES/icons/botao_ok_azul.png" visible="false" />
+			<label id="okLabel" x="130.5" y="811.5" cssClass="nowAssetInfoMoreLabel" visible="false" />
+		</group>
+		<label id="searchStatus" x="688.5" y="550.5" cssClass="search_status"/>
+		<group id="searchResultListGroup" x="678" y="331" visible="false">
+			<sVGlink id="upArrow" x="1130" y="-35" href="../../../customise/resources/svg/icons.svg#guideUpArrowIcon"/>
+			<pageableList id="searchResultList" itemTemplate="SearchResultListItem"/>
+			<sVGlink id="downArrow" x="1130" y="440" href="../../../customise/resources/svg/icons.svg#guideDownArrowIcon"/>
+			<label id="searchResultCount" y="489" cssClass="search_help"/>
+			<image id="redB" x="270" y="456.5" href="../../../customise/resources/images/%RES/icons/botao_vermelho.png"/>
+			<label id="filterRed" x="323" y="489" cssClass="search_help"/>
+			<bufferIndicator id="loadingImg" x="487" y="187" imageWidth="60" imageHeight="60" image="../../../customise/resources/images/net/loading.png" />
+		</group>
+	</group>
+
+	<group id="searchDetailResultListGroup" visible="false">
+		<label id="keyword" x="80" y="300" cssClass="search_keyword" />
+		<label id="eventTitle" x="580" y="300" cssClass="search_title" visible="false"/>
+		<sVGlink id="upArrow" x="1800" y="305" height="30" width="40" href="../../../customise/resources/svg/icons.svg#guideUpArrowIcon" />
+		<pageableList id="searchTitleDetailResultList" x="82.5" y="336" visibleItemCount="7" itemHeight="60" itemTemplate="SearchTitleDetailResultListItem"  wrapAround="false" />
+		<pageableList id="searchGeneralTitleDetailResultList" x="82.5" y="336" visibleItemCount="7" itemHeight="60" itemTemplate="SearchGeneralTitleDetailResultListItem"  wrapAround="false" />
+		<pageableList id="searchActorDetailResultList" x="82.5" y="336" visibleItemCount="7" itemHeight="60" itemTemplate="SearchActorDetailResultListItem"  wrapAround="false" />
+		<pageableList id="searchEpisodeDetailResultList" x="82.5" y="336" visibleItemCount="7" itemHeight="60" itemTemplate="SearchEpisodeDetailResultListItem"  wrapAround="false" />
+		<bufferIndicator id="resultsLoadingImg" x="900" y="500" imageWidth="60" imageHeight="60" image="../../../customise/resources/images/net/loading.png" />
+		<sVGlink id="downArrow" x="1800" y="760" height="30" width="40" href="../../../customise/resources/svg/icons.svg#guideDownArrowIcon" />
+		<label id="detailStatus" x="788.5" y="550.5" cssClass="search_status"/>
+		<label id="resultNumber" x="105" y="830" cssClass="serarch_result" />
+		<collapsingGroup id="buttonIcons" x="417" y="800" height="37.5" itemPadding="100">
+			<collapsingGroupItem id="okButton" href="../../../customise/resources/images/%RES/icons/botao_ok_branco.png" />
+			<collapsingGroupItem id="infoButton" href="../../../customise/resources/images/%RES/icons/botao_vermelho.png" />
+			<collapsingGroupItem id="newSearchButton" href="../../../customise/resources/images/%RES/icons/botao_verde.png" />
+			<collapsingGroupItem id="reminderButton" href="../../../customise/resources/images/%RES/icons/botao_amarelo.png" />
+			<collapsingGroupItem id="recordButton" href="../../../customise/resources/images/%RES/icons/botao_gravar_RCU.png" />
+		</collapsingGroup>
+	</group>
+</view>

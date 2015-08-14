@@ -1,0 +1,43 @@
+function LanguageBundle() {
+	this.applicationName = "Search";
+
+	this.search = "Busca";
+	this.title = "Busca por t\u00EDtulo";
+	this.titleActors = "Busca por ator/diretor";
+	this.titleKeyword = "Busca geral";
+	this.titleRerun = "Reprises";
+	this.searching = "Buscando...";
+	this.noResults = "Nenhum item encontrado";
+	this.start = "Digite um termo para iniciar a busca...";
+	this.person = "Pessoa";
+	this.show = "Show";
+	this.keyword = "Teclado";
+	this.clearAll = "Limpar tudo";
+	this.clearPreviousSearches = "Limpar buscas anteriores";
+	this.searchUnavailable = "A busca está indispon\u00EDvel no momento. Por favor, tente mais tarde.";
+	this.searchbyKeyword = "busca geral";
+	this.searchResultCount = " resultados";
+	this.oneResult = " resultado";
+	this.open = "abrir";
+	this.gotoGuide = "ver no guia";
+	this.watch = "assistir";
+	this.info = "+info";
+	this.newSearch = "nova busca";
+	this.setReminder = "lembrete";
+	this.cancelReminder = "cancelar";
+	this.record = "gravar";
+	this.cancelRecord = "cancelar";
+	this.vodPrompt = "NOW. NET do seu jeito. No seu tempo.";
+	this.filter = "filtrar";
+	this.liveCategory = "Ao vivo";
+	this.catchupCategory = "Alcançar";
+	this.vodCategory = "NOW";
+	this.pvrCategory = "PVR";
+	this.CatchUp = "Alcançar";
+	this.scheduled = "Programado";
+	this.recorded = "Gravado";
+	this.play = "jogar";
+	this.unknownChannelName = "Desconhecido";
+	this.insertCharacter = "inserir caractere";
+	this.goToNow = "ir para o NOW";
+}

@@ -1,0 +1,28 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:ekioh="http://www.ekioh.com/2007/ekioh"
+    version="1.2" baseProfile="tiny"
+    focusable="true"
+    viewBox="0 0 1280 720" preserveAspectRatio="none">
+
+    <defs>
+
+		<filter id="glow">
+		    <feColorMatrix type="matrix"
+		        values=
+		            "0 0 0 0   0
+		             0 0 0 0.9 0 
+		             0 0 0 0.9 0 
+		             0 0 0 1   0"/>
+		    <feGaussianBlur stdDeviation="15"
+		        result="coloredBlur"/>
+		    <feMerge>
+		        <feMergeNode in="coloredBlur"/>
+		        <feMergeNode in="SourceGraphic"/>
+		    </feMerge>
+		</filter>
+
+    </defs>
+</svg>

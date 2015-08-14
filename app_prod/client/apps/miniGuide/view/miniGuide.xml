@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<view xmlns="http://www.example.org/nagra">
+	<layer id="miniguideShadow" x="0" y="640" width="1920" height="480" visible="true" opacity="1">
+		<backgroundBox id="miniguideShadowContent" x="0" y="0" width="1920" height="480" cssClass="miniguideBackground" opacity="1"/>
+		<backgroundBox cssClass="synopsisFadeGradientBottom" x="0" y="0" width="1920" height="480" opacity="1"/>
+	</layer>
+	<animatedMiniguide id="animatedMiniguide" x="186" y="800" opacity="0.95"/>
+</view>

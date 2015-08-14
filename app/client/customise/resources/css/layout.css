@@ -1,0 +1,549 @@
+/* layout.css - for styling solely related to layout */
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/* box-sizing section ends */
+
+/* top level definitions (base html components) */
+p {
+	margin: 0;
+	position: absolute;
+}
+img {
+	position: absolute;
+	display: inline;
+}
+div {
+	position: absolute;
+	padding: 0;
+	overflow: visible;
+}
+ul {
+	position : absolute;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+li {
+	position: relative;
+}
+
+.fixedList > li {
+	position: absolute;
+}
+
+/* top level definitions (base html components) section ends*/
+
+/* CSS replacements for JSFW components, apply these to Containers */
+
+/* $N.gui.Layer replacement */
+.hwLayer {
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	overflow: hidden;
+}
+
+/* $N.gui.ClippedGroup replacement */
+.clippedGroup {
+	overflow: hidden;
+}
+
+/* CSS JSFW replacement section ends */
+
+.relative {
+	position: relative;
+}
+
+.inlineText {
+	display: inline;
+	position: static;
+	white-space: nowrap;
+}
+
+.deferredRendering {
+	z-index: 1;
+}
+
+.buttonGroupItems {
+    display: inline;
+    position: static;
+    white-space: nowrap;
+}
+
+.buttonGroupItemContainer {
+  display: -webkit-flex;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+}
+
+.popupDirectTextEntryCursor, .dialogButtonText {
+    display:inline;
+    vertical-align: central;
+}
+
+.inlineBlock {
+	display: inline-block;
+}
+
+.verticalAlignMiddle {
+	vertical-align: middle;
+}
+
+/* alignment definitions */
+/* please use .left */
+.left, .unSelectableDialogButtonTextLeft, .dialogButtonTextLeft, .dialogButtonTextLabel,
+.keypadInputTextAlphaNumeric, .playbackIconLabelTextLeftAlign, .photoPlayerIconLabelText {
+	text-align: left;
+}
+/* please use .right */
+.right, .clockContainer, .rightAlign, .playbackIconLabelTextRightAlign, .timerText,
+.photoPlayerLabelRightAlign {
+	text-align: right;
+}
+.pullRight {
+	float: right;
+}
+/* please use .center */
+.center, .noFavoritesList, .addToFavTitle, .mosaicUnsubscribePrompt, .optionsMenuItemTitle,
+.optionsMenuItemTitleSmaller, .noMailText, .keypadEntryKey, .dialog_title_centre,
+.splashScreenLabel, .dialogButtonText, .unSelectableDialogButtonText,
+.nowLoadingText, .loadingBarText, .videoLoadingBarText,
+.keypadInputTextNumeric, .pinKeys, .playbackIconLabelText, .videoUnavailableText,
+.photoPlayerLabelText, .usbLoadingTextMessage, .usbLoadingTextLabel, .greyKeypadKey,
+.keyInactive, .keyInactiveVod, .keyActive, .keyActiveVod, .playerCenter {
+	text-align: center;
+}
+/* alignment definitions section ends */
+
+.currentDateText {
+    padding-top:5px;
+}
+
+.currentTimeText, .currentDateText {
+    position: static;
+	display: inline-block;
+}
+
+.buttonIconGroup {
+	padding: 0;
+	margin: 0;
+	height: 25px;
+}
+
+.buttonIconGroupItem img {
+	position: relative;
+	display: inline;
+	margin-right: 8px;
+	vertical-align: middle;
+	max-height: 25px;
+}
+
+.buttonIconGroupItem span {
+	vertical-align: middle;
+}
+
+.buttonIconGroupItem {
+	position: relative;
+	display: inline;
+	padding-right: 30px;
+}
+
+.buttonIconGroupItem.listGuide {
+	padding-right: 41px;
+}
+
+.buttonIconGroupItem.music {
+	padding-right: 46px;
+}
+
+.buttonIconGroupItem.mosaicIndicator {
+	padding-right: 73px;
+}
+
+.buttonIconGroupItem.search {
+	padding-right: 65px;
+}
+
+.miniguideButtonGroupItem {
+	position: relative;
+	display: inline-block;
+}
+
+.miniguideButtonGroupItem:nth-of-type(1) {
+	width: 130px;
+}
+
+.miniguideButtonGroupItem:nth-of-type(2) {
+	width: 156px;
+}
+
+.miniguideButtonGroupItem:nth-of-type(3) {
+	width: 160px;
+}
+
+.channelListChanNum {
+	left: 85px;
+}
+
+.channelBox .channelListChanNum, .channelListChanName, .channelNumberEntry {
+	left: 10px;
+}
+
+.channelBox .channelListChanNum {
+	line-height: 30px;
+}
+
+.channelList.channelNumberEntry {
+	top: 6px;
+}
+
+.channelListChanName {
+	bottom: 0;
+}
+.channelBoxConnector {
+	left: 340px;
+	top: 2px;
+	width: 5px;
+	height: 64px;
+}
+.breadcrumbChildTitle {
+	margin-top: 9px;
+}
+
+.dialogButtonText, .dialogButtonTextLeft {
+	position: relative;
+	vertical-align: central;
+}
+.guideTitle {
+	top: 56px;
+}
+
+.optionsMenuItemIcon {
+	position: relative;
+	max-width: 30px;
+	max-height: 30px;
+}
+
+.optionsMenuItemTitle, .optionsMenuItemTitleSmaller {
+	position: relative;
+}
+
+.optionsMenuItemTop {
+	position: relative;
+	height: 55%;
+	display: -webkit-flex;
+	-webkit-justify-content: center;
+	-webkit-align-items: center;
+}
+
+.optionsMenuItemBottom {
+	position: relative;
+	height: 45%;
+	display: -webkit-flex;
+	-webkit-justify-content: center;
+	-webkit-align-items: flex-start;
+}
+
+.inlineText {
+	margin-left: 12px;
+}
+
+.scrollingLabel {
+	white-space: pre;
+	position: relative;
+	display: inline-block;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+}
+
+.delayedScrollingLabel {
+	white-space: pre;
+	position: relative;
+	display: inline-block;
+}
+
+.bufferIndicator {
+	z-index: 1;
+}
+
+.channelListItem {
+	width: 345px;
+	height: 68px;
+}
+
+.channelLogoNamePosition {
+	top: 22px;
+	width: 64px;
+	text-overflow: clip;
+}
+
+.channelDefinitionPosition {
+	padding-top: 9px;
+	width: 64px;
+	height: 64px;
+	text-overflow: clip;
+}
+.channelLogoContainerSize {
+	width: 68px;
+	height: 68px;
+}
+
+.channelLogoSize {
+	width: 64px;
+	height: 64px;
+}
+
+.channelBoxPosition {
+	top: 2px;
+	left: 70px;
+	width: 270px;
+	height: 64px;
+}
+
+.icon-small {
+	margin-left: 10px;
+}
+
+.leftArrow {
+	position: relative;
+	float: left;
+	margin-top: 3px;
+	margin-right: 5px;
+	margin-left: -3px;
+}
+
+.eventDetails {
+	margin-left: 10px;
+}
+
+.blockedTextInGuide {
+	top: 32px;
+	left: 21px;
+	text-align: left;
+}
+
+.timeListItemContainerSize {
+	width: 831px;
+	height: 30px;
+}
+.timeListItemPosition {
+	margin-top: 3px;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 30px;
+	width: 100%;
+}
+.timeListItem p {
+	padding-top: 0;
+}
+.timeListItemHighlight {
+	left: 0;
+	top: 2px;
+	width: 828px;
+	height: 30px;
+}
+.timeListItemTimeLine {
+	left: 0;
+	top: 0;
+	width: 828px;
+	height: 1px;
+}
+.listEventName-position {
+	margin-left: 8px;
+}
+
+.listEventTime-position {
+	margin-left: 10px;
+}
+.gridRowItem {
+	height: 65px;
+}
+.gridItemTitle {
+	padding: 5px 5px 5px 8px;
+}
+.gridRowItem .icon, .timeListItem .icon {
+	margin-left: 10px;
+}
+
+.marginLeftSmall {
+	margin-left: 10px;
+}
+.iconContainerPosition {
+	margin-top: 2px;
+	margin-right: 10px;
+}
+.gridRowItemSubtitle {
+	top: 28px;
+	line-height: 1;
+	padding: 6px 5px 0 8px;
+}
+.ellipsisLabel {
+	width: 100%;
+}
+.noFavoritesList {
+	top: 271px;
+	left: 406px;
+	width: 811px;
+}
+.noFavoritesGrid {
+	top: 250px;
+	left: 420px;
+}
+.recordingListItemContainer {
+	max-width:760px;
+	height: 44px;
+	overflow: hidden;
+	display: -webkit-flex;
+	-webkit-align-items: center;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	text-overflow: ellipsis;
+}
+.wrap {
+	min-width: 0; /* this is needed for ellipsing text */
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+.recordingListItemEpisodes {
+	margin-left: 5px;
+	-webkit-flex: none;
+}
+.recordingListItemIconCell {
+	margin-left: 10px;
+	-webkit-flex: none;
+}
+.recordingListItemLabel {
+	margin-left: 54px;
+}
+.recordingListItemIcon, .scheduledListItemIcon {
+	left: 13px;
+}
+.recordingListItemIcon {
+	top: 9px;
+}
+.scheduledListItemIcon, .recordingActiveIcon {
+	top: 4px;
+}
+.recordingInfoIcon {
+	margin-left: 15px;
+}
+.recordingDate {
+	right: 8px;
+	width: 70px;
+	top: 6px;
+}
+.msgToAddFavorite {
+	left: 54px;
+	top: 584px;
+}
+.noFavoriteChannelsSummary {
+	left: 54px;
+	top: 548px;
+}
+
+.marginActorDetail{
+	margin-bottom: 9px;
+}
+.marginTitle{
+	margin-bottom: 4px;
+}
+.marginDirectorDetail{
+	margin-bottom: 2px;
+}
+.imageSize{
+	margin:0;
+	padding:0;
+	top:0;
+	max-width: 1280px;
+	max-height: 720px;
+}
+.imageContainer{
+	position: relative;
+	display: -webkit-flex;
+	-webkit-justify-content: center;
+	-webkit-align-items: center;
+	background-color: #000;
+}
+.zoomImageContainer{
+	position: absolute;
+	background-color: #000;
+}
+.smartCardNotInsertedText{
+	padding-top:25px;
+}
+
+.hwClippedGroup {
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	overflow: hidden;
+}
+.previewImageSize{
+	margin:0;
+	padding:0;
+	position:relative;
+	top:0;
+}
+
+.previewImageMaxSize{
+	max-width: 300px;
+	max-height: 300px;
+}
+
+.previewImageWidth{
+	width: 100%;
+	height: auto;
+}
+
+.previewImageHeight{
+	height: 100%;
+	width: auto;
+}
+
+
+.mediaPlaybackBanner {
+	z-index: 2;
+}
+
+.portalRecordIcon {
+	margin-left: 8px;
+	-webkit-flex: none;
+	flex: none;
+}
+
+.portalRecordIcon, .portalPartialRecordIcon {
+	position: relative;
+	top: 2px;
+}
+
+.recordingPromotionItemTopRow {
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.recordingPromotionItemEventDetails {
+	margin-right: 8px;
+}
+
+.recordingPromotionItemEventDetails:empty {
+	margin-right: 0;
+}
+
+.recordingPromotionItemTitle {
+	position: relative;
+	width: 0;
+	flex: 1;
+	-webkit-flex: 1;
+}

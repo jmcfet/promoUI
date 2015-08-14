@@ -1,0 +1,170 @@
+.headerText, .headerTextLeft {
+	font-size: 35px;
+}
+
+.subtitle2, .subtitle3 {
+	font-size: 30px;
+}
+
+.subtitle {
+	font-size: 20px;
+}
+
+.subtitle2 {
+	font-size: 19px;
+}
+
+.subtitle3 {
+	font-size: 15px;
+}
+
+.subtitle2Span {
+	font-size: 13px;
+}
+
+.description {
+	font-size: 15px;
+}
+
+.descriptionSmall {
+	font-size: 10px;
+}
+
+.descriptionStandard {
+	font-size: 15px;
+}
+
+.descriptionLarge {
+	font-size: 25px;
+}
+
+.duration, .durationUnit {
+	font-size: 19px;
+}
+.durationUnit {
+	font-size: 13px;
+}
+
+.thumbnailText {
+	font-size: 18px;
+}
+
+.timeItemSubText {
+}
+
+.timeItemSubTextHighlight {
+	font-size:17px;
+}
+
+.channelText {
+	font-size:20px;
+}
+
+.eventText, .searchResultText, .searchResultTextHighlight {
+	font-size:15px;
+}
+
+.searchResultTextFocus, .searchResultTextHighlightFocus {
+	font-size:19px;
+}
+
+.contentItemText {
+	font-size:15px;
+}
+
+.contentItemSubText {
+	font-size:15px;
+}
+
+.volumeText {
+	font-size:18px;
+}
+
+.channelSelectItemText {
+	font-size:15px;
+}
+
+.progressInner {
+	stroke-width: 1;
+}
+
+.progressTextStart, .progressTextEnd {
+	font-size: 24px;
+}
+
+.dialog_title {
+	font-size: 22px;
+}
+
+.dialog_message {
+	font-size: 15px;
+}
+
+.button_bg_highlight {
+	stroke-width: 1;
+}
+
+.button_text {
+	font-size: 18px;
+}
+
+.button_text_highlight {
+	font-size: 18px;
+}
+
+.currentTimeText {
+	font-size:30px;
+}
+
+.backLabelText {
+	font-size:21px;
+}
+
+.messageBody {
+	font-size: 18px;
+}
+
+.pinEnteredDigits, .pinNonEnteredDigits {
+	font-size: 80px;
+}
+
+.invalidX {
+	font-size: 22px;
+	stroke-width: 2;
+}
+
+.trickPlaySpeed {
+	font-size: 35px;
+}
+
+.vodFooterText {
+	font-size: 19px;
+}
+
+.catchUpShortDayText {
+	font-size: 14px;
+}
+
+.relatedZapperText {
+	font-size: 30px;
+}
+
+.relatedZapperText {
+	font-size: 25px;
+}
+
+.searchTermEntryText, .termEntryText{
+	font-size: 24px;
+}
+
+.facebookHeading {
+	font-size: 30px;
+}
+
+.facebookTitle, .facebookDescription {
+	font-size: 17px;
+}
+
+.facebookDate {
+	font-size: 14px;
+}

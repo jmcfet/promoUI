@@ -1,0 +1,67 @@
+{
+	"errorDescription": "",
+	"message": "",
+	"resultCode": "OK",
+	"resultObj": {
+		"contentList": [
+			{
+				"categoryId": "187",
+				"contents": [{
+					"contentId": "TDLA0100000112219859_DV"
+					},{
+					"contentId": "TDLA0100000112218648_DV"
+					},{
+					"contentId": "TDLA0100000110244881_DV"
+					},{
+					"contentId": "TDLA0100000109526246_SY"
+					},{
+					"contentId": "GSAT1501080123626701_TE"
+					}],
+				"name": "Movie",
+				"ordering": "linear"
+			},
+			{
+				"categoryId": "1000247",
+				"contents": [{
+					"contentId": "GSAB1501090124589101_TE"
+					}],
+				"name": "Documentaries",
+				"ordering": "linear"
+			},
+			{
+				"categoryId": "1000247",
+				"contents": [{
+					"contentId": "GSAT1412230123627601_TE"
+					},{
+					"contentId": "ENCR1000000000033870_EA"
+					},{
+					"contentId": "GSAT1501060122185201_DV"
+					},{
+					"contentId": "GSAT1411240122229201_TE"
+					},{
+					"contentId": "GSAT1411250122228701_TE"
+					},{
+					"contentId": "TDLA0100000105751290_WR"
+					},{
+					"contentId": "CBOL0000000003950521_IR"
+					},{
+					"contentId": "GSAT1407310117908701_TE"
+					},{
+					"contentId": "SDLA0100000098365133_DV"
+					},{
+					"contentId": "SDLA0100000104016956_DV"
+					}],
+				"name": "Documentaries",
+				"ordering": "linear"
+			},
+			{
+				"categoryId": "1000247",
+				"contents": [{
+					"contentId": "TDLA0100000109526246_SY"
+					}],
+				"name": "Documentaries",
+				"ordering": "linear"
+			}
+		]
+	}
+}

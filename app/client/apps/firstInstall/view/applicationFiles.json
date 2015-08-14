@@ -1,0 +1,9 @@
+[
+	"../FirstInstall.js",
+	"BoxMenu.js",
+	"BoxMenuItem.js",
+	"SignalBox.js",
+	"BoxMenuItemWithIcon.js",
+	"ChannelScanBox.js",
+	"FactoryResetBox.js"
+]

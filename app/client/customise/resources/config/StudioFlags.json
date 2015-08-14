@@ -1,0 +1,35 @@
+{
+	"Studios": {
+		"Telecine": "telecine",
+		"Degustaçao Telecine": "telecine",
+		"GNT": "gnt",
+		"Multishow": "multishow",
+		"Gloob": "gloob",
+		"SporTV": "sportv",
+		"BIS": "bis",
+		"Canal Brasil": "canalbrasil",
+		"Viva": "viva",
+		"Curta": "curta",
+		"Universal Channel": "universal",
+		"Syfy": "syfy",
+		"OFF": "canaloff",
+		"Nickelodeon": "nick",
+		"Cartoon Network": "cartoonnetwork",
+		"Boomerang": "boomerang",
+		"TNT": "tnt",
+		"HBO": "hbo",
+		"Clarovideo": "clara",
+		"Combate": "combate",
+		"Fox": "fox",
+		"Fox Life": "fox",
+		"Discovery Kids": "discoverykids",
+		"Discovery H&H": "discoveryhomeandhealth",
+		"Animal Planet": "animalplanet",
+		"Nat Geo": "natgeo",
+		"ID": "id",
+		"TLC": "tlc",
+
+		"Universal": "universal",
+		"Disney": "disneychannel"
+	}
+}

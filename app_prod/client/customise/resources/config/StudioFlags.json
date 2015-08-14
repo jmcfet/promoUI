@@ -1,0 +1,46 @@
+{
+	"Studios": {
+		"globosat": {
+			"Degustaçao Telecine": "telecine",
+			"GNT": "gnt",
+			"Multishow": "multishow",
+			"Gloob": "gloob",
+			"SporTV": "sportv",
+			"BIS": "bis",
+			"Canal Brasil": "canalbrasil",
+			"Viva": "viva",
+			"Curta": "curta",
+			"Universal Channel": "universal",
+			"Syfy": "syfy",
+			"OFF": "globosat",
+			"Default": "globosat"
+		},
+		"Fox": "fox",
+		"FIC / Fox Latin American Channel": "fox",
+		"Fox Latin America Channels": "fox",
+		"hbo": "hbo",
+		"Universal": "universal",
+		"Disney": "disneychannel",
+		"Viacom Productions": {
+			"Nickelodeon": "nick"
+		},
+		"Venus": "venus",
+		"Sextreme": "sextreme",
+		"Playboy": "playboy_tv",
+		"Private Plus": "private",
+		"Private": "private",
+		"Sexy Hot Rapidinhas": "sexyhot",
+		"Sexy Hot": "sexyhot",
+		"Hot Shots": "hotshots",
+		"For Man": "forman",
+		"Turner Broadcasting System Latin America Inc.": {
+			"Cartoon Network": "cartoonnetwork",
+			"Boomerang": "boomerang",
+			"TNT": "tnt"
+		},
+		"The Learning Channel": "tlc",
+		"Default": {
+			"HBO": "hbo"
+		}
+	}
+}

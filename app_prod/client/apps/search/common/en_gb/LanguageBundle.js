@@ -1,0 +1,43 @@
+function LanguageBundle() {
+	this.applicationName = "Search";
+
+	this.search = "Search";
+	this.title = "Search by Title";
+	this.titleActors = "Search by Actors/Director";
+	this.titleKeyword = "Keyword Search";
+	this.titleRerun = "Reruns";
+	this.searching = "Searching...";
+	this.noResults = "No item found";
+	this.start = "Input one keyword to start the search...";
+	this.person = "Person";
+	this.show = "Show";
+	this.keyword = "Keyword";
+	this.clearAll = "Clear All";
+	this.clearPreviousSearches = "Clear Previous Searches";
+	this.searchUnavailable = "Search is currently unavailable. Please try later.";
+	this.searchbyKeyword = "by keyword";
+	this.searchResultCount = " results";
+	this.oneResult = " result";
+	this.open = "open";
+	this.watch = "watch";
+	this.gotoGuide = "see in guide";
+	this.info = "+info";
+	this.newSearch = "new search";
+	this.setReminder = "reminder";
+	this.cancelReminder = "cancel";
+	this.record = "record";
+	this.cancelRecord = "cancel";
+	this.vodPrompt = "NOW. NET your way. When you want it.";
+	this.filter = "filter";
+	this.liveCategory = "Live";
+	this.catchupCategory = "Catchup";
+	this.vodCategory = "NOW";
+	this.pvrCategory = "PVR";
+	this.CatchUp = "Catch Up";
+	this.scheduled = "Scheduled";
+	this.recorded = "Recorded";
+	this.play = "play";
+	this.unknownChannelName = "Unknown";
+	this.insertCharacter = "insert character";
+	this.goToNow = "go to NOW";
+}

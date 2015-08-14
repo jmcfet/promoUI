@@ -1,0 +1,71 @@
+.music_title
+{
+    font-family: 'Ubuntu', sans-serif;
+	font-size: 40px;
+}
+.screensaverGenre
+{
+	font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    fill: #999999;
+    color: #999999;
+}
+.screensaverChannel
+{
+	font-family: 'Ubuntu-Medium', sans-serif;
+    font-size: 30px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.music_tuned_title
+{
+	font-family: 'Ubuntu', sans-serif;
+    font-size: 24px;
+}
+.music_tuned_channel
+{
+	font-family: 'Ubuntu-Medium', sans-serif;
+    font-size: 32px;
+}
+.music_tuned_item 
+{
+	font-family: 'Ubuntu', sans-serif;
+    font-size: 24px;
+    fill: #999999;
+    color: #999999;
+}
+.screensaverTitle
+{
+	font-family: 'Ubuntu', sans-serif;
+    font-size: 24px;
+    fill: #999999;
+    color: #999999;
+}
+.music_tuned_data
+{
+	font-family: 'Ubuntu-Medium', sans-serif;
+    font-size: 24px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.music_tuned_dataSong
+{
+	font-family: 'Ubuntu', sans-serif;
+    font-size: 24px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.screensaverData
+{
+	font-family: 'Ubuntu-Medium', sans-serif;
+    font-size: 26px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.music_button_item
+{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 22px;
+    fill: #ccc;
+    color: #CCCCCC;
+}

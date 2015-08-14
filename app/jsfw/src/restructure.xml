@@ -1,0 +1,232 @@
+<project name="Restructure" default="run">
+	<description>Restructure the JSFW for backwards compability</description>
+	
+	<!-- Constants: Use these to set configurable properties below -->
+	<property name="platform.otv50" value="OTV5.0" />
+	<property name="platform.html5" value="HTML5" />
+	<property name="platform.nmppc" value="NMPPC" />
+	<property name="platform.samsung" value="SAMSUNG" />
+	<property name="sdp.31" value="SDP3.1" />
+	<property name="sdp.34" value="SDP3.4" />
+	<property name="sdp.34.mds" value="SDP3.4mds" />
+	<property name="build.all" value="ALL" />
+	<property name="build.none" value="NONE" />
+	
+	<!-- Configurable Properties. Set the property values using the constants above -->
+	
+	<!-- Indicates if the service directory is required -->
+	<property name="services.build.type" value="${build.all}" /> <!--Allowed Values NONE, ALL -->
+	
+	<!-- Sets the SDP version to use if services are required -->
+	<property name="services.version" value="${sdp.34.mds}" /> <!--Allowed Values SDP3.1, SDP3.4, SDP3.4mds -->
+	
+	<!-- Sets the target platform type -->
+	<property name="platform.build.type" value="${platform.html5}" /> <!--Allowed Values NONE, OTV5.0, HTML5, SAMSUNG, NMPPC -->
+	
+	<!-- Indicates if Apps are required -->
+	<property name="apps.build.type" value="${build.all}" /> <!--Allowed Values NONE,ALL-->
+	
+	<!-- Indicates if the GUI Framework is required -->
+	<property name="gui.build.type" value="${build.all}" /> <!--Allowed Values NONE,ALL-->
+	
+	
+	
+	<!-- Private Targets ************************************************************************************************************************* -->
+	<target name="run" description="Main script entry point" depends="configure.services.build, configure.platform.build, configure.apps.build, configure.gui.build, set.version">
+		<echo message="** Finished converting JSFW for Backwards Compatibility **" />
+		<echo message="Services Build Type: ${services.build.type}" />
+		<echo message="Services Version   : ${services.version}" />
+		<echo message="Platform Type      : ${platform.build.type}" />
+		<echo message="Apps Build Type    : ${apps.build.type}" />
+		<echo message="GUI BuildType      : ${gui.build.type}" />
+	</target>	
+	
+	<!-- Private SDP targets -->
+	<target name="configure.services.build" depends="configure.sdp.build.31, configure.sdp.build.34, configure.sdp.build.34.mds, configure.sdp.build">
+		<echo message="Service directories configured" />
+	</target>
+	
+	<target name="configure.sdp.build.31" description="Use sdp3.1 files" depends="sdp.31.required" if="sdp.31.required">
+		<echo message="SDP 31 Required" />
+		<delete dir="services/sdp"/>
+		<delete dir="services/sdp34"/>
+		<delete dir="services/sdp34mds"/>
+		<move file="services/sdp31" tofile="services/sdp"/>
+	</target>	
+	
+	<target name="configure.sdp.build.34" description="Use sdp3.4 files" depends="sdp.34.required" if="sdp.34.required">
+		<echo message="SDP 34 Required" />
+		<delete dir="services/sdp"/>
+		<delete dir="services/sdp31"/>
+		<delete dir="services/sdp34mds"/>
+		<move file="services/sdp34" tofile="services/sdp"/>
+	</target>
+	
+	<target name="configure.sdp.build.34.mds" description="Use sdp3.4 with MDS files" depends="sdp.34.mds.required" if ="sdp.34.mds.required">
+		<echo message="SDP 34 with MDS Required" />
+		<delete dir="services/sdp"/>
+		<delete dir="services/sdp31"/>
+		<delete dir="services/sdp34"/>
+		<move file="services/sdp34mds" tofile="services/sdp"/>
+	</target>
+	
+	<target name="configure.sdp.build" description="Check of SDP is required at all" depends="services.build.required" unless="services.build.required">
+		<echo message="Service build is not required.Deleting all service directories" />
+		<delete dir="services/sdp"/>
+		<delete dir="services/sdp31"/>
+		<delete dir="services/sdp34"/>
+		<delete dir="services/sdp34mds"/>
+	</target>	
+	
+	<target name="sdp.31.required">
+		<condition property="sdp.31.required">
+			<equals arg1="${services.version}" arg2="${sdp.31}" />
+		</condition>
+	</target>
+	
+	<target name="sdp.34.required">
+		<condition property="sdp.34.required">
+			<equals arg1="${services.version}" arg2="${sdp.34}" />
+		</condition>
+	</target>
+	
+	<target name="sdp.34.mds.required">
+		<condition property="sdp.34.mds.required">
+			<equals arg1="${services.version}" arg2="${sdp.34.mds}" />
+		</condition>
+	</target>
+	
+	<target name="services.build.required">
+		<condition property="services.build.required">
+			<equals arg1="${services.build.type}" arg2="${build.all}" />
+		</condition>
+	</target>
+	
+	<!-- Private Platform targets -->
+	<target name="configure.platform.build" depends="configure.html5.build, configure.samsung.build, configure.otv50.build, configure.nmppc.build">
+		<echo message="Service directories configured" />
+	</target>
+	
+	<target name="configure.html5.build" description="Check if a HTML5 build is required" depends="html5.build.required" if="html5.build.required">
+		<echo message="HTML5 build is required" />
+		<move todir="platform">
+    		<fileset dir="platform/html5"/>
+  		</move>
+  		<delete dir="platform/html5"/>
+		<delete dir="platform/otv50"/>
+		<delete dir="platform/samsung"/>
+		<delete dir="platform/nmppc"/>
+	</target>
+	
+	<target name="configure.samsung.build" description="Check if a Samsung build is required" depends="samsung.build.required" if="samsung.build.required">
+		<echo message="Samsung build is required" />
+		<move todir="platform">
+    		<fileset dir="platform/samsung"/>
+  		</move>
+  		<delete dir="platform/html5"/>
+		<delete dir="platform/otv50"/>
+		<delete dir="platform/samsung"/>
+		<delete dir="platform/nmppc"/>
+	</target>
+	
+	<target name="configure.otv50.build" description="Check if a OTV50 build is required" depends="otv50.build.required" if="otv50.build.required">
+		<echo message="OTV50 build is required" />
+		<move todir="platform">
+    		<fileset dir="platform/otv50"/>
+  		</move>
+  		<delete dir="platform/html5"/>
+		<delete dir="platform/otv50"/>
+		<delete dir="platform/samsung"/>
+		<delete dir="platform/nmppc"/>
+	</target>
+
+	<target name="configure.nmppc.build" description="Check if a NMPPC build is required" depends="nmppc.build.required" if="nmppc.build.required">
+		<echo message="NMPPC build is required" />
+		<move todir="platform">
+    		<fileset dir="platform/nmppc"/>
+  		</move>
+  		<delete dir="platform/html5"/>
+		<delete dir="platform/otv50"/>
+		<delete dir="platform/samsung"/>
+		<delete dir="platform/nmppc"/>
+	</target>
+	
+	<target name="html5.build.required">
+		<condition property="html5.build.required">
+			<equals arg1="${platform.build.type}" arg2="${platform.html5}" />
+		</condition>
+	</target>
+	
+	<target name="samsung.build.required">
+		<condition property="samsung.build.required">
+			<equals arg1="${platform.build.type}" arg2="${platform.samsung}" />
+		</condition>
+	</target>
+	
+	<target name="otv50.build.required">
+		<condition property="otv50.build.required">
+			<equals arg1="${platform.build.type}" arg2="${platform.otv50}" />
+		</condition>
+	</target>		
+	
+	<target name="nmppc.build.required">
+		<condition property="nmppc.build.required">
+			<equals arg1="${platform.build.type}" arg2="${platform.nmppc}" />
+		</condition>
+	</target>
+	
+	<!-- Private Apps Targets -->	
+	<target name="configure.apps.build" depends="apps.build.required" unless="apps.build.required">
+		<echo message="Apps are not required." />
+		  <delete>
+    		<fileset dir="apps/util">
+    			<exclude name="Util.js"/>
+    		</fileset>	
+ 			<fileset dir="apps/core">
+    			<exclude name="Log.js"/>
+    			<exclude name="Version.js"/>
+    		</fileset>	
+  		  </delete>
+  		  <delete dir="apps/dialog"/>
+	</target>
+	
+	<target name="apps.build.required">
+		<condition property="apps.build.required">
+			<equals arg1="${apps.build.type}" arg2="${build.all}" />
+		</condition>
+	</target>
+	
+	<!-- Private GUI Targets -->	
+	<target name="configure.gui.build" depends="gui.build.required" unless="gui.build.required">
+		<echo message="Gui components are not required." />
+  		<delete dir="gui"/>
+	</target>
+	
+	<target name="gui.build.required">
+		<condition property="gui.build.required">
+			<equals arg1="${gui.build.type}" arg2="${build.all}" />
+		</condition>
+	</target>
+	
+	<!-- Private version targets -->
+	<target name="set.version" depends="set.is.mds, set.mds.version, set.non.mds.version" description="Sets the appropriate version in the version module. Ignores the MDS setting">
+		<replaceregexp file="apps/core/Version.js"
+			match="sdp:(.*)"
+			replace="sdp:\'${restructure.sdp.version}',"
+			byline="true" />
+	</target>	
+	
+	<target name="set.is.mds">
+	    <condition property="is.mds"> 
+	    	<equals arg1="${services.version}" arg2="${sdp.34.mds}" />
+	    </condition> 
+	</target>
+	
+	<target name="set.mds.version" if="is.mds">
+		<property name="restructure.sdp.version" value="${sdp.34}" />
+	</target>
+	
+	<target name="set.non.mds.version" unless="is.mds">
+		<property name="restructure.sdp.version" value="${services.version}" />
+	</target>
+</project>

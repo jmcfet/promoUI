@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<view xmlns="http://www.example.org/nagra">
+	<BackgroundBox id='backj' x="0" y="0" height="1080" width="1920" cssClass="primaryColour" />
+	<label id='just' x="0" y="530" cssClass="keypadInputTextNumeric" width="1920" text="Subscription test application launched" />
+</view>

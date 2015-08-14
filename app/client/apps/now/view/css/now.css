@@ -1,0 +1,86 @@
+.optionsMenuItem {
+	color: #000000;
+	background-color: #000000;
+}
+
+.nowClubeAssetPrompt, .nowClubeAssetSynopsis, .nowClubeAssetInfoLabels {
+	margin-top: 16px;
+}
+
+.nowClubeAssetInfoMoreLabel {
+	margin-top: 6px;
+}
+
+.nowAssetInfo {
+	position: relative;
+	line-height: 1.1;
+}
+
+.nowAssetInfo.title, .nowAssetInfo.subtitle, .nowAssetInfo.actors {
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.nowAssetInfoContainer {
+	display: -webkit-flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+}
+
+.nowAssetInfo.title, .nowAssetInfo.price {
+	color: #FFF;
+}
+
+.nowAssetInfo.subtitle {
+	margin-top: 5px;
+	margin-bottom: -2px;
+}
+
+.nowAssetInfo.price {
+	height: 32px;
+	margin-top: 15px;
+}
+
+.nowAssetInfo.ratingGenreContainer {
+	margin-top: 13px;
+}
+
+.nowAssetInfo.ratingIcon {
+	padding-top: 2px;
+	padding-right: 11px;
+	vertical-align: text-top;
+}
+
+.nowAssetInfo.syContainer {
+	margin-top: 18px;
+	height: 0;
+	-webkit-flex: 1;
+	flex: 1;
+}
+
+.nowAssetInfo.synopsis {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+}
+
+.nowAssetInfo.actors {
+	margin-top: 13px;
+}
+
+.nowAssetInfo.director {
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	margin-top: 8px;
+}
+
+.nowAssetInfo.flags {
+	height: 54px;
+	margin-top: 15px;
+}
+
+.nowAssetInfo.moreInfoContainer {
+	margin-top: 12px;
+	padding-bottom: 2px;
+}

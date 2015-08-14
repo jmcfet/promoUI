@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<view xmlns="http://www.example.org/nagra">
+	<fastContainer id="fullScreenBackground" width="1920" height="1080" cssClass="blackFill"/>
+	<image id="kidsBackground" x="0" y="0" width="1920" height="1080" href="../../../customise/resources/images/net/background2.png" visible="false"/>
+
+	<layer id="nowColorStripLayer" width="1920" height="7.5">
+		<backgroundBox id="nowColorStrip" width="1920" height="7.5" cssClass="nowColorStrip"/>
+	</layer>
+
+	<group id="navigationGroup">
+		<layer id="menuFadeGradientLayer" width="1080" height="1080">
+			<backgroundBox id="menuFadeGradient" x="-50" width="700" height="1080" cssClass="nowFadeGradientOverlay"/>
+		</layer>
+		<nowPane id="masterPane" x="103.5" y="321" />
+		<nowPane id="slavePane" x="690" y="321" visible="false" />
+		<layer id="menuSeparator" x="690" y="309" width="3" height="600" visible="false">
+			<backgroundBox id="nowColorStrip" width="3" height="600" cssClass="nowColorStripVert"/>
+		</layer>
+		<sVGlink id="navigateBackArrow" x="64.5" y="595.5" href="../../../customise/resources/svg/icons.svg#guideLeftArrowIcon" visible="false" />
+	</group>
+
+	<nowFullAssetInfo id="fullAssetInfo" visible="false" />
+
+	<image id="nowLogo" x="108" y="43.5" width="235.5" height="153" href="../../../customise/resources/images/net/NOW_logo.png" />
+	<image id="nowClubeLogo" x="94.5" y="48" width="600" height="135" href="../../../customise/resources/images/net/NOW_clube_logo.png" visible="false" />
+	<breadcrumb id="breadcrumb" x="364.5" y="145.5" />
+
+	<nowDisclaimer id="disclaimer" visible="false" />
+	<nowLoading id="loadingBar" visible="false" />
+</view>

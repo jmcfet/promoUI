@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="customise/resources/css/common.css" type="text/css"?>
+
+<!DOCTYPE svg [
+	<!ENTITY frameworkPath "../jsfw/src/gui">
+	<!ENTITY sdkPath "../jsfw/src">
+]>
+
+<svg id="content"
+xml:space="preserve"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:svg="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:ekioh="http://www.ekioh.com/2007/ekioh"
+	version="1.2" baseProfile="tiny"
+	viewBox="0 0 1280 720" viewport-fill="none" preserveAspectRatio="none" onload="$N.app.ApplicationLoader.load('applicationFilesMin.json')" image-rendering="optimizeSpeed">
+
+	<foreignObject id="CCOM" x="50" y="20" width="100" height="50" requiredExtensions="application/CCOM" />
+
+
+	<script type="text/ecmascript" xlink:href="ApplicationLoader.js" />
+
+	<!-- Adding Crypto.js library -->
+	<script type="text/ecmascript" xlink:href="external/crypto-js_3.1.2/aes.js" />
+	<script type="text/ecmascript" xlink:href="external/crypto-js_3.1.2/jsonformatter.js" />
+
+</svg>

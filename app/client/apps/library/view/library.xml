@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<view xmlns="http://www.example.org/nagra">
+	<layer id="libraryBackgroundGradient" x="0" y="0" width="1920" height="1080" visible="true" opacity="0.9">
+        <backgroundBox id="menuFadeGradientOverlay" x="0" y="0" width="300" height="1080" cssClass="menuFadeGradientOverlay"/>
+    </layer>
+
+    <group id="libraryTitle" x="492" y="210.5">
+       <label id="title" x="20" y="0" width="1000" cssClass="newLibraryTitle" />
+    </group>
+	<pageableList id="menu" x="85" y="306" itemHeight="83" itemTemplate="LongMenuItem" />
+	<group id="hardDriveSpace" x="85" y="840" visible="false">
+		<label id="progressBarLabel" x="2" cssClass="diskSpaceFreeText" />
+		<progressBar id="progressBar" y="50" width="351" height="15" outerCssClass="progressOuter" innerCssClass="progressInner" />
+	</group>
+	<group id="recordingsWindow" x="492" y="310.5">
+		<group id="recordingsList">
+			<container id="background" width="1345.5" height="576" cssClass="recordingsWindowBackgroundPassivated" />
+			<textArea id="noRecordingsLabel" x="119" y="84" width="1136.5" height="200" cssClass="normal recordingItemName" visible="true" />
+			<pageableList id="recordingsMenu" x="26" y="70" visibleItemCount="6" itemHeight="0" itemTemplate="RecordingListItem" visible="false" />
+			<pageableList id="scheduledMenu" x="21" y="58.5" visibleItemCount="4" itemHeight="0" itemTemplate="ScheduledRecordingItem" visible="false" />
+			<image id="upArrow" x="1292" y="30" href="../../../customise/resources/images/icons/arrows/upArrowIcon.png" visible="false" />
+			<image id="downArrow" x="1292" y="527" href="../../../customise/resources/images/icons/arrows/downArrowIcon.png" visible="false" />
+		</group>
+		<group id="recordingsOptionsFooter" y="601.5" visible="false">
+			<backgroundBox id="footerBackgroundBox" width="1347" height="72" cssClass="recordingsOptionFooterBackground" />
+			<image id="redKey" y="18" href="../../../customise/resources/images/%RES/icons/botao_vermelho_inactive.png"/>
+			<label id="redSelectLabel" cssClass="recordingsOptionFooterText" y="16.5"/>
+			<image id="greenKey" x="406.5" y="18" href="../../../customise/resources/images/%RES/icons/botao_verde.png"/>
+			<label id="greenSelectLabel" cssClass="recordingsOptionFooterText" x="460.5" y="16.5"/>
+			<image id="yellowKey" y="18" href="../../../customise/resources/images/%RES/icons/botao_amarelo.png"/>
+			<label id="yellowSelectLabel" cssClass="recordingsOptionFooterText" y="16.5"/>
+			<image id="blueKey" y="18" href="../../../customise/resources/images/%RES/icons/botao_azul.png"/>
+			<label id="blueSelectLabel" cssClass="recordingsOptionFooterText" y="16.5"/>
+		</group>
+		<libraryOptions id="libraryOptions" visible="false" />
+		<group id="manualRecordingOptionsList">
+			<label id="title" x="20" y="-28" width="1000" height="75" cssClass="newLibraryTitle" />
+			<manualRecordingOptions id="manualRecordingOptions" visible="false" />
+		</group>
+	</group>
+	<group id="settingsPanelWindow" x="492" y="278" visible="false">
+		<group id="settingsPanel" x="0" y="0"></group>
+	</group>
+	<MessageDialog id="warningMessage" visible="false" />
+</view>

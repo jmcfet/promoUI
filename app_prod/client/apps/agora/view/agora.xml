@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<view xmlns="http://www.example.org/nagra">
+	<breadcrumb id="title" x="354" y="144" />
+	<label id="subTitle" x="520" y="144" cssClass="agoraSubTitle" />
+	<sVGlink id="upArrow" x="195" y="171.5" height="30" width="40" href="../../../customise/resources/svg/icons.svg#guideUpArrowIcon" />
+	<pageableList id="menuList" x="51" y="204" visibleItemCount="7" itemHeight="109.5" itemTemplate="AgoraListItem"  wrapAround="true" />
+	<sVGlink id="downArrow" x="195" y="975" height="30" width="40" href="../../../customise/resources/svg/icons.svg#guideDownArrowIcon" />
+	<collapsingGroup id="buttonIcons" x="276" y="975" height="37.5" itemPadding="45">
+		<collapsingGroupItem id="redButton" href="../../../customise/resources/images/%RES/icons/botao_vermelho.png" />
+		<collapsingGroupItem id="greenButton" href="../../../customise/resources/images/%RES/icons/botao_verde.png" />
+		<collapsingGroupItem id="yellowButton" href="../../../customise/resources/images/%RES/icons/botao_amarelo.png" />
+		<collapsingGroupItem id="okButton" href="../../../customise/resources/images/%RES/icons/botao_ok_branco.png" />
+		<collapsingGroupSvgItem id="leftArrow" href="../../../customise/resources/svg/icons.svg#guideLeftArrowIcon" />
+		<collapsingGroupSvgItem id="rightArrow" href="../../../customise/resources/svg/icons.svg#guideRightArrowIcon" />
+	</collapsingGroup>
+	<label id="noChannelMsg" x="300" y="500" cssClass="noChannels" />
+	<collapsingGroup id="agoraFavOK" x="240" y="530" height="37.5" itemPadding="45" >
+		<collapsingGroupItem id="okIcon" href="../../../customise/resources/images/%RES/icons/botao_ok_azul.png" />
+	</collapsingGroup>
+</view>

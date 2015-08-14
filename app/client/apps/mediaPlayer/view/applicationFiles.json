@@ -1,0 +1,21 @@
+[
+	"AudioBanner.js",
+	"BaseBanner.js",
+	"PlaybackBanner.js",
+	"PVRPlaybackBanner.js",
+	"TimeShiftBanner.js",
+	"MediaPlaybackBanner.js",
+	"ThumbnailWithAnimation.js",
+	"VideoLoadingBar.js",
+	"ImageBanner.js",
+	"../BasePlayer.js",
+	"../HLSPlayer.js",
+	"../OnDemandPlayer.js",
+	"../AudioPlayer.js",
+	"../MediaPlayer.js",
+	"../PvrPlayer.js",
+	"../TimeShiftPlayer.js",
+	"../ImageViewer.js",
+	"../MusicPlayer.js",
+	"../VideoPlayerUSBDLNA.js"
+]

@@ -1,0 +1,116 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI Tabs - Default functionality</title>
+     <link href="css/font-awesome/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <style>
+        .imageinfo {
+            margin-bottom: 5px;
+            padding-right: -20px;
+            background-color: lightgray;
+            width: 100%;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+      .search-inline-container-icon-search {
+          position: absolute;
+          padding: auto;
+          right: 10px; }
+
+        .button-link {
+    padding: 10px 15px;
+    background: #4479BA;
+    color: #FFF;
+    float:right;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: solid 1px #20538D;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+    </style>
+    
+</head>
+<body>
+    <div style="height:180px;width:100%">
+        <div class="imageinfo">
+            <span id="NameContents" style='padding:10px'>Position: </span>
+
+        </div>
+        <div class="imageinfo">
+            <span style='padding:10px'>Type:</span>
+            <select style="width:200px">
+                <option value="EPG">EPG</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+            </select>
+            <button onclick="searchClicked()">
+                <i class="search-inline-container-icon-search icon-search icon-2x"></i>
+            </button>
+        </div>
+        <div class="imageinfo">
+            <span id="titleContents" style='padding:10px'>Title:</span>
+            <input id="title" type="text" />
+        </div>
+        <div class="imageinfo">
+            <span id="AssetContents" style='padding:10px'>Asset:</span>
+        </div>
+        <div class="imageinfo">
+            <div style='padding:10px'>image: </div>
+        </div>
+        <div style="height:40px;width:100%;padding-top:10px">
+            <a class="button-link" onclick="selectedclicked();">Done</a>
+        </div>
+    </div>
+ <script>
+    
+     var $N = opener.$N;
+     var portal = $N.app.PortalWindow;
+     var currentCell = portal.currentCell;
+     if (currentCell) {
+         netMdsServer = $N.app.Config.getConfigValue("mds.developer.server") + '/portal/images/';
+         document.getElementById('NameContents').innerHTML = '<b>Position: </b> ' + portal.target;
+         if (opener.filename) {   //if called by child window
+             document.getElementById('AssetContents').innerHTML = '<b>Asset: </b> ' + opener.filename;
+         }
+     }
+     else {
+         alert('logic error no currentCell');
+     }
+    
+  //   netMdsServer = 'http://localhost:55619/client/apps' + '/portal/images/';
+     function searchClicked() {
+         window.callback = callback;
+         window.title = document.getElementById('title').value;
+         location.href = "imagepicker.html";
+ //        var newWindow = window.open("imagepicker.html");
+   //      window.close();
+        
+     }
+     function callback(caller) {
+         alert(caller.filename);
+         document.getElementById('AssetContents').innerHTML = caller.filename;
+         
+     }
+     function selectedclicked() {
+         portal.title = document.getElementById('title').value;
+         portal.opened();
+     }
+ </script>
+</body>
+</html>

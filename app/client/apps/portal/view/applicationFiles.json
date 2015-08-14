@@ -1,0 +1,9 @@
+[
+	"../Portal.js",
+	"../PortalWindow.js",
+	"../view/PortalMessages.js",
+	"../view/RecordingPromotionItem.js",
+	"../view/MusicPromotionItem.js",
+	"../view/PortalIconTextItem.js",
+	"../view/MessagePromotionItem.js"
+]

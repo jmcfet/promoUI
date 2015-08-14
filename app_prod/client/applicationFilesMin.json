@@ -1,0 +1,9 @@
+{
+	"HTML": [
+		"min/html/app-min.js"
+	],
+	"SVG": [
+		"min/svg/app-min.js"
+	],
+	"COMMON": []
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+    "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<svg  xml:space="preserve"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:svg="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:ekioh="http://www.ekioh.com/2007/ekioh"
+	xmlns:nagra="http://www.example.org/nagra"
+	xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0" i:viewOrigin="195.958 355.7202" i:rulerOrigin="0 0" i:pageBounds="0 595.2754 841.8896 0"
+	version="1.2" baseProfile="tiny"
+	viewBox="0 0 1280 720" viewport-fill="none" preserveAspectRatio="none" image-rendering="optimizeSpeed">   
+	
+	<ekioh:browser svg:id="browser" svg:x="0" svg:y="0" svg:width="1280" svg:height="720" svg:focusable="true" xlink:href="launch.html" />
+	
+</svg>

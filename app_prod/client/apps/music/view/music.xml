@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<view xmlns="http://www.example.org/nagra">
+	<group id="musicGroup">
+		<label id="title" x="354" y="144" cssClass="music_title" />
+        <group id="genres">
+            <image id="focus" x="0" y="474" width="648" height="105" href="images/musica_focus.png" />
+            <centralPivotList id="genreList" x="81" itemTemplate="MusicGenreItem">
+                <itemConfig movementPositions="0,172.5; 0,229.5; 0,354; 0,480; 0,606; 0,730.5; 0,787.5" opacityValues="0,0.4,0.4,1,0.4,0.4,0" />
+            </centralPivotList>
+        </group>
+        <group id="genreArrows" x="117">
+			<sVGlink id="upArrow" x="0" y="195" height="30" width="40" href="../../../customise/resources/svg/icons.svg#guideUpArrowIcon" />
+			<sVGlink id="downArrow" x="0" y="841.5" height="30" width="40" href="../../../customise/resources/svg/icons.svg#guideDownArrowIcon" />
+        </group>
+        <group x="633" id="channels">
+            <image id="focus" x="0" y="474" width="648" height="105" href="images/musica_focus.png" visible="false" />
+            <centralPivotList id="channelList" x="54" itemTemplate="MusicSubCategoryItem" wrapAround="true">
+                <itemConfig movementPositions="0,157.5; 0,232.5; 0,307.5; 0,382.5; 0,477; 0,571.5; 0,646.5; 0,721.5; 0,796.5" opacityValues="0,0.4,0.4,0.4,1,0.4,0.4,0.4,0"/>
+            </centralPivotList>
+        </group>
+        <group id="channelArrows" x="750">
+			<sVGlink id="upArrow" x="0" y="195" height="30" width="40" href="../../../customise/resources/svg/icons.svg#guideUpArrowIcon" />
+			<sVGlink id="downArrow" x="0" y="841.5" height="30" width="40" href="../../../customise/resources/svg/icons.svg#guideDownArrowIcon" />
+        </group>
+        <group id="tuned" x="1332" visible="true">
+            <image id="genre"   x="18" y="267" width="150" height="150" />
+            <label id="title"   x="0" y="457.5" cssClass="music_tuned_title" />
+            <label id="channel" x="0" y="545" cssClass="music_tuned_channel" />
+            <group id="infoLayer">
+	            <label id="artistTitle" x="0" y="653" cssClass="music_tuned_item" />
+	            <TextArea id="artist" x="135" y="619" width="411" height="50" cssClass="music_tuned_data" />
+	            <label id="songTitle" x="0" y="761" cssClass="music_tuned_item" />
+	            <TextArea id="song" x="135" y="727" width="411" height="106" cssClass="music_tuned_dataSong" />
+	            <label id="albumtitleTitle" x="0" y="869" cssClass="music_tuned_item" />
+	            <TextArea id="albumtitle" x="135" y="835" width="411" height="106" cssClass="music_tuned_data" />
+            </group>
+            <group id="waitingLayer" x="0" y="679" visible="false">
+            	<bufferIndicator id="indicatorImage" x="0" y="0" imageWidth="48" imageHeight="48" image="../../../customise/resources/images/net/loading.png" />
+				<label id="waitingText" x="70" y="38" cssClass="music_tuned_title" />
+            </group>
+        </group>
+		<collapsingGroup id="buttonIcons" x="117" y="930" height="37.5" itemPadding="69">
+			<collapsingGroupItem id="redButton" href="../../../customise/resources/images/%RES/icons/botao_vermelho.png" />
+			<collapsingGroupItem id="greenButton" href="../../../customise/resources/images/%RES/icons/botao_verde.png" />
+			<collapsingGroupItem id="okButton" href="../../../customise/resources/images/%RES/icons/botao_ok_branco.png" />
+			<collapsingGroupItem id="exitButton" href="../../../customise/resources/images/%RES/icons/Icn_white_bud.png" />
+        </collapsingGroup>
+	</group>
+    <group id="screensaver" visible="false">
+        <container id="animate" x="800" y="200" width="970" height="154">
+            <image id="genre"  x="0" y="0" width="150" height="150" />
+            <label id="genre2" x="166" y="39" cssClass="screensaverGenre" />
+            <label id="channel" x="316" y="39" width="620" cssClass="screensaverChannel" />
+            <label id="artistTitle" x="166" y="87" cssClass="screensaverTitle" />
+            <label id="artist" x="292" y="89" width="720" cssClass="screensaverData" />
+            <label id="songTitle" x="166" y="129" cssClass="screensaverTitle" />
+            <label id="song" x="292" y="131" width="720" cssClass="screensaverData" />
+        </container>
+    </group>
+</view>

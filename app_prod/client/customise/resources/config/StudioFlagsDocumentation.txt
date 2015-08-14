@@ -1,0 +1,37 @@
+This file is expected to have a node name Studios thay contains a list of studios.
+This list of studios should contains a Default studio.
+
+If the NowMappingUtil code can not find the named studio it will use the Default studio.
+
+Once its found a studio, it will do one of the following.
+a) value is string - Use the provided string as the flag name
+b) value is object - Look for a product name. (Again using an optional default if it can not find it)
+
+e.g.
+
+Studios: {
+	Studio1: studio1,
+	Studio2: {
+		ProdA: studio2_productA,
+		ProdB: studio2_productB
+	},
+	Studio3 : {
+		ProdC: studio3_productC
+		Default: studio3_default
+	}
+	Default: {
+		ProdD: def_productD
+	}
+}
+
+getStudioFlag(Studio1, null);  	 returns studio1
+
+getStudioFlag(Studio2, ProdA); 	returns studio2_productA
+getStudioFlag(Studio2, ProdB); 	returns studio2_productB
+getStudioFlag(Studio2, ProdZ); 	returns null (No default product defined)
+
+getStudioFlag(Studio3, ProdC); 	returns studio3_productC
+getStudioFlag(Studio3, ProdZ);	returns studio3_default (No product found so default product)
+
+getStudioFlag(null, ProdD); 	returns def_productD (No studio found so uses default studio)
+getStudioFlag(null, null);		returns null (No default product)

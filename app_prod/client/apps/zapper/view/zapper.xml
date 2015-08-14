@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+
+<view xmlns="http://www.example.org/nagra">
+
+	<backgroundBox id="noSignalBackgroundBlack" height="1080" width="1920" visible="false"/>
+
+	<layer id="miniguideShadow" x="0" y="640" width="1920" height="480" visible="true" opacity="1">
+		<backgroundBox id="miniguideShadowContent" x="0" y="0" width="1920" height="480" cssClass="miniguideBackground" opacity="1"/>
+		<backgroundBox cssClass="synopsisFadeGradientBottom" x="0" y="0" width="1920" height="480" opacity="1"/>
+	</layer>
+
+	<animatedMiniguide id="animatedMiniguide" x="186" y="800" opacity="0.95"/>
+
+	<group id="rightSideTipsGroup" x="1600"  y="300" visible="true">
+		<backgroundBox id="rightSideTipsBackgroundBox" height="114" width="292" cssClass="tipsFromNetBackGroundBox" />
+		<textArea id="title" x="16" y="25" width="280" height="200" cssClass="tipsFromNetText"/>
+	</group>
+
+	<group id="noSignalMessageBox" x="450"  y="234" visible="false">
+		<backgroundBox id="noSignalMessageBackgroundBox" height="450" width="1020" cssClass="tipsFromNetBackGroundBox" />
+		<label id="noSignalMessageBoxTitle" x="30" y="75" cssClass="noSignalMessageBoxTitle"/>
+		<textArea id="noSignalMessage" x="30" y="110" width="980" height="345" cssClass="noSignalMessage" />
+		<label id="noSignalCode" x="740" y="420" cssClass="noSignalCode" />
+	</group>
+    <group id="largeRecordIcon" x="1702" y="0" visible="false">
+        <backgroundBox id="recordIconShadow" x="0" y="0" width="216" height="216" cssClass="recordIconRadialGradient" opacity="1" />
+        <image id="largeIcon" x="72" y="71" href="../../../customise/resources/images/%RES/icons/botao_gravar_red_large.png" />
+    </group>
+</view>

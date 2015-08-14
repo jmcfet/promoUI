@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:svg="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2"
+	baseProfile="tiny">
+
+	<defs>
+
+		<g id="iconBg">
+			<rect width="85" height="85" rx="10" ry="10"
+				style="opacity:0.7;fill:url(gradients.svg#trickplayGradient);fill-opacity:1;stroke:none;stroke-width:0.97222221;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+				id="rect3229"/>
+		</g>
+
+		<g id="playHead">
+			<rect x="0" y="1" width="5" height="18" fill="white" />
+			<use x="6" y="3" xlink:href="#playIconInner" transform="scale(0.5)" />
+		</g>
+
+		<g transform="rotate(45)" id="positionMarkerHead">
+			<rect x="0" y="-5" width="10" height="10" fill="white"/>
+		</g>
+
+		<linearGradient id="XMLID_5_" gradientUnits="userSpaceOnUse"
+						x1="4.6631" y1="14.7065" x2="15.3628" y2="4.0068">
+			<stop offset="0" style="stop-color:#D01929"/>
+			<stop offset="0.1135" style="stop-color:#D11E2D"/>
+			<stop offset="0.2445" style="stop-color:#D42C3A"/>
+			<stop offset="0.3844" style="stop-color:#D94350"/>
+			<stop offset="0.5305" style="stop-color:#DF636E"/>
+			<stop offset="0.6813" style="stop-color:#E88D95"/>
+			<stop offset="0.8363" style="stop-color:#F2C0C5"/>
+			<stop offset="0.9917" style="stop-color:#FEFCFC"/>
+			<stop offset="1" style="stop-color:#FFFFFF"/>
+		</linearGradient>
+
+		<linearGradient id="XMLID_6_" gradientUnits="userSpaceOnUse"
+						x1="4.6631" y1="14.7065" x2="15.3628" y2="4.0068">
+			<stop offset="0" style="stop-color:#D0D0929"/>
+			<stop offset="0.1135" style="stop-color:#D1D12D"/>
+			<stop offset="0.2445" style="stop-color:#D4D43A"/>
+			<stop offset="0.3844" style="stop-color:#D9D950"/>
+			<stop offset="0.5305" style="stop-color:#DFDF6E"/>
+			<stop offset="0.6813" style="stop-color:#E8E895"/>
+			<stop offset="0.8363" style="stop-color:#F2F2C5"/>
+			<stop offset="0.9917" style="stop-color:#FEFEFC"/>
+			<stop offset="1" style="stop-color:#FFFFFF"/>
+		</linearGradient>
+
+		<radialGradient id="glowGradient">
+			<stop offset="0" style="stop-color:white; stop-opacity:0.5" />
+			<stop offset="1" style="stop-color:white; stop-opacity:0" />
+		</radialGradient>
+	</defs>
+
+	<path id="pct_allCh"
+		style="fill:none;stroke:#C0D449;stroke-width:2;"
+		d="M13,12.822c0,3.313-2.687,6-6,6s-6-2.687-6-6c0-3.314,2.687-6,6-6 L7.015,2.59l3.92,4.344L6.909,11.65V6.934"/>
+
+	<path id="pct_date" style="fill:none;stroke:#C0D449;stroke-width:2;"
+		d="M1.597,1c0,0,0.747,4.787,2.383,7.46 c1.489,2.432,5.064,2.919,5.064,2.919h9.087c0,0-3.575-0.162-4.916-3.081c-1.34-2.919-2.383-7.46-2.383-7.46V1H1v13.297h9.385 v-2.756"/>
+
+	<g id="clock">
+		<circle cx="7.6" cy="9.6" r="9" fill="#b7b8d8" stroke="black" stroke-width="1.2" />
+		<path style="opacity:1;fill:#151515;stroke:none;"
+			d="M 2.5, 8.5 v 2.85 h 7.85 l 5, -5 l -2, -2 l -4.15, 4.15 h -6 z " />
+	</g>
+
+	<g id="reminder">
+
+		<g>
+			<circle style="fill:#D01929;stroke:#000000;" cx="9.998"
+					cy="9.999" r="9.498"/>
+			<line style="fill:none;" x1="10.457" y1="9.54" x2="9.998"
+				y2="9.999"/>
+			<path style="fill:url(#XMLID_5_);"
+				d="M15.91,12.899c-1.268,1.616-2.192-1.638-10.442,2.612c3.75-8.75-1.184-9.52-0.111-10.887
+					c2.285-2.914,6.5-3.425,9.415-1.14C17.685,5.77,18.195,9.986,15.91,12.899z"/>
+			<line style="fill:none;" x1="11.823" y1="7.336" x2="10.364"
+				y2="9.173"/>
+		</g>
+		<g>
+			<path style="fill:#515151;"
+				d="M14.318,6.511c0.27-0.271,0.27-0.706,0-0.976l0,0c-0.271-0.271-0.706-0.271-0.977,0L8.904,9.971
+					c-0.271,0.271-0.271,0.708,0,0.977l0,0c0.271,0.271,0.707,0.271,0.975,0L14.318,6.511z"/>
+			<circle style="fill:#515151;" cx="9.719" cy="10.08"
+					r="1.182"/>
+		</g>
+		<path style="fill:#515151;"
+			d="M5.104,10.247c0,0.63-0.511,1.141-1.142,1.141H3.091c-0.63,0-1.141-0.511-1.141-1.141l0,0
+				c0-0.631,0.511-1.142,1.141-1.142h0.871C4.593,9.105,5.104,9.616,5.104,10.247L5.104,10.247z"/>
+		<path style="fill:#515151;"
+			d="M17.55,10.247c0,0.63-0.511,1.141-1.142,1.141h-0.871c-0.63,0-1.141-0.511-1.141-1.141l0,0
+				c0-0.631,0.511-1.142,1.141-1.142h0.871C17.039,9.105,17.55,9.616,17.55,10.247L17.55,10.247z"/>
+		<path style="fill:#515151;"
+			d="M9.75,14.892c0.63,0,1.141,0.511,1.141,1.142v0.871c0,0.63-0.511,1.141-1.141,1.141l0,0
+				c-0.631,0-1.142-0.511-1.142-1.141v-0.871C8.608,15.403,9.119,14.892,9.75,14.892L9.75,14.892z"/>
+		<path style="fill:#515151;"
+			d="M9.75,2.446c0.63,0,1.141,0.511,1.141,1.142v0.871c0,0.63-0.511,1.141-1.141,1.141l0,0
+				c-0.631,0-1.142-0.511-1.142-1.141V3.587C8.608,2.957,9.119,2.446,9.75,2.446L9.75,2.446z"/>
+	</g>
+
+	<g id="background_glow">
+		<ellipse cx="0" cy="0" rx="30" ry="30" style="fill:url(#glowGradient);stroke:none" />
+	</g>
+
+	<g id="folderDownArrowIcon">
+		<polygon fill="#EFEFEF" points="0,0 20,0 10,12 0,0"/>
+	</g>
+	<g id="folderUpArrowIcon">
+		<polygon fill="#EFEFEF" points="10,0 20,12 0,12"/>
+	</g>
+
+	<g id="guideUpArrowIcon">
+		<polygon fill="#FFFFFF" points="10,0 20,12 0,12"/>
+	</g>
+	<g id="guideDownArrowIcon">
+		<polygon fill="#FFFFFF" points="0,0 20,0 10,12"/>
+	</g>
+	<g id="greyGuideUpArrowIcon">
+		<polygon fill="#46515b" stroke="#46515b" points="10,0 20,12 0,12"/>
+	</g>
+	<g id="greyGuideDownArrowIcon">
+		<polygon fill="#46515b" stroke="#46515b" points="0,0 20,0 10,12"/>
+	</g>
+	<g id="guideLeftArrowIcon">
+		<polygon fill="#FFFFFF" points="12,0 12,20 0,10"/>
+	</g>
+	<g id="guideRightArrowIcon">
+		<polygon fill="#FFFFFF" points="0,0 0,20 12,10"/>
+	</g>
+	<g id="settingsLeftArrowIcon">
+		<polygon fill="#CCCCCC" stroke="#CCCCCC" points="12,0 12,20 0,10"/>
+	</g>
+	<g id="settingsRightArrowIcon">
+		<polygon fill="#CCCCCC" stroke="#CCCCCC" points="0,0 0,20 12,10"/>
+	</g>
+
+	<g id="miniguideUpArrowIcon">
+		<polygon fill="#8d9ba9" points="10,0 20,12 0,12"/>
+	</g>
+	<g id="miniguideDownArrowIcon">
+		<polygon fill="#8d9ba9" points="0,0 20,0 10,12"/>
+	</g>
+	<g id="miniguideLeftArrowIcon">
+		<polygon fill="#8d9ba9" points="12,0 12,20 0,10"/>
+	</g>
+	<g id="miniguideRightArrowIcon">
+		<polygon fill="#8d9ba9" points="0,0 0,20 12,10"/>
+	</g>
+	<g id="playbackSTOP">
+		<rect x="0" y="0" height="16" width="16" fill="#fff"/>
+	</g>
+	<g id="playbackREPLAY">
+		<path fill="#ffffff" d=" M 11.80 21.01 C 14.87 19.04 18.07 17.29 21.25 15.50 C 21.25 16.83 21.25 18.17 21.25 19.51 C 25.50 19.63 29.80 19.13 34.01 19.82 C 35.91 20.88 35.39 23.25 35.54 25.05 C 35.36 27.36 36.20 30.38 33.98 31.96 C 27.11 32.66 20.17 32.01 13.27 32.28 C 13.27 31.40 13.28 29.62 13.28 28.74 C 19.52 28.77 25.75 28.74 31.99 28.75 C 32.00 26.84 32.00 24.92 32.01 23.00 C 28.42 23.00 24.83 23.00 21.24 23.01 C 21.24 23.92 21.24 25.74 21.24 26.65 C 18.09 24.79 14.72 23.25 11.80 21.01 Z" />
+	</g>
+	<g id="timeShiftREW">
+		<polygon fill="#ffffff" points="12,0 12,16 0,8"/>
+		<polygon fill="#ffffff" points="20,0 20,16 8,8"/>
+	</g>
+	<g id="timeShiftPlay">
+		<polygon fill="#fff" points="11,8 11,33 32,21"/>
+	</g>
+	<g id="timeShiftFFW">
+		<polygon fill="#fff" points="0,0 0,16 12,8"/>
+		<polygon fill="#fff" points="8,0 8,16 20,8"/>
+	</g>
+	<g id="timeShiftPause">
+		<rect x="14" y="13" height="16" width="4" fill="#fff" />
+		<rect x="22" y="13" height="16" width="4" fill="#fff" />
+	</g>
+	<g id="timeShiftProgressMarker">
+		<rect fill="#fff"  x="0" y="0" width="6" height="16"/>
+	</g>
+	<g id="nowLearnMoreIcon">
+		<polygon fill="#2c688f" points="0,0 0,24 15,12"/>
+	</g>
+	<g id="settingsBGLines" stroke="#166fad" stroke-opacity="1" stroke-width="0.3" transform="translate(15 3)">
+		<path d="M0 35 H 870 0"/>
+		<path d="M0 72 H 870 0"/>
+		<path d="M0 109 H 870 0"/>
+		<path d="M0 145 H 870 0"/>
+		<path d="M0 180 H 870 0"/>
+		<path d="M0 216 H 870 0"/>
+		<path d="M0 251 H 870 0"/>
+		<path d="M0 289 H 870 0"/>
+		<path d="M0 325 H 870 0"/>
+	</g>
+	<g id="photoPlayerHollowLeftArrowIcon">
+		<polygon stroke="#19acea" points="12,0 12,20 0,10"/>
+	</g>
+	<g id="photoPlayerHollowRightArrowIcon">
+		<polygon stroke="#19acea" points="0,0 0,20 12,10"/>
+	</g>
+	<g id="photoPlayerSolidLeftArrowIcon">
+		<polygon fill="#19acea" stroke-width="2" points="12,0 12,20 0,10"/>
+	</g>
+	<g id="photoPlayerSolidRightArrowIcon">
+		<polygon fill="#19acea" stroke-width="2" points="0,0 0,20 12,10"/>
+	</g>
+</svg>

@@ -1,0 +1,47 @@
+.channelBg{
+	fill:#111177;
+}
+
+.channelBgHighlight{
+	fill:#4455AA;
+}
+
+.channelBgDisabled {
+}
+
+.eventBg, .eventBgCurrent {
+	fill:#332299;
+	stroke-width:0;
+}
+
+.eventBgHighlight {
+	fill:#5577DD;
+	stroke:#DDDD00;
+	stroke-width:2
+}
+
+.eventBgDisabled {
+	fill:#222266;
+	stroke-width:0;
+}
+
+.eventText, .channelText {
+	font-size:11px;
+	fill: white;
+	text-anchor: start;
+}
+
+.channelTextDisabled {
+	font-size:11px;
+	fill: #777777;
+}
+
+.timeLabelText {
+	font-size:10;
+	fill:#ffffff;
+}
+
+.timeLineBg {
+	fill:#ffffff;
+	fill-opacity:0.2;
+}

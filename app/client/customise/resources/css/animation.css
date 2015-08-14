@@ -1,0 +1,302 @@
+
+@-webkit-keyframes blink {
+	0% {
+		opacity:1;
+	}
+	50% {
+		opacity:0;
+	}
+	100% {
+		opacity:1;
+	}
+}
+
+.blink {
+	-webkit-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+
+	-webkit-animation-direction: normal;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-name: blink;
+	-webkit-animation-timing-function: ease-in-out;
+}
+
+.scrollingLabel.animate {
+	z-index: 1;
+	animation: scrollingLabelAnimation 10s linear infinite;
+	-webkit-animation: scrollingLabelAnimation 10s linear infinite;
+}
+
+.delayedScrollingLabel.animate {
+	z-index: 1;
+	animation: delayedScrollingLabelAnimation 10s linear infinite;
+	-webkit-animation: delayedScrollingLabelAnimation 10s linear infinite;
+}
+
+@keyframes delayedScrollingLabelAnimation {
+	0% { transform: translate3d(0, 0, 0px); }
+	80% { transform: translate3d(-50%, 0, 0px); }
+	100% { transform: translate3d(-50%, 0, 0px); }
+}
+
+@-webkit-keyframes delayedScrollingLabelAnimation {
+	0% {
+		-webkit-transform: translate3d(0, 0, 0px);
+		transform: translate3d(0, 0, 0px);
+	}
+	80% {
+		-webkit-transform: translate3d(-50%, 0, 0px);
+		transform: translate3d(-50%, 0, 0px);
+	}
+	100% {
+		-webkit-transform: translate3d(-50%, 0, 0px);
+		transform: translate3d(-50%, 0, 0px);
+	}
+}
+
+@keyframes scrollingLabelAnimation {
+	0% { transform: translate3d(0, 0, 0px); }
+	100% { transform: translate3d(-100%, 0, 0px); }
+}
+
+@-webkit-keyframes scrollingLabelAnimation {
+	0% {
+		-webkit-transform: translate3d(0, 0, 0px);
+		transform: translate3d(0, 0, 0px);
+	}
+	100% {
+		-webkit-transform: translate3d(-100%, 0, 0px);
+		transform: translate3d(-100%, 0, 0px);
+	}
+}
+
+/* Miniguide channel logo animations  */
+
+@-webkit-keyframes activeServiceScrollDown {
+	0% {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+		transform: translate3d(0px, 0px, 0px);
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: translate3d(0px, 44px, 0px);
+		transform: translate3d(0px, 44px, 0px);
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes inactiveServiceScrollDown {
+	0% {
+		-webkit-transform: translate3d(0px, -44px, 0px);
+		transform: translate3d(0px, -44px, 0px);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+		transform: translate3d(0px, 0px, 0px);
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes activeServiceScrollUp {
+	0% {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+		transform: translate3d(0px, 0px, 0px);
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: translate3d(0px, -44px, 0px);
+		transform: translate3d(0px, -44px, 0px);
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes inactiveServiceScrollUp {
+	0% {
+		-webkit-transform: translate3d(0px, 44px, 0px);
+		transform: translate3d(0px, 44px, 0px);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+		transform: translate3d(0px, 0px, 0px);
+		opacity: 1;
+	}
+}
+
+/* Miniguide channel logo animations section ends  */
+
+/* Miniguide event scrolling animations  */
+
+@-webkit-keyframes activeEventScrollRight {
+	0% {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+		transform: translate3d(0px, 0px, 0px);
+	}
+	100% {
+		-webkit-transform: translate3d(430px, 0px, 0px);
+		transform: translate3d(430px, 0px, 0px);
+	}
+}
+
+@-webkit-keyframes inactiveEventScrollRight {
+	0% {
+		-webkit-transform: translate3d(-656px, 0px, 0px);
+		transform: translate3d(-656px, 0px, 0px);
+	}
+	100% {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+		transform: translate3d(0px, 0px, 0px);
+	}
+}
+
+@-webkit-keyframes activeEventScrollLeft {
+	0% {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+		transform: translate3d(0px, 0px, 0px);
+	}
+	100% {
+		-webkit-transform: translate3d(-656px, 0px, 0px);
+		transform: translate3d(-656px, 0px, 0px);
+	}
+}
+
+@-webkit-keyframes inactiveEventScrollLeft {
+	0% {
+		-webkit-transform: translate3d(430px, 0px, 0px);
+		transform: translate3d(430px, 0px, 0px);
+	}
+	100% {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+		transform: translate3d(0px, 0px, 0px);
+	}
+}
+
+/* Miniguide event scrolling animations - section ends */
+
+.nowMenuItemHighlighted {
+	animation: whitePulse 1.5s linear infinite;
+	-webkit-animation: whitePulse 1.5s linear infinite;
+}
+
+@keyframes whitePulse {
+	from {
+		text-shadow: 0 0 0 #fff;
+	}
+	50% {
+		text-shadow: 0 0 10px #fff;
+	}
+	to {
+		text-shadow: 0 0 0 #fff;
+	}
+}
+
+@-webkit-keyframes whitePulse {
+	from {
+		text-shadow: 0 0 0 #fff;
+	}
+	50% {
+		text-shadow: 0 0 10px #fff;
+	}
+	to {
+		text-shadow: 0 0 0 #fff;
+	}
+}
+
+.fadeIn.animate {
+	animation: fadeIn 0.3s ease;
+	-webkit-animation: fadeIn 0.3s ease;
+}
+
+@-webkit-keyframes fadeIn {
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
+}
+
+.miniguideChannelLogoAnimation {
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-duration: 333ms;
+	-webkit-animation-fill-mode: forwards;
+	animation-timing-function: ease;
+	animation-duration: 333ms;
+	animation-fill-mode: forwards;
+	overflow: hidden;
+}
+
+.miniguideBackgroundLayer {
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	overflow: hidden;
+	-webkit-transition: opacity 333ms linear;
+	transition: opacity 333ms linear;
+	opacity: 0;
+}
+
+.miniguideBackgroundLayer.active {
+	opacity: 1;
+}
+
+.miniguideEventLayer {
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-animation-duration: 250ms;
+	animation-duration: 250ms;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	overflow: hidden;
+}
+
+.miniguideBackdrop {
+	-webkit-transition: opacity 333ms ease-out;
+	transition: opacity 333ms ease-out;
+	overflow: hidden;
+	opacity: 0;
+}
+
+.miniguideBackdrop.active {
+	opacity: 1;
+}
+
+.bufferIndicator.animate {
+	-webkit-animation: bufferIndicatorAnimation 1s linear infinite;
+	animation: bufferIndicatorAnimation 1s linear infinite;
+}
+
+@keyframes bufferIndicatorAnimation {
+	0% { transform: rotate3d(0, 0, 1, 0deg); }
+	100% { transform: rotate3d(0, 0, 1, 360deg); }
+}
+
+@-webkit-keyframes bufferIndicatorAnimation {
+	0% {
+		-webkit-transform: rotate3d(0, 0, 1, 0deg);
+		transform: rotate3d(0, 0, 1, 0deg);
+	}
+	100% {
+		-webkit-transform: rotate3d(1, 0, 0, 360deg);
+		transform: rotate3d(0, 0, 1, 360deg);
+	}
+}
+
+.fadingImage {
+	-webkit-transform: translateZ(0);
+	-webkit-transition: opacity 0ms ease-in;
+	transform: translateZ(0);
+	transition: opacity 0ms ease-in;
+	opacity: 0;
+}
+
+.fadingImage.loaded {
+	-webkit-transition-duration: 250ms;
+	transition-duration: 250ms;
+	opacity: 1;
+}

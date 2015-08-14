@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<view xmlns="http://www.example.org/nagra">
+
+	<group id="channelListGroup">
+		<breadcrumb id="guideTitle" x="354" y="144" />
+		<label id="catchupTitle" x="520" y="144" cssClass="titleHighlight" />
+		<pageableList id="channelList" x="79" y="237" itemTemplate="ChannelListItem" visible="false" />
+		<sVGlink id="upArrow" x="112" y="213" href="../../../customise/resources/svg/icons.svg#guideUpArrowIcon" />
+		<sVGlink id="downArrow" x="112" y="673" href="../../../customise/resources/svg/icons.svg#guideDownArrowIcon" />
+		<sVGlink id="catchupArrow" x="192" y="201" href="../../../customise/resources/svg/icons.svg#guideLeftArrowIcon" visible="false" />
+		<label id="catchupLabel" x="225" y="230" cssClass="title dialog_title" visible="false" />
+	</group>
+	<group id="eventListGroup">
+		<group id="timeListGroup" visible="false">
+			<layer id="timeListBackgroundGroup" x="597" y="240" width="1245" height="423">
+				<backgroundBox id="timeListBackground" x="0" y="0" width="1245" height="423" cssClass="timeListBackGroundSelected"/>
+				<bufferIndicator id="loadingImg" x="598" y="187" imageWidth="48" imageHeight="48" image="../../../customise/resources/images/net/loading.png"/>
+				<backgroundBox id="rowLine1" x="12" y="54" width="1216" height="1" cssClass="timeListLine"/>
+				<backgroundBox id="rowLine2" x="12" y="107" width="1216" height="1" cssClass="timeListLine"/>
+				<backgroundBox id="rowLine3" x="12" y="160" width="1216" height="1" cssClass="timeListLine"/>
+				<backgroundBox id="rowLine4" x="12" y="213" width="1216" height="1" cssClass="timeListLine"/>
+				<backgroundBox id="rowLine5" x="12" y="266" width="1216" height="1" cssClass="timeListLine"/>
+				<backgroundBox id="rowLine6" x="12" y="319" width="1216" height="1" cssClass="timeListLine"/>
+				<backgroundBox id="rowLine7" x="12" y="372" width="1216" height="1" cssClass="timeListLine"/>
+			</layer>
+			<pageableListWithScrolling id="timeList" x="597" y="241" itemTemplate="TimeItem" visible="false" />
+			<sVGlink id="leftArrow" x="680" y="204" href="../../../customise/resources/svg/icons.svg#guideLeftArrowIcon" />
+			<sVGlink id="rightArrow" x="830" y="204" href="../../../customise/resources/svg/icons.svg#guideRightArrowIcon" />
+			<sVGlink id="upArrow" x="1805" y="213" href="../../../customise/resources/svg/icons.svg#guideUpArrowIcon" visible="false" />
+			<sVGlink id="downArrow" x="1805" y="673" href="../../../customise/resources/svg/icons.svg#guideDownArrowIcon" visible="false" />
+			<label id="timeListDateTitle" x="715" y="230" cssClass="title dialog_title" visible="false" />
+			<group id="noEventInfoLayer" x="0" y="0">
+				<backgroundBox id="noEventInfoBackground" x="597" y="408" width="1242" height="42" cssClass="timeListItemHighlight" visible="false"/>
+				<label id="noEventInfoText" x="800" y="440" width="600" height="41" cssClass="timeItemText" visible="false"/>
+			</group>
+		</group>
+
+		<group id="gridListGroup" x="597" y="200" visible="false">
+			<grid id="gridList" x="6" y="40" width="1236" height="440" itemTemplate="ListLinker">
+				<itemConfig width="1236" height="97" listTemplate="GridRow" listItemTemplate="GridRowItem" />
+			</grid>
+			<label id="gridDateTitle" x="-390" y="30" cssClass="title dialog_title" />
+			<group id="timeBar" x="6" y="0" opacity="0.3">
+				<sVGlink id="leftArrow" x="0" y="3" href="../../../customise/resources/svg/icons.svg#guideLeftArrowIcon" visible="false" />
+				<sVGlink id="rightArrow" x="1216" y="3" href="../../../customise/resources/svg/icons.svg#guideRightArrowIcon" />
+				<label id="colTime1" x="24" y="30" cssClass="gridTime" visible="false" />
+				<backgroundBox id="colTimeSeparator1" x="240" y="5" width="3" height="25" cssClass="gridTimeSeparator" />
+				<label id="colTime2" x="260" y="30" cssClass="gridTime" visible="false" />
+				<backgroundBox id="colTimeSeparator2" x="485" y="5" width="3" height="25" cssClass="gridTimeSeparator" />
+				<label id="colTime3" x="505" y="30" cssClass="gridTime" visible="false" />
+				<backgroundBox id="colTimeSeparator3" x="731" y="5" width="3" height="25" cssClass="gridTimeSeparator" />
+				<label id="colTime4" x="751" y="30" cssClass="gridTime" visible="false" />
+				<backgroundBox id="colTimeSeparator4" x="980" y="5" width="3" height="25" cssClass="gridTimeSeparator" />
+				<label id="colTime5" x="1000" y="30" cssClass="gridTime" visible="false" />
+			</group>
+			<backgroundBox id="currentTimeIndicator" x="-4" y="4" width="3" height="459" cssClass="currentTimeIndicator" />
+		</group>
+	</group>
+	<group id="noEpg" visible="false">
+			<backgroundBox id="background" x="0" y="0" width="1920" height="1080" cssClass="guideNoEpgBarBackground"/>
+			<backgroundBox id="basicGradientTop" x="0" y="232.5" width="1920" height="39" cssClass="guideNoEpgGradientTop"/>
+			<backgroundBox id="basicGradientBottom" x="0" y="870.5" width="1920" height="39" cssClass="guideNoEpgGradientBottom"/>
+			<backgroundBox id="solidLineTop" x="0" y="271.5" width="1920" height="1.5" cssClass="guideNoEpgBarSolidDivider"/>
+			<backgroundBox id="solidLineBottom" x="0" y="869" width="1920" height="1.5" cssClass="guideNoEpgBarSolidDivider"/>
+			<backgroundBox id="barBackground" x="0" y="273" width="1920" height="596" cssClass="blackFill"/>
+			<Label id="noEPGTitle" x="300" y="450" cssClass="title" />
+			<SpanTextArea id="noEPGinfo" x="300" y="500" width="1200" height="200" cssClass="noEPGContent" />
+			<backgroundBox id="okBackground" x="300" y="690" width="180" height="60" cssClass="guideNoEpgButtonBackground"/>
+			<Label id="noEPGOk" x="360" y="735" text="Ok" cssClass="noEPGContent" />
+	</group>
+
+	<collapsingGroup id="buttonIcons" x="606" y="714" height="37.5" itemPadding="62">
+		<collapsingGroupItem id="searchButton" href="../../../customise/resources/images/%RES/icons/botao_vermelho.png" />
+		<collapsingGroupItem id="filterButton" href="../../../customise/resources/images/%RES/icons/botao_verde.png" />
+		<collapsingGroupItem id="modeButton" href="../../../customise/resources/images/%RES/icons/botao_amarelo.png" />
+		<collapsingGroupItem id="optionButton" href="../../../customise/resources/images/%RES/icons/botao_azul.png" />
+		<collapsingGroupItem id="recordButton" href="../../../customise/resources/images/%RES/icons/botao_gravar_RCU.png" />
+	</collapsingGroup>
+
+	<summary id="summary" x="81" y="792" visible="false" width="1920" height="288">
+		<image id="caAccess" x="985.5" y="-40" width="40" height="40" href="../../../customise/resources/images/%RES/icons/Icon_Folder_Inaccessible.png" visible="false" />
+	</summary>
+
+	<backgroundBox id="summaryFade" x="0" y="792" visible="true" width="1920" height="288" cssClass="blackFill" opacity="0.5" />
+
+	<group id="noChannels">
+		<group id="favorite">
+			<layer id="emptyChannelBackgroundGroup" x="194.5" y="240" width="400" height="432" visible="false">
+				<backgroundBox id="emptyChannel1" x="0" y="0" width="393" height="96" cssClass="channelListItemBackground" opacity="0.5"/>
+				<backgroundBox id="emptyChannel2" x="0" y="110" width="393" height="96" cssClass="channelListItemBackground" opacity="0.5"/>
+				<backgroundBox id="emptyChannel3" x="0" y="217.5" width="393" height="96" cssClass="channelListItemBackground" opacity="0.5"/>
+				<backgroundBox id="emptyChannel4" x="0" y="326" width="393" height="96" cssClass="channelListItemBackground" opacity="0.5"/>
+			</layer>
+			<layer id="emptyGridBackgroundGroup" x="603" y="240" width="1236" height="440" visible="false">
+				<backgroundBox id="emptyGridRow1" x="0" y="0" width="1236" height="96" cssClass="gridRowItemBackground" opacity="0.5"/>
+				<backgroundBox id="emptyGridRow2" x="0" y="110" width="1236" height="96" cssClass="gridRowItemBackground" opacity="0.5"/>
+				<backgroundBox id="emptyGridRow3" x="0" y="217.5" width="1236" height="96" cssClass="gridRowItemBackground" opacity="0.5"/>
+				<backgroundBox id="emptyGridRow4" x="0" y="326.5" width="1236" height="96" cssClass="gridRowItemBackground" opacity="0.5"/>
+			</layer>
+			<Label id="center" x="609" y="441" width="1216" cssClass="noFavoritesList" visible="false" />
+			<Label id="left" x="639" y="411" cssClass="noFavoritesGrid" visible="false" />
+			<spanLabel id="summary" x="81" y="863.5" cssClass="longMenuItem" visible="false" />
+		</group>
+
+	</group>
+	<label id="msgForFavourite" x="81" y="910" cssClass="msgToAddFavorite" />
+	<collapsingGroup id="guideFavOK" x="81" y="935" height="37.5" itemPadding="45" >
+		<collapsingGroupItem id="okIcon" href="../../../customise/resources/images/%RES/icons/botao_ok_azul.png" />
+	</collapsingGroup>
+
+</view>

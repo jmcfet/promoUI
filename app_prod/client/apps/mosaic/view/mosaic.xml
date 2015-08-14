@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<view xmlns="http://www.example.org/nagra">
+	<breadcrumb id="Mosaictitle" x="354" y="144" />
+	<sVGlink id="upArrow" x="680" y="244.5" height="30" width="40" href="../../../customise/resources/svg/icons.svg#guideUpArrowIcon" />
+	<pageableMosaic id="channelMosaic" rows="4" x="0" y="226.5" wrapAround="true" columns="7" itemTemplate="ChannelMosaicTile">
+		<itemConfig width="96" height="96" />
+	</pageableMosaic>
+	<sVGlink id="downArrow" x="680" y="892.5" height="30" width="40" href="../../../customise/resources/svg/icons.svg#guideDownArrowIcon" />
+	<label id="serviceNumber" cssClass="mosaicServiceName" x="1346" y="266.5"/>
+	<label id="serviceName" cssClass="mosaicServiceName" x="1416" y="266.5" text="Cartoon NewWork"/>
+	<delayedScrollingLabel id="eventTitle" x="1346" y="576.5" width="480" duration="250ms" cssClass="mosaicEventName" />
+	<spanLabel id="eventTitleWithEpisode" x="1346" y="610" width="480" height="60" firstWordsOnly="true" cssClass="mosaicEventName" spanCssClass="mosaicEventNameGrey" />
+	<group id="eventInfo" x="1346" y="244.5">
+    	<container x="4" y="40.5" width="483" height="273" cssClass="mosaicVideoBorder"/>
+		<video id="scaleScreenVideo" x="6" y="42.5" width="480" height="270" href="display://0"/>
+		<eventPreview id="previewArea" x="4" y="40.5" width="480" height="270"/>
+		<parentalRatingIcon id="parentalRatingIcon" x="0" y="399" />
+		<label id="eventGenre" x="45" y="430" width="520" cssClass="mosaicEventGenre"/>
+		<textArea id="eventDescription" y="456" width="484" height="120" cssClass="mosaicEventDescription"/>
+		<label id="eventStartTime"  x="0" y="609" width="115" cssClass="mosaicinfo" />
+		<contentProgressBar id="progressBar" x="94.5" y="590" width="147" height="15" />
+		<label id="eventEndTime" x="252" y="609" width="115" cssClass="mosaicinfo" />
+		<recordIcon id="recordIcon" x="350" y="580" />
+		<startOverIcon id="startOverIcon" x="350" y="580" />
+    </group>
+	<label id="noChannelMsg" x="540" y="470" cssClass="noChannels" />
+	<collapsingGroup id="mosaicFavOK" x="480" y="490" height="37.5" itemPadding="45" >
+		<collapsingGroupItem id="okIcon" href="../../../customise/resources/images/%RES/icons/botao_ok_azul.png" />
+	</collapsingGroup>
+	<collapsingGroup id="indicator" x="84" y="930" height="37.5" itemPadding="110">
+		<collapsingGroupItem id="redIcn" href="../../../customise/resources/images/%RES/icons/botao_vermelho.png" />
+		<collapsingGroupItem id="greenIcn" href="../../../customise/resources/images/%RES/icons/botao_verde.png" />
+		<collapsingGroupItem id="RCUIcn" href="../../../customise/resources/images/%RES/icons/botao_gravar_RCU.png" />
+	</collapsingGroup>
+	<collapsingGroup id="OK" x="1346" y="930" height="37.5" itemPadding="45">
+		<collapsingGroupItem id="okIcn" href="../../../customise/resources/images/%RES/icons/botao_ok_branco.png" />
+	</collapsingGroup>
+</view>

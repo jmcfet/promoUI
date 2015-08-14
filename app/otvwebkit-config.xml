@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebKitSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="otvwebkit-config.xsd">
+	<!-- The default font family used to display text. -->
+	<default-font-family>Ubuntu</default-font-family>
+	<!-- Whether to enable css shaders -->
+	<enable-css-shaders>false</enable-css-shaders>
+    <!-- The js heap memory related options -->
+    <js-memory>
+        <!-- Define the max heap size in MB. Browser exits once used heap size is larger than it, and 0 for no limitation.-->
+            <max-js-heap-size>0</max-js-heap-size>     
+        <!-- The max allocated heap-related memory before first GC, in MB. -->
+            <allocated-first-gc-trigger>10</allocated-first-gc-trigger>
+        <!-- The max new allocated heap-related memory from previous GC to next GC, in MB. -->
+            <allocated-next-gc-trigger>5</allocated-next-gc-trigger>
+    </js-memory>
+    <!-- NET override, increased cache size to allow more decoded images to be held in RAM -->
+    <memory-cache>
+        <isEnabled>true</isEnabled>
+        <!-- Default: 10MB, override 30MB -->
+        <capacity>30</capacity>
+        <dead-decoded-data-deletion-interval>60</dead-decoded-data-deletion-interval>
+    </memory-cache>
+	<!-- Setting the default background-color with 0xFF(Alpha)FF(Red)FF(Green)FF(Blue) 
+		format -->
+	<default-background-color>FF000000</default-background-color>
+	<developer-debug support="specify">         <!-- Contains the various developer-debug options. Choices are "none" and "specify" -->
+		<gc>false</gc>                          <!-- javascript garbage collection logs. Choices are false, true, or gdk key name (e.g. F12 or RC_ENTER)-->
+		<graphics-layer>false</graphics-layer>  <!-- AC layer info (name, position, size). Choices are false, true, or gdk key name (e.g. F12 or RC_ENTER)-->
+		<image>false</image>                    <!-- Image decoding and rendering with timing. Choices are false, true, or gdk key name (e.g. F12 or RC_ENTER)-->
+		<js-log-verbose>false</js-log-verbose>  <!-- File and line numbers in JS log (including alert, console.log, confirm, prompt). Choices are false, true, or gdk key name (e.g. F12 or RC_ENTER)-->
+		<memory-cache>false</memory-cache>      <!-- Output the memory cache information: the size of dead data, live data and their decoded data of all kinds of subresource, like js, html, image.... Choices are false, true, or gdk key name (e.g. F12 or RC_ENTER).-->
+		<js-timer>false</js-timer>              <!-- Show JS timer/interval execution with timing, also printing JS code. Choices are false, true, or gdk key name (e.g. F12 or RC_ENTER)-->
+		<key-event>false</key-event>            <!-- Print key event details. Choices are false, true, or gdk key name (e.g. F12 or RC_ENTER)-->
+		<layout>false</layout>                  <!-- Layout profiling. Choices are false, true, or gdk key name (e.g. F12 or RC_ENTER)-->
+		<paint>false</paint>                    <!-- Paint timing. Choices are false, true, or gdk key name (e.g. F12 or RC_ENTER)-->
+		<ccom>false</ccom>                      <!-- CCOM (plugin) method/property execution with names and timings. Choices are false, true, or gdk key name (e.g. F12 or RC_ENTER)-->
+		<resource>false</resource>              <!-- Network/file requests with profiling. Choices are false, true, or gdk key name (e.g. F12 or RC_ENTER)-->
+		<graphics-layer-visual>false</graphics-layer-visual> <!-- Colored layer borders and draw-count. Choices are false, true, or gdk key name (e.g. F12 or RC_ENTER)-->
+		<xhr>false</xhr>                        <!-- XMLHttpRequest with timing (synchronous). Choices are false, true, or gdk key name (e.g. F12 or RC_ENTER)-->
+		<force-gc></force-gc>                   <!-- Force javascript garbage collection, same as calling window.gc(). Should be a gdk key name (e.g. F12 or RC_ENTER)-->
+		<js-heap></js-heap>                     <!-- Show javascript heap used and total bytes. Should be a gdk key name (e.g. F12 or RC_ENTER) -->
+		<dom-size></dom-size>                   <!-- Show total DOM size. Should be a gdk key name (e.g. F12 or RC_ENTER) -->
+		<dom-tree></dom-tree>                   <!-- Print out DOM tree. Should be a gdk key name (e.g. F12 or RC_ENTER) -->
+		<fps></fps>                             <!-- Starts, stops and prints frames-per-second (e.g. Escape or RC_RED) -->
+		<prefix></prefix>                       <!-- This UTF-8 prefix will be added to the beginning of each trace. If prefix is "timestamp", a timestamp will be added instead -->
+	</developer-debug>
+</WebKitSettings>

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<AIM xmlns:otv="http://security.opentv.com/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://security.opentv.com/schema OtvSecSchema.xsd">
+  <AUTHOR>NAGRA</AUTHOR>
+  <APP_ID>nagra_net21_ui</APP_ID>
+  <APP_TYPE>html</APP_TYPE>
+  <APP_VER>0.0.0.0</APP_VER>
+  <START_ARG>client/launch.html</START_ARG>
+  <AUTHOR_HREF>http://www.nagra.com/dtv/</AUTHOR_HREF>
+  <AUTHOR_EMAIL>contact@opentv.com</AUTHOR_EMAIL>
+  <VIEW_MODES>fullscreen</VIEW_MODES>
+  <HEIGHT>720</HEIGHT>
+  <WIDTH>1280</WIDTH>
+  <SERVICE_BOUND>TRUE</SERVICE_BOUND>
+  <AUTHORIZATION>0</AUTHORIZATION>
+  <SECURITY_INFO>0</SECURITY_INFO>
+  <KEYBOARD_MASK>0</KEYBOARD_MASK>
+  <VISIBILITY>TRUE</VISIBILITY>
+  <ICON_FLAGS>0</ICON_FLAGS>
+  <CPU>2</CPU>
+  <MEMORY>2</MEMORY>
+  <RUNTIME_PRIORITY>0</RUNTIME_PRIORITY>
+  <STORAGE_PRIORITY>0</STORAGE_PRIORITY>
+  <DEFAULT_FOCUS_APP>0</DEFAULT_FOCUS_APP>
+  <NAME>Nagra NET 2.1<SHORT_NAME>R-CLIENT NET</SHORT_NAME></NAME>
+  <DESCRIPTION>Nagra UI for NET Brazil Operator</DESCRIPTION>
+  <PATH>nagra_net21_ui</PATH>
+  <AUTOFOCUS>TRUE</AUTOFOCUS>
+  <LICENSE>THIS SOFTWARE IS CONFIDENTIAL AND PROPRIETARY PROPERTY OF OPENTV, INC.
+
+        Copyright (c) 1994-present OpenTV, Inc. All rights reserved.
+
+        OpenTV, the OpenTV logo, OpenTV Hardware Porting Kit, OpenTV Software
+        Development Kit, It's the Experience and Powered by OpenTV are either
+        service marks, trademarks and/or registered trademarks of OpenTV, Inc.
+        in the United States and other countries. All other trademarks are the
+        property of their respective owners.
+
+        This software and the accompanying documentation are the confidential
+        and proprietary products of OpenTV, Inc., the use of which is governed
+        by the terms and conditions of a separate license agreement. This
+        software may not be copied, compiled, decompiled, distributed, modified,
+        or transferred without the prior written permission of OpenTV, Inc. and
+        its licensors, if any. See 'Release Notes' for more information.
+
+        OpenTV, Inc.
+        275 Sacramento Street
+        San Francisco, CA 94111-3810
+        Tel: (415) 962-5000, Fax: (415) 962-5300</LICENSE>
+  <otv:AUTHORIZATIONS>
+    <otv:SERVICES>
+      <otv:ALL>
+        <otv:PERMISSIONS>*</otv:PERMISSIONS>
+      </otv:ALL>
+    </otv:SERVICES>
+    <otv:RESOURCES>
+      <otv:MEMORY>LARGE</otv:MEMORY>
+      <otv:NETWORK/>
+    </otv:RESOURCES>
+  </otv:AUTHORIZATIONS>
+</AIM>

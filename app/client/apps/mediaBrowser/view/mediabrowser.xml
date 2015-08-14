@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<view xmlns="http://www.example.org/nagra">
+	<group id="menuGroup" x="80" y="200">
+		<fixedList id="mediaMenu" x="5" y="148" itemTemplate="LogoMenuItem">
+		    <itemConfig movementPositions="0,0; 0,83; 0,166; 0,249; 0,332; 0,415; 0,498; 0,581"/>
+		</fixedList>
+
+		<group id="mediaPanel" x="400" y="80">
+			<pageableListWithBackground id="mediaMenuList" y="95" itemTemplate="MediaBrowserMenuItem" itemHeight="72" >
+				<itemConfig height="60" width="507" cssClass="dialogSubtitle ellipsisText" textWidth = "585" />
+				<backgroundConfig height="576" width="661" y="-65"/>
+			</pageableListWithBackground>
+
+			<group id="previewPanel" x="685" y="30" >
+				<backgroundBox id="previewBackgroundBox" height="576" width = "661" cssClass="outOfFocusBackground" />
+				<label id="mediaTitle" cssClass="previewTitleLabel" x="36" y="30"/>
+				<group id="imagePanel" x="37.5" y="120" height="405" width="585" cssClass="imageContainer noFill">
+					<image id="previewImageThumbnail" x="0" y="0" quality= "2" maxBitMapSize="500KB" cssClass="previewImageSize previewImageMaxSize"/>
+					<image id="previewImage" x="0" y="0" quality= "2" maxBitMapSize="500KB" cssClass="previewImageSize" visible="false"/>
+				</group>
+			</group>
+
+			<group id="LoadingPanel" y="95" visible = "false">
+				<backgroundBox id="LoadingBackgroundBox" y="-65" height="576" width = "661" cssClass="outOfFocusBackground"/>
+				<bufferIndicator id="imageLoadingIndicator" x="100" y="200" imageWidth="48" imageHeight="48" image="../../../customise/resources/images/net/loading.png"/>
+				<label id="LoadingTitle" cssClass="previewTitleLabel" x="160" y="200"/>
+				<label id="usbLoadingTitle" x="100" y="145" cssClass="usbLoadingTextLabel" />
+				<textArea id="usbLoadingMessage" x="30" y="205" width="550" height="200" cssClass="usbLoadingTextMessage" visible="true" />
+			</group>
+
+			<label id="noDataLabel" cssClass="previewTitleLabel ellipsisText" x="150" y="300" visible="false"/>
+			<label id="fetchContent" cssClass="previewTitleLabel ellipsisText" x="100" y="400" visible="false"/>
+
+			<group id="scrollIndicator" x="600" y="20" >
+				<image id="upArrow" x="7" y="21" height="18" width="30" href="../../../customise/resources/images/icons/arrows/upArrowIcon.png" visible="false"/>
+				<image id="downArrow" x="7" y="540" height="18" width="30" href="../../../customise/resources/images/icons/arrows/downArrowIcon.png" visible="false"/>
+			</group>
+
+			<group id="mediaFooter" y="630">
+				<backgroundBox id="footerBackgroundBox" height="72" width = "661" cssClass="outOfFocusBackground" />
+				<backgroundBox id="leftArrow" x="19.5" y="26" height="23" width="30" cssClass="settingsLeftArrowIcon" />
+				<backgroundBox id="rightArrow" x="627" y="26" height="26" width="30" cssClass="settingsRightArrowIcon" />
+				<label id="backLabel" cssClass="settingsFooterLabel" x="46" y="18"/>
+				<label id="forwardLabel" cssClass="settingsFooterLabel" x="505" y="18"/>
+				<image id="okIcon" x="1157" y="18" height="36" width="36" href="../../../customise/resources/images/%RES/icons/botao_ok_branco.png"/>
+				<label id="selectLabel" cssClass="settingsFooterLabel" x="1207" y="18"/>
+				<image id="greenKey" x="400" y="18" height="36" width="36" href="../../../customise/resources/images/%RES/icons/botao_verde.png"/>
+				<label id="greenSelectLabel" cssClass="settingsFooterLabel" x="450" y="18"/>
+			</group>
+		</group>
+		<group id="settingsPanelWindow" x="400" y="80" visible="false">
+			<label id="settingsPanelTitle" x="20" y="0" width="1000" height="75" cssClass="newLibraryTitle" visible="false"/>
+			<group id="settingsPanel" x="0" y="0"></group>
+		</group>
+	</group>
+	<breadcrumb id="breadcrumb" x="499.5" y="228" cssClass="breadcrumbTitle wrap ellipsisLabel aquaText" />
+</view>

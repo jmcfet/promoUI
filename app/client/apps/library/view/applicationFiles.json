@@ -1,0 +1,19 @@
+[
+	"../Library.js",
+	"../LibraryWindow.js",
+	"LibraryOptions.js",
+	"ManualRecordingOptionHelper.js",
+	"LibraryOptionsMenuItem.js",
+	"LibraryOptionsSubMenu.js",
+	"LibraryOptionsSubMenuConfirmation.js",
+	"LibraryOptionsSubMenuFolder.js",
+	"LibraryOptionsSubMenuKeyboard.js",
+	"LibraryOptionsSubMenuKeypad.js",
+	"LibraryOptionsSubMenuItem.js",
+	"LibraryOptionsSubMenuIconItem.js",
+	"ManualRecordingOptions.js",
+	"ManualRecordingOptionsTimeKeypad.js",
+	"ManualRecordingDateKeypad.js",
+	"ManualRecordingOptionsSubMenuConfirmation.js",
+	"ManualRecordingOptionsSubMenuFolder.js"
+]
