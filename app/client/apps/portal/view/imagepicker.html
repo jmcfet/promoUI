@@ -2,6 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
+    <script src="../purl.js"></script>
+    <script src="../../../common/jquery-1.11.3.js"></script>
     <style>
         .mydiv {
             width: 158px;
@@ -89,7 +91,7 @@ ul
     <script src="imagepopulatorList.js"></script>
 </head>
 <body>
-    <div style="height:440px;width:100%">
+    <div style="height:500px;width:100%">
         <!--<div style="height:60px;width:50%;background-color:lightgray">
            
         </div>-->
@@ -106,7 +108,7 @@ ul
                 </div>
                 <ul id="images" style="height:400px;"></ul>
             </div>
-                <div style="flex:1;height:400px;  padding-left:10px ">
+                <div style="flex:1;height:460px;  padding-left:10px ">
                     <div style="height:180px;width:100%">
                         <div class="imageinfo">
                             <span id="NameContents" style='padding:10px'></span>
@@ -118,14 +120,17 @@ ul
                         <div class="imageinfo">
                             <span id="AssetContents" style='padding:10px'></span>
                         </div>
-                        <div class="imageinfo">
-                            <div style='padding:10px'>image size:</div>
-                        </div>
+                       
                     </div>
-                    <div id="bigimagecontainer" style="height:220px;width:100%;border:2px solid;display: inline-block;">
+                    <div id="bigimagecontainer" style="height:160px;width:100%;border:2px solid;display: inline-block;">
                         <img id="bigimage" style="width:100%;max-height:100%" />
                     </div>
-
+                    <div class="imageinfo">
+                        <span id="imageUrl" style='padding:10px'></span>
+                    </div>
+                    <div class="imageinfo">
+                        <div style='padding:10px'>image size:</div>
+                    </div>
 
                 </div>
             </div>

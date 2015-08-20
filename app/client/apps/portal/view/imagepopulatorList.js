@@ -4,14 +4,16 @@ var fileinfo = null;
 var netMdsServer = null;
 var cnt = 0;
 function start() {
+    var url = purl(document.location);
+    var param1 = url.param("title");
+    netMdsServer = url.param("imageurl") + '/portal/images/';
    
+    //$N = window.$N;
+    //if (!$N) {
+    //    alert('called in wrong context');
+    //    return;
+    //}
    
-    if (!$N) {
-        alert('called in wrong context');
-        return;
-    }
-    netMdsServer = $N.app.Config.getConfigValue("mds.developer.server") + '/portal/images/';
-    
  //   netMdsServer = 'http://localhost:55619/client/apps' + '/portal/images/';
     var parent = document.getElementById('images');
     var xmlhttp = new XMLHttpRequest();
@@ -48,6 +50,7 @@ function clicked(e) {
         if (fileinfo.items[cnt].name === filename) {
             document.getElementById('NameContents').innerHTML = '<b>Name: </b>' + fileinfo.items[cnt].name;
             document.getElementById('AssetContents').innerHTML = '<b>Asset: </b> ' + filename;
+            document.getElementById('imageUrl').innerHTML = '<b>Image: </b> ' + filename;
             document.getElementById('bigimage').src = netMdsServer + fileinfo.items[cnt].image;
             break;
         }
@@ -63,6 +66,8 @@ function selectedclicked(cnt) {
     //$N.app.PortalWindow.opened(netMdsServer + fileinfo.items[cnt].image);
 
     //  window.close();
+    window.location.href = "tab1.html?imageurl=" + document.getElementById('bigimage').src;
+    
     var newWindow = window.open("tab1.html");
  //   opener.callback(window.filename);
    

@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>jQuery UI Tabs - Default functionality</title>
+  <title>UI Tabs - Default functionality</title>
      <link href="css/font-awesome/font-awesome.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link href="css/editorStyles.css" rel="stylesheet" />
+    
     <style>
         .imageinfo {
             margin-bottom: 5px;
@@ -46,59 +47,108 @@
     
 </head>
 <body>
-    <div style="height:180px;width:100%">
-        <div class="imageinfo">
-            <span id="NameContents" style='padding:10px'>Position: </span>
+  
+      
+        <div class="main-content">
+            <div class="all-products page">
+                <div class="imageinfo">
+                    <span id="NameContents" style='padding:10px'>Position: </span>
 
-        </div>
-        <div class="imageinfo">
-            <span style='padding:10px'>Type:</span>
-            <select style="width:200px">
-                <option value="EPG">EPG</option>
-                <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
-                <option value="audi">Audi</option>
-            </select>
-            <button onclick="searchClicked()">
-                <i class="search-inline-container-icon-search icon-search icon-2x"></i>
-            </button>
-        </div>
-        <div class="imageinfo">
-            <span id="titleContents" style='padding:10px'>Title:</span>
-            <input id="title" type="text" />
-        </div>
-        <div class="imageinfo">
-            <span id="AssetContents" style='padding:10px'>Asset:</span>
-        </div>
-        <div class="imageinfo">
-            <div style='padding:10px'>image: </div>
-        </div>
-        <div style="height:40px;width:100%;padding-top:10px">
-            <a class="button-link" onclick="selectedclicked();">Done</a>
-        </div>
-    </div>
+                </div>
+                <div class="imageinfo">
+                    <span style='padding:10px'>Type:</span>
+                    <select style="width:200px">
+                        <option value="EPG">EPG</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                    <button id="searchit">
+                        <i class="search-inline-container-icon-search icon-search icon-2x"></i>
+                    </button>
+                </div>
+                <div class="imageinfo">
+                    <span id="titleContents" style='padding:10px'>Title:</span>
+                    <input id="title" type="text" />
+                </div>
+                <div class="imageinfo">
+                    <span id="AssetContents" style='padding:10px'>Asset:</span>
+                </div>
+                <div class="imageinfo">
+                    <div id="imageUrlPicker" style='padding:10px'>image: </div>
+                </div>
+                <div style="height:40px;width:100%;padding-top:10px">
+                    <a  id="doneButton"class="button-link" >Done</a>
+                </div>
+            </div>
+            <div class="single-product page">
+                <div class="preview-large">
+                    <div class="container">
+                        <div style="flex:1">
+                            <div style="height:30px;background-color:lightgray">
+                                <span style='padding:10px'>Type:</span>
+                                <select style="width:200px">
+                                    <option value="EPG">EPG</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="opel">Opel</option>
+                                    <option value="audi">Audi</option>
+                                </select>
+                            </div>
+                            <ul id="images" style="height:400px;"></ul>
+                        </div>
+                        <div style="flex:1;height:460px;  padding-left:10px ">
+                            <div style="height:180px;width:100%">
+                                <div class="imageinfo">
+                                    <span id="assetName" style='padding:10px'></span>
+
+                                </div>
+                                <div class="imageinfo">
+                                    <span id="TypeContents" style='padding:10px'></span>
+                                </div>
+                                <div class="imageinfo">
+                                    <span id="AssetContents" style='padding:10px'></span>
+                                </div>
+
+                            </div>
+                            <div id="bigimagecontainer" style="height:160px;width:100%;border:2px solid;display: inline-block;">
+                                <img id="bigimage" style="width:100%;max-height:100%" />
+                            </div>
+                            <div class="imageinfo">
+                                <span id="PickerimageUrl" style='padding:10px'></span>
+                            </div>
+                            <div class="imageinfo">
+                                <div style='padding:10px'>image size:</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div style="height:40px;width:100%;padding-top:10px">
+                        <a id="selectbutton" class="button-link" ">Select</a>
+                    </div>
+                </div>
+                
+            </div>
+                  
+         </div>
+    
+         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="../editor.js"></script>
+    </body>
+
+</html>
+
  <script>
     
-     var $N = opener.$N;
-     var portal = $N.app.PortalWindow;
-     var currentCell = portal.currentCell;
-     if (currentCell) {
-         netMdsServer = $N.app.Config.getConfigValue("mds.developer.server") + '/portal/images/';
-         document.getElementById('NameContents').innerHTML = '<b>Position: </b> ' + portal.target;
-         if (opener.filename) {   //if called by child window
-             document.getElementById('AssetContents').innerHTML = '<b>Asset: </b> ' + opener.filename;
-         }
-     }
-     else {
-         alert('logic error no currentCell');
-     }
     
   //   netMdsServer = 'http://localhost:55619/client/apps' + '/portal/images/';
-     function searchClicked() {
+     function searchClickeduuu() {
          window.callback = callback;
          window.title = document.getElementById('title').value;
-         location.href = "imagepicker.html";
- //        var newWindow = window.open("imagepicker.html");
+        
+         window.location.href = "imagepicker.html?title=" + window.title + "&imageurl=" + $N.app.Config.getConfigValue("mds.developer.server");
+     //    window.location.href = "imagepicker.html?title=" + window.title + "&imageurl=" + "test";
+
+   //      var newWindow = window.open("imagepicker.html");
    //      window.close();
         
      }
@@ -107,10 +157,7 @@
          document.getElementById('AssetContents').innerHTML = caller.filename;
          
      }
-     function selectedclicked() {
-         portal.title = document.getElementById('title').value;
-         portal.opened();
-     }
+     
  </script>
 </body>
 </html>
