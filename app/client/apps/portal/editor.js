@@ -2,19 +2,17 @@
     var page = $('.all-products');
     page.addClass('visible');
     var netMdsServer = 'http://localhost:51478/app/client/apps' + '/portal/images/';
-    debugger;
     if (opener) {
 
         var $N = window.$N = opener.$N;
         var portal = $N.app.PortalWindow;
         var currentCell = portal.currentCell;
-
+//populate the first page
         if (currentCell) {
-            netMdsServer = $N.app.Config.getConfigValue("mds.developer.server") + '/portal/images/';
+ //           netMdsServer = $N.app.Config.getConfigValue("mds.developer.server") + '/portal/images/';
             document.getElementById('NameContents').innerHTML = '<b>Position: </b> ' + portal.cellNumber;
-            if (opener.filename) {   //if called by child window
-                document.getElementById('AssetContents').innerHTML = '<b>Asset: </b> ' + opener.filename;
-            }
+            document.getElementById('AssetContents').innerHTML = '<b>Asset: </b> ' + 'not sure what goes here';
+          
         }
         else {
             alert('logic error no currentCell');
@@ -41,19 +39,20 @@
     }
 
 
-    //select the first image
+    //populate the second page by selecting the first image
     document.getElementById('assetName').innerHTML = '<b>Name: </b> ' + fileinfo.items[0].name;
     document.getElementById('TypeContents').innerHTML = '<b>Type: </b> ' + 'EPG';
-    document.getElementById('AssetContents').innerHTML = '<b>Asset: </b> ' + fileinfo.items[0].image;
-    if (netMdsServer)
+    document.getElementById('AssetContents2').innerHTML = '<b>Asset: </b> ' + 'not sure what goes here';
+    if (netMdsServer) {
         document.getElementById('bigimage').src = netMdsServer + fileinfo.items[0].image;
-
+        document.getElementById('PickerimageUrl').innerHTML = '<b>Image: </b> ' + fileinfo.items[0].image;
+    }
     
     var done = $('#doneButton');
     done.on('click', function (e) {
-        debugger;
+       
             portal.title = document.getElementById('title').value;
-            portal.url = document.getElementById('imageUrlPicker').value;
+  //          portal.url = document.getElementById('imageUrlPicker').value;
             portal.opened();
         
 
@@ -80,9 +79,10 @@
         for (cnt = 0; cnt < fileinfo.items.length; cnt++) {
             if (fileinfo.items[cnt].name === filename) {
                 document.getElementById('NameContents').innerHTML = '<b>Name: </b>' + fileinfo.items[cnt].name;
-                document.getElementById('AssetContents').innerHTML = '<b>Asset: </b> ' + filename;
-                document.getElementById('imageUrlPicker').innerHTML = '<b>Image: </b> ' + fileinfo.items[cnt].image;
+                document.getElementById('AssetContents2').innerHTML = '<b>Asset: </b> ' + 'not sure what goes here';
+                document.getElementById('PickerimageUrl').innerHTML = '<b>Image: </b> ' + fileinfo.items[cnt].image;
                 document.getElementById('bigimage').src = netMdsServer + fileinfo.items[cnt].image;
+                portal.url = fileinfo.items[cnt].image;
                 break;
             }
         }

@@ -5,7 +5,8 @@ function start() {
     $N = opener.$N;
 //    alert($N.app.PortalWindow.opened);
     debugger;
-    var netMdsServer = $N.app.Config.getConfigValue("mds.developer.server") + '/portal/images/';
+    var netMdsServer = 'http://localhost:51478/app/client/apps' + '/portal/images/';
+  //  var netMdsServer = $N.app.Config.getConfigValue("mds.developer.server") + '/portal/images/';
     var parent = document.getElementById('images');
     var elem = document.createElement("div");
     elem.setAttribute("class", "wide");

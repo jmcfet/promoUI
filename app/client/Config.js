@@ -564,10 +564,10 @@
 			},
 			"mds.developer.server": {
 			    //				value: "http://ssolab1.nagra.com",
-	//		    			    value: "http://localhost:55726/app/client/apps",
-	//		    value: "http://localhost:55619/client/apps",
+			    			    value: "http://localhost:51478/app/client/apps",
+	//		    value: "http://localhost:51478",
 			    override: true,
-			    value: "http://silverclouddevelopment.com",
+	//		    value: "http://silverclouddevelopment.com",
 			},
 			"mds.developer.promo_path": {
 				value: "/net/posters/epg",

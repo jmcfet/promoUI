@@ -53,7 +53,7 @@ $N.app.PortalWindow = (function () {
 	
 	    currentItem = window.$N.app.PortalWindow.activationObject.data.items[this.cellNumber - 1];
 	    currentItem.data.text = window.$N.app.PortalWindow.title;
-	    currentItem.data.localHref = window.$N.app.PortalWindow.url;
+	    currentItem.data.localHref = '/portal/images/' + window.$N.app.PortalWindow.url;
 	    window.$N.app.PortalWindow.preview(window.$N.app.PortalWindow.activationObject);
 	}
 	function layoutselected(url) {

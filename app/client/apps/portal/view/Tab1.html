@@ -84,19 +84,28 @@
             <div class="single-product page">
                 <div class="preview-large">
                     <div class="container">
-                        <div style="flex:1">
-                            <div style="height:30px;background-color:lightgray">
-                                <span style='padding:10px'>Type:</span>
-                                <select style="width:200px">
-                                    <option value="EPG">EPG</option>
-                                    <option value="saab">Saab</option>
-                                    <option value="opel">Opel</option>
-                                    <option value="audi">Audi</option>
-                                </select>
+                        <div style="flex:4;background:white;height:400px">
+                            <div style="height:35px;margin-bottom: 5px;background-color:lightgray;display:flex;">
+                                <div style="flex:6;display:flex;height:30px">
+                                    <span style='padding:10px;flex:2'>Type:</span>
+                                    <select style="flex:3">
+                                        <option value="EPG">EPG</option>
+                                        <option value="saab">Saab</option>
+                                        <option value="opel">Opel</option>
+                                        <option value="audi">Audi</option>
+                                    </select>
+                                 </div>
+                                <button id="searchit" style="flex:6;height:30px">
+                                        <i class=" icon-search icon-2x"></i>
+                                </button>
+                                <div style="flex:1"></div>
                             </div>
-                            <ul id="images" style="height:400px;"></ul>
+                            <div style="height:400px;display:flex">
+                                <div style='flex:1;height:400px;background:grey'>'</div>
+                                <ul id="images" style="flex:1;height:400px;"></ul>
+                            </div>
                         </div>
-                        <div style="flex:1;height:460px;  padding-left:10px ">
+                        <div style="flex:3;height:400px;  padding-left:10px ">
                             <div style="height:180px;width:100%">
                                 <div class="imageinfo">
                                     <span id="assetName" style='padding:10px'></span>
@@ -106,7 +115,7 @@
                                     <span id="TypeContents" style='padding:10px'></span>
                                 </div>
                                 <div class="imageinfo">
-                                    <span id="AssetContents" style='padding:10px'></span>
+                                    <span id="AssetContents2" style='padding:10px'></span>
                                 </div>
 
                             </div>
@@ -129,9 +138,10 @@
                 
             </div>
                   
-         </div>
+         
     
-         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+    <script src="../../../jquery-1.8.2.js"></script>
         <script src="../editor.js"></script>
     </body>
 
