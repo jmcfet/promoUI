@@ -57,8 +57,14 @@
                 <li class='active has-sub'>
                     <a href='#'><span>File</span></a>
                     <ul>
-                        <li><a href='layoutpicker.html' onclick="window.open(this.href, 'mywin',
-                        'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><span>New</span></a></li>
+                        <li>
+                            <a href='layoutpicker.html' onclick=" var tt = 'top=' + 300 + ',left=' + 500 + ',width=500,height=500,toolbar=0,resizable=0';
+    window.open(this.href, 'mywin', tt);
+    debugger;
+                         return false;"><span>New</span></a>
+                            <!--<a href='layoutpicker.html' onclick="clicked(this.href)"><span>New</span></a>-->
+                        </li>
+
                         <li><a href='#'><span>Open</span></a></li>
                         <li><a href='#'><span>Save</span></a></li>
                         
@@ -68,5 +74,17 @@
                 <li class='last'><a href='#'><span>Contact</span></a></li>
             </ul>
         </div>
+        <script>
+           
+            function clicked(href) {
+                debugger;
+                var tt =  'top=' + window.screenY + ',left=' + window.screenX + ',width=500,height=500,toolbar=0,resizable=0';
+                //            mywindow = window.open(href, 'pick a layout', 'width=500,height=500,toolbar=0,resizable=0');
+                var test = window.screenY;
+                window.open(this.href, 'mywin', 'top=window.screenY,left=window.screenX,width=500,height=500,toolbar=0,resizable=0');
+   //             mywindow.moveTo(100, 100);
+                return false;
+            }
+        </script>
 	</body>
 </html>

@@ -102,8 +102,10 @@ $N.app.PortalWindow = (function () {
 	    }
 	    window.$N.app.PortalWindow.currentCell = currentCell;
 	    
-	    //    var newwindow = window.open('tab1.html', 'name', 'height=480,width=750');
-	    var newwindow = window.open('tab1.html');
+	
+	   
+	    //	    var newwindow = window.open('tab1.html');
+	    var newwindow = window.open('tab1.html','mywin2', 'screenX=200,screenY=400,width=800,height=800,toolbar=0,location=0,resizable=1');
 	    //newwindow.onclose = function () {
 	    //    debugger;
 	    //}

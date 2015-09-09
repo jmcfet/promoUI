@@ -5,6 +5,7 @@
   <title>UI Tabs - Default functionality</title>
      <link href="css/font-awesome/font-awesome.css" rel="stylesheet" />
     <link href="css/editorStyles.css" rel="stylesheet" />
+    <link href="../jstree/themes/default/style.min.css" rel="stylesheet" />
     
     <style>
         .imageinfo {
@@ -56,16 +57,18 @@
 
                 </div>
                 <div class="imageinfo">
-                    <span style='padding:10px'>Type:</span>
-                    <select style="width:200px">
+                    <span style='padding:10px '>Type:</span>
+                    <select style="width:200px;">
                         <option value="EPG">EPG</option>
                         <option value="saab">Saab</option>
                         <option value="opel">Opel</option>
                         <option value="audi">Audi</option>
                     </select>
-                    <button id="searchit">
-                        <i class="search-inline-container-icon-search icon-search icon-2x"></i>
-                    </button>
+                    <div style="padding-left:30px">
+                        <button id="searchit" style="padding-left:30px">
+                            <i class=" icon-search icon-2x"></i>
+                        </button>
+                    </div>
                 </div>
                 <div class="imageinfo">
                     <span id="titleContents" style='padding:10px'>Title:</span>
@@ -101,7 +104,12 @@
                                 <div style="flex:1"></div>
                             </div>
                             <div style="height:400px;display:flex">
-                                <div style='flex:1;height:400px;background:grey'>'</div>
+                                <div id="tree" style='flex:1;height:400px;background:grey'>
+                                    <ul>
+                                        <li>Root node 1</li>
+                                        <li>Root node 2</li>
+                                    </ul>
+                                '</div>
                                 <ul id="images" style="flex:1;height:400px;"></ul>
                             </div>
                         </div>
@@ -141,8 +149,11 @@
          
     
     
-    <script src="../../../jquery-1.8.2.js"></script>
+    <!--<script src="../../../jquery-1.8.2.js"></script>-->
+
+            <script src="../common/jquery-1.11.3.min.js"></script>
         <script src="../editor.js"></script>
+        <script src="../jstree/jstree.js"></script>
     </body>
 
 </html>
@@ -151,7 +162,7 @@
     
     
   //   netMdsServer = 'http://localhost:55619/client/apps' + '/portal/images/';
-     function searchClickeduuu() {
+     function searchClicked() {
          window.callback = callback;
          window.title = document.getElementById('title').value;
         
